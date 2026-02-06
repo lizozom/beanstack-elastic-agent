@@ -10,3 +10,5 @@ wheels/
 .venv
 data/generated/reports/
 .python-version
+pyproject.toml
+.env

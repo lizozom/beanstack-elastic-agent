@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "anthropic>=0.78.0",
+    "elasticsearch>=8.17.0",
     "faker>=40.1.2",
     "python-dotenv>=1.2.1",
+    "requests>=2.32.5",
 ]

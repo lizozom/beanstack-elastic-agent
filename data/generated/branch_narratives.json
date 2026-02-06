@@ -9,7 +9,8 @@
       "maintenance relationship",
       "workarounds"
     ],
-    "narrative_tone": "darkly humorous and resigned"
+    "narrative_tone": "darkly humorous and resigned",
+    "message_length": "short"
   },
   "branch-002": {
     "branch_id": "branch-002",
@@ -21,7 +22,8 @@
       "scheduling conflicts",
       "holiday tensions"
     ],
-    "narrative_tone": "stressed and personal"
+    "narrative_tone": "stressed and personal",
+    "message_length": "medium"
   },
   "branch-003": {
     "branch_id": "branch-003",
@@ -33,7 +35,8 @@
       "predictable issues",
       "quiet pride"
     ],
-    "narrative_tone": "calm and matter-of-fact"
+    "narrative_tone": "calm and matter-of-fact",
+    "message_length": "short"
   },
   "branch-004": {
     "branch_id": "branch-004",
@@ -46,7 +49,8 @@
       "viral moments",
       "celebrity sightings"
     ],
-    "narrative_tone": "excited but overwhelmed"
+    "narrative_tone": "excited but overwhelmed",
+    "message_length": "short"
   },
   "branch-005": {
     "branch_id": "branch-005",
@@ -59,7 +63,8 @@
       "broke customers",
       "professor regulars"
     ],
-    "narrative_tone": "youthful and chaotic"
+    "narrative_tone": "youthful and chaotic",
+    "message_length": "short"
   },
   "branch-006": {
     "branch_id": "branch-006",
@@ -72,7 +77,8 @@
       "team building",
       "proving doubters wrong"
     ],
-    "narrative_tone": "determined and hopeful"
+    "narrative_tone": "determined and hopeful",
+    "message_length": "short"
   },
   "branch-007": {
     "branch_id": "branch-007",
@@ -84,7 +90,8 @@
       "speed records",
       "transit delays affecting business"
     ],
-    "narrative_tone": "fast-paced and efficient"
+    "narrative_tone": "fast-paced and efficient",
+    "message_length": "short"
   },
   "branch-008": {
     "branch_id": "branch-008",
@@ -96,7 +103,8 @@
       "creative events",
       "staff pursuing dreams"
     ],
-    "narrative_tone": "supportive and creative"
+    "narrative_tone": "supportive and creative",
+    "message_length": "long"
   },
   "branch-009": {
     "branch_id": "branch-009",
@@ -108,7 +116,8 @@
       "supplier changes for ethics",
       "staff pushback"
     ],
-    "narrative_tone": "earnest and preachy"
+    "narrative_tone": "earnest and preachy",
+    "message_length": "medium"
   },
   "branch-010": {
     "branch_id": "branch-010",
@@ -121,7 +130,8 @@
       "dog treat inventory",
       "allergic customers"
     ],
-    "narrative_tone": "dog-obsessed and cheerful"
+    "narrative_tone": "dog-obsessed and cheerful",
+    "message_length": "short"
   },
   "branch-011": {
     "branch_id": "branch-011",
@@ -133,7 +143,8 @@
       "staff taking sides",
       "breakup aftermath"
     ],
-    "narrative_tone": "gossipy and dramatic"
+    "narrative_tone": "gossipy and dramatic",
+    "message_length": "short"
   },
   "branch-012": {
     "branch_id": "branch-012",
@@ -145,7 +156,8 @@
       "old vs new customers",
       "community events"
     ],
-    "narrative_tone": "thoughtful and conflicted"
+    "narrative_tone": "thoughtful and conflicted",
+    "message_length": "short"
   },
   "branch-013": {
     "branch_id": "branch-013",
@@ -157,7 +169,8 @@
       "price wars",
       "petty complaints about neighbor"
     ],
-    "narrative_tone": "frustrated and competitive"
+    "narrative_tone": "frustrated and competitive",
+    "message_length": "short"
   },
   "branch-014": {
     "branch_id": "branch-014",
@@ -170,7 +183,8 @@
       "paparazzi",
       "set catering"
     ],
-    "narrative_tone": "starstruck and chaotic"
+    "narrative_tone": "starstruck and chaotic",
+    "message_length": "short"
   },
   "branch-015": {
     "branch_id": "branch-015",
@@ -182,7 +196,8 @@
       "contractor problems",
       "customer complaints about mess"
     ],
-    "narrative_tone": "exhausted and apologetic"
+    "narrative_tone": "exhausted and apologetic",
+    "message_length": "short"
   },
   "branch-016": {
     "branch_id": "branch-016",
@@ -195,7 +210,8 @@
       "lost tourists",
       "seasonal swings"
     ],
-    "narrative_tone": "patient but weary"
+    "narrative_tone": "patient but weary",
+    "message_length": "short"
   },
   "branch-017": {
     "branch_id": "branch-017",
@@ -208,7 +224,8 @@
       "noise",
       "spilled beer smell"
     ],
-    "narrative_tone": "exasperated but profitable"
+    "narrative_tone": "exasperated but profitable",
+    "message_length": "short"
   },
   "branch-018": {
     "branch_id": "branch-018",
@@ -220,7 +237,8 @@
       "emotional moments",
       "free coffee for nurses"
     ],
-    "narrative_tone": "compassionate and understanding"
+    "narrative_tone": "compassionate and understanding",
+    "message_length": "medium"
   },
   "branch-019": {
     "branch_id": "branch-019",
@@ -233,7 +251,8 @@
       "people quitting",
       "manager being strict"
     ],
-    "narrative_tone": "professional but underlying tension"
+    "narrative_tone": "professional but underlying tension",
+    "message_length": "short"
   },
   "branch-020": {
     "branch_id": "branch-020",
@@ -245,7 +264,8 @@
       "mysterious equipment failures",
       "customers noticing weird vibes"
     ],
-    "narrative_tone": "half-joking but genuinely spooked"
+    "narrative_tone": "half-joking but genuinely spooked",
+    "message_length": "short"
   },
   "branch-021": {
     "branch_id": "branch-021",
@@ -257,7 +277,8 @@
       "maintenance relationship",
       "workarounds"
     ],
-    "narrative_tone": "darkly humorous and resigned"
+    "narrative_tone": "darkly humorous and resigned",
+    "message_length": "short"
   },
   "branch-022": {
     "branch_id": "branch-022",
@@ -269,7 +290,8 @@
       "scheduling conflicts",
       "holiday tensions"
     ],
-    "narrative_tone": "stressed and personal"
+    "narrative_tone": "stressed and personal",
+    "message_length": "short"
   },
   "branch-023": {
     "branch_id": "branch-023",
@@ -281,7 +303,8 @@
       "predictable issues",
       "quiet pride"
     ],
-    "narrative_tone": "calm and matter-of-fact"
+    "narrative_tone": "calm and matter-of-fact",
+    "message_length": "short"
   },
   "branch-024": {
     "branch_id": "branch-024",
@@ -294,7 +317,8 @@
       "viral moments",
       "celebrity sightings"
     ],
-    "narrative_tone": "excited but overwhelmed"
+    "narrative_tone": "excited but overwhelmed",
+    "message_length": "short"
   },
   "branch-025": {
     "branch_id": "branch-025",
@@ -307,7 +331,8 @@
       "broke customers",
       "professor regulars"
     ],
-    "narrative_tone": "youthful and chaotic"
+    "narrative_tone": "youthful and chaotic",
+    "message_length": "short"
   },
   "branch-026": {
     "branch_id": "branch-026",
@@ -320,7 +345,8 @@
       "team building",
       "proving doubters wrong"
     ],
-    "narrative_tone": "determined and hopeful"
+    "narrative_tone": "determined and hopeful",
+    "message_length": "short"
   },
   "branch-027": {
     "branch_id": "branch-027",
@@ -332,7 +358,8 @@
       "speed records",
       "transit delays affecting business"
     ],
-    "narrative_tone": "fast-paced and efficient"
+    "narrative_tone": "fast-paced and efficient",
+    "message_length": "short"
   },
   "branch-028": {
     "branch_id": "branch-028",
@@ -344,7 +371,8 @@
       "creative events",
       "staff pursuing dreams"
     ],
-    "narrative_tone": "supportive and creative"
+    "narrative_tone": "supportive and creative",
+    "message_length": "short"
   },
   "branch-029": {
     "branch_id": "branch-029",
@@ -356,7 +384,8 @@
       "supplier changes for ethics",
       "staff pushback"
     ],
-    "narrative_tone": "earnest and preachy"
+    "narrative_tone": "earnest and preachy",
+    "message_length": "short"
   },
   "branch-030": {
     "branch_id": "branch-030",
@@ -369,7 +398,8 @@
       "dog treat inventory",
       "allergic customers"
     ],
-    "narrative_tone": "dog-obsessed and cheerful"
+    "narrative_tone": "dog-obsessed and cheerful",
+    "message_length": "short"
   },
   "branch-031": {
     "branch_id": "branch-031",
@@ -381,7 +411,8 @@
       "staff taking sides",
       "breakup aftermath"
     ],
-    "narrative_tone": "gossipy and dramatic"
+    "narrative_tone": "gossipy and dramatic",
+    "message_length": "short"
   },
   "branch-032": {
     "branch_id": "branch-032",
@@ -393,7 +424,8 @@
       "old vs new customers",
       "community events"
     ],
-    "narrative_tone": "thoughtful and conflicted"
+    "narrative_tone": "thoughtful and conflicted",
+    "message_length": "short"
   },
   "branch-033": {
     "branch_id": "branch-033",
@@ -405,7 +437,8 @@
       "price wars",
       "petty complaints about neighbor"
     ],
-    "narrative_tone": "frustrated and competitive"
+    "narrative_tone": "frustrated and competitive",
+    "message_length": "short"
   },
   "branch-034": {
     "branch_id": "branch-034",
@@ -418,7 +451,8 @@
       "paparazzi",
       "set catering"
     ],
-    "narrative_tone": "starstruck and chaotic"
+    "narrative_tone": "starstruck and chaotic",
+    "message_length": "short"
   },
   "branch-035": {
     "branch_id": "branch-035",
@@ -430,7 +464,8 @@
       "contractor problems",
       "customer complaints about mess"
     ],
-    "narrative_tone": "exhausted and apologetic"
+    "narrative_tone": "exhausted and apologetic",
+    "message_length": "short"
   },
   "branch-036": {
     "branch_id": "branch-036",
@@ -443,7 +478,8 @@
       "lost tourists",
       "seasonal swings"
     ],
-    "narrative_tone": "patient but weary"
+    "narrative_tone": "patient but weary",
+    "message_length": "short"
   },
   "branch-037": {
     "branch_id": "branch-037",
@@ -456,7 +492,8 @@
       "noise",
       "spilled beer smell"
     ],
-    "narrative_tone": "exasperated but profitable"
+    "narrative_tone": "exasperated but profitable",
+    "message_length": "short"
   },
   "branch-038": {
     "branch_id": "branch-038",
@@ -468,7 +505,8 @@
       "emotional moments",
       "free coffee for nurses"
     ],
-    "narrative_tone": "compassionate and understanding"
+    "narrative_tone": "compassionate and understanding",
+    "message_length": "short"
   },
   "branch-039": {
     "branch_id": "branch-039",
@@ -481,7 +519,8 @@
       "people quitting",
       "manager being strict"
     ],
-    "narrative_tone": "professional but underlying tension"
+    "narrative_tone": "professional but underlying tension",
+    "message_length": "short"
   },
   "branch-040": {
     "branch_id": "branch-040",
@@ -493,7 +532,8 @@
       "mysterious equipment failures",
       "customers noticing weird vibes"
     ],
-    "narrative_tone": "half-joking but genuinely spooked"
+    "narrative_tone": "half-joking but genuinely spooked",
+    "message_length": "short"
   },
   "branch-041": {
     "branch_id": "branch-041",
@@ -505,7 +545,8 @@
       "maintenance relationship",
       "workarounds"
     ],
-    "narrative_tone": "darkly humorous and resigned"
+    "narrative_tone": "darkly humorous and resigned",
+    "message_length": "short"
   },
   "branch-042": {
     "branch_id": "branch-042",
@@ -517,7 +558,8 @@
       "scheduling conflicts",
       "holiday tensions"
     ],
-    "narrative_tone": "stressed and personal"
+    "narrative_tone": "stressed and personal",
+    "message_length": "short"
   },
   "branch-043": {
     "branch_id": "branch-043",
@@ -529,7 +571,8 @@
       "predictable issues",
       "quiet pride"
     ],
-    "narrative_tone": "calm and matter-of-fact"
+    "narrative_tone": "calm and matter-of-fact",
+    "message_length": "short"
   },
   "branch-044": {
     "branch_id": "branch-044",
@@ -542,7 +585,8 @@
       "viral moments",
       "celebrity sightings"
     ],
-    "narrative_tone": "excited but overwhelmed"
+    "narrative_tone": "excited but overwhelmed",
+    "message_length": "short"
   },
   "branch-045": {
     "branch_id": "branch-045",
@@ -555,7 +599,8 @@
       "broke customers",
       "professor regulars"
     ],
-    "narrative_tone": "youthful and chaotic"
+    "narrative_tone": "youthful and chaotic",
+    "message_length": "short"
   },
   "branch-046": {
     "branch_id": "branch-046",
@@ -568,7 +613,8 @@
       "team building",
       "proving doubters wrong"
     ],
-    "narrative_tone": "determined and hopeful"
+    "narrative_tone": "determined and hopeful",
+    "message_length": "short"
   },
   "branch-047": {
     "branch_id": "branch-047",
@@ -580,7 +626,8 @@
       "speed records",
       "transit delays affecting business"
     ],
-    "narrative_tone": "fast-paced and efficient"
+    "narrative_tone": "fast-paced and efficient",
+    "message_length": "short"
   },
   "branch-048": {
     "branch_id": "branch-048",
@@ -592,7 +639,8 @@
       "creative events",
       "staff pursuing dreams"
     ],
-    "narrative_tone": "supportive and creative"
+    "narrative_tone": "supportive and creative",
+    "message_length": "short"
   },
   "branch-049": {
     "branch_id": "branch-049",
@@ -604,7 +652,8 @@
       "supplier changes for ethics",
       "staff pushback"
     ],
-    "narrative_tone": "earnest and preachy"
+    "narrative_tone": "earnest and preachy",
+    "message_length": "short"
   },
   "branch-050": {
     "branch_id": "branch-050",
@@ -617,7 +666,8 @@
       "dog treat inventory",
       "allergic customers"
     ],
-    "narrative_tone": "dog-obsessed and cheerful"
+    "narrative_tone": "dog-obsessed and cheerful",
+    "message_length": "short"
   },
   "branch-051": {
     "branch_id": "branch-051",
@@ -629,7 +679,8 @@
       "staff taking sides",
       "breakup aftermath"
     ],
-    "narrative_tone": "gossipy and dramatic"
+    "narrative_tone": "gossipy and dramatic",
+    "message_length": "short"
   },
   "branch-052": {
     "branch_id": "branch-052",
@@ -641,7 +692,8 @@
       "old vs new customers",
       "community events"
     ],
-    "narrative_tone": "thoughtful and conflicted"
+    "narrative_tone": "thoughtful and conflicted",
+    "message_length": "short"
   },
   "branch-053": {
     "branch_id": "branch-053",
@@ -653,7 +705,8 @@
       "price wars",
       "petty complaints about neighbor"
     ],
-    "narrative_tone": "frustrated and competitive"
+    "narrative_tone": "frustrated and competitive",
+    "message_length": "short"
   },
   "branch-054": {
     "branch_id": "branch-054",
@@ -666,7 +719,8 @@
       "paparazzi",
       "set catering"
     ],
-    "narrative_tone": "starstruck and chaotic"
+    "narrative_tone": "starstruck and chaotic",
+    "message_length": "short"
   },
   "branch-055": {
     "branch_id": "branch-055",
@@ -678,7 +732,8 @@
       "contractor problems",
       "customer complaints about mess"
     ],
-    "narrative_tone": "exhausted and apologetic"
+    "narrative_tone": "exhausted and apologetic",
+    "message_length": "short"
   },
   "branch-056": {
     "branch_id": "branch-056",
@@ -691,7 +746,8 @@
       "lost tourists",
       "seasonal swings"
     ],
-    "narrative_tone": "patient but weary"
+    "narrative_tone": "patient but weary",
+    "message_length": "short"
   },
   "branch-057": {
     "branch_id": "branch-057",
@@ -704,7 +760,8 @@
       "noise",
       "spilled beer smell"
     ],
-    "narrative_tone": "exasperated but profitable"
+    "narrative_tone": "exasperated but profitable",
+    "message_length": "short"
   },
   "branch-058": {
     "branch_id": "branch-058",
@@ -716,7 +773,8 @@
       "emotional moments",
       "free coffee for nurses"
     ],
-    "narrative_tone": "compassionate and understanding"
+    "narrative_tone": "compassionate and understanding",
+    "message_length": "short"
   },
   "branch-059": {
     "branch_id": "branch-059",
@@ -729,7 +787,8 @@
       "people quitting",
       "manager being strict"
     ],
-    "narrative_tone": "professional but underlying tension"
+    "narrative_tone": "professional but underlying tension",
+    "message_length": "short"
   },
   "branch-060": {
     "branch_id": "branch-060",
@@ -741,7 +800,8 @@
       "mysterious equipment failures",
       "customers noticing weird vibes"
     ],
-    "narrative_tone": "half-joking but genuinely spooked"
+    "narrative_tone": "half-joking but genuinely spooked",
+    "message_length": "short"
   },
   "branch-061": {
     "branch_id": "branch-061",
@@ -753,7 +813,8 @@
       "maintenance relationship",
       "workarounds"
     ],
-    "narrative_tone": "darkly humorous and resigned"
+    "narrative_tone": "darkly humorous and resigned",
+    "message_length": "short"
   },
   "branch-062": {
     "branch_id": "branch-062",
@@ -765,7 +826,8 @@
       "scheduling conflicts",
       "holiday tensions"
     ],
-    "narrative_tone": "stressed and personal"
+    "narrative_tone": "stressed and personal",
+    "message_length": "short"
   },
   "branch-063": {
     "branch_id": "branch-063",
@@ -777,7 +839,8 @@
       "predictable issues",
       "quiet pride"
     ],
-    "narrative_tone": "calm and matter-of-fact"
+    "narrative_tone": "calm and matter-of-fact",
+    "message_length": "short"
   },
   "branch-064": {
     "branch_id": "branch-064",
@@ -790,7 +853,8 @@
       "viral moments",
       "celebrity sightings"
     ],
-    "narrative_tone": "excited but overwhelmed"
+    "narrative_tone": "excited but overwhelmed",
+    "message_length": "short"
   },
   "branch-065": {
     "branch_id": "branch-065",
@@ -803,7 +867,8 @@
       "broke customers",
       "professor regulars"
     ],
-    "narrative_tone": "youthful and chaotic"
+    "narrative_tone": "youthful and chaotic",
+    "message_length": "short"
   },
   "branch-066": {
     "branch_id": "branch-066",
@@ -816,7 +881,8 @@
       "team building",
       "proving doubters wrong"
     ],
-    "narrative_tone": "determined and hopeful"
+    "narrative_tone": "determined and hopeful",
+    "message_length": "short"
   },
   "branch-067": {
     "branch_id": "branch-067",
@@ -828,7 +894,8 @@
       "speed records",
       "transit delays affecting business"
     ],
-    "narrative_tone": "fast-paced and efficient"
+    "narrative_tone": "fast-paced and efficient",
+    "message_length": "short"
   },
   "branch-068": {
     "branch_id": "branch-068",
@@ -840,7 +907,8 @@
       "creative events",
       "staff pursuing dreams"
     ],
-    "narrative_tone": "supportive and creative"
+    "narrative_tone": "supportive and creative",
+    "message_length": "short"
   },
   "branch-069": {
     "branch_id": "branch-069",
@@ -852,7 +920,8 @@
       "supplier changes for ethics",
       "staff pushback"
     ],
-    "narrative_tone": "earnest and preachy"
+    "narrative_tone": "earnest and preachy",
+    "message_length": "short"
   },
   "branch-070": {
     "branch_id": "branch-070",
@@ -865,7 +934,8 @@
       "dog treat inventory",
       "allergic customers"
     ],
-    "narrative_tone": "dog-obsessed and cheerful"
+    "narrative_tone": "dog-obsessed and cheerful",
+    "message_length": "short"
   },
   "branch-071": {
     "branch_id": "branch-071",
@@ -877,7 +947,8 @@
       "staff taking sides",
       "breakup aftermath"
     ],
-    "narrative_tone": "gossipy and dramatic"
+    "narrative_tone": "gossipy and dramatic",
+    "message_length": "short"
   },
   "branch-072": {
     "branch_id": "branch-072",
@@ -889,7 +960,8 @@
       "old vs new customers",
       "community events"
     ],
-    "narrative_tone": "thoughtful and conflicted"
+    "narrative_tone": "thoughtful and conflicted",
+    "message_length": "short"
   },
   "branch-073": {
     "branch_id": "branch-073",
@@ -901,7 +973,8 @@
       "price wars",
       "petty complaints about neighbor"
     ],
-    "narrative_tone": "frustrated and competitive"
+    "narrative_tone": "frustrated and competitive",
+    "message_length": "short"
   },
   "branch-074": {
     "branch_id": "branch-074",
@@ -914,7 +987,8 @@
       "paparazzi",
       "set catering"
     ],
-    "narrative_tone": "starstruck and chaotic"
+    "narrative_tone": "starstruck and chaotic",
+    "message_length": "short"
   },
   "branch-075": {
     "branch_id": "branch-075",
@@ -926,7 +1000,8 @@
       "contractor problems",
       "customer complaints about mess"
     ],
-    "narrative_tone": "exhausted and apologetic"
+    "narrative_tone": "exhausted and apologetic",
+    "message_length": "short"
   },
   "branch-076": {
     "branch_id": "branch-076",
@@ -939,7 +1014,8 @@
       "lost tourists",
       "seasonal swings"
     ],
-    "narrative_tone": "patient but weary"
+    "narrative_tone": "patient but weary",
+    "message_length": "short"
   },
   "branch-077": {
     "branch_id": "branch-077",
@@ -952,7 +1028,8 @@
       "noise",
       "spilled beer smell"
     ],
-    "narrative_tone": "exasperated but profitable"
+    "narrative_tone": "exasperated but profitable",
+    "message_length": "short"
   },
   "branch-078": {
     "branch_id": "branch-078",
@@ -964,7 +1041,8 @@
       "emotional moments",
       "free coffee for nurses"
     ],
-    "narrative_tone": "compassionate and understanding"
+    "narrative_tone": "compassionate and understanding",
+    "message_length": "short"
   },
   "branch-079": {
     "branch_id": "branch-079",
@@ -977,7 +1055,8 @@
       "people quitting",
       "manager being strict"
     ],
-    "narrative_tone": "professional but underlying tension"
+    "narrative_tone": "professional but underlying tension",
+    "message_length": "short"
   },
   "branch-080": {
     "branch_id": "branch-080",
@@ -989,7 +1068,8 @@
       "mysterious equipment failures",
       "customers noticing weird vibes"
     ],
-    "narrative_tone": "half-joking but genuinely spooked"
+    "narrative_tone": "half-joking but genuinely spooked",
+    "message_length": "short"
   },
   "branch-081": {
     "branch_id": "branch-081",
@@ -1001,7 +1081,8 @@
       "maintenance relationship",
       "workarounds"
     ],
-    "narrative_tone": "darkly humorous and resigned"
+    "narrative_tone": "darkly humorous and resigned",
+    "message_length": "short"
   },
   "branch-082": {
     "branch_id": "branch-082",
@@ -1013,7 +1094,8 @@
       "scheduling conflicts",
       "holiday tensions"
     ],
-    "narrative_tone": "stressed and personal"
+    "narrative_tone": "stressed and personal",
+    "message_length": "short"
   },
   "branch-083": {
     "branch_id": "branch-083",
@@ -1025,7 +1107,8 @@
       "predictable issues",
       "quiet pride"
     ],
-    "narrative_tone": "calm and matter-of-fact"
+    "narrative_tone": "calm and matter-of-fact",
+    "message_length": "short"
   },
   "branch-084": {
     "branch_id": "branch-084",
@@ -1038,7 +1121,8 @@
       "viral moments",
       "celebrity sightings"
     ],
-    "narrative_tone": "excited but overwhelmed"
+    "narrative_tone": "excited but overwhelmed",
+    "message_length": "short"
   },
   "branch-085": {
     "branch_id": "branch-085",
@@ -1051,7 +1135,8 @@
       "broke customers",
       "professor regulars"
     ],
-    "narrative_tone": "youthful and chaotic"
+    "narrative_tone": "youthful and chaotic",
+    "message_length": "short"
   },
   "branch-086": {
     "branch_id": "branch-086",
@@ -1064,7 +1149,8 @@
       "team building",
       "proving doubters wrong"
     ],
-    "narrative_tone": "determined and hopeful"
+    "narrative_tone": "determined and hopeful",
+    "message_length": "short"
   },
   "branch-087": {
     "branch_id": "branch-087",
@@ -1076,7 +1162,8 @@
       "speed records",
       "transit delays affecting business"
     ],
-    "narrative_tone": "fast-paced and efficient"
+    "narrative_tone": "fast-paced and efficient",
+    "message_length": "short"
   },
   "branch-088": {
     "branch_id": "branch-088",
@@ -1088,7 +1175,8 @@
       "creative events",
       "staff pursuing dreams"
     ],
-    "narrative_tone": "supportive and creative"
+    "narrative_tone": "supportive and creative",
+    "message_length": "short"
   },
   "branch-089": {
     "branch_id": "branch-089",
@@ -1100,7 +1188,8 @@
       "supplier changes for ethics",
       "staff pushback"
     ],
-    "narrative_tone": "earnest and preachy"
+    "narrative_tone": "earnest and preachy",
+    "message_length": "short"
   },
   "branch-090": {
     "branch_id": "branch-090",
@@ -1113,7 +1202,8 @@
       "dog treat inventory",
       "allergic customers"
     ],
-    "narrative_tone": "dog-obsessed and cheerful"
+    "narrative_tone": "dog-obsessed and cheerful",
+    "message_length": "medium"
   },
   "branch-091": {
     "branch_id": "branch-091",
@@ -1125,7 +1215,8 @@
       "staff taking sides",
       "breakup aftermath"
     ],
-    "narrative_tone": "gossipy and dramatic"
+    "narrative_tone": "gossipy and dramatic",
+    "message_length": "long"
   },
   "branch-092": {
     "branch_id": "branch-092",
@@ -1137,7 +1228,8 @@
       "old vs new customers",
       "community events"
     ],
-    "narrative_tone": "thoughtful and conflicted"
+    "narrative_tone": "thoughtful and conflicted",
+    "message_length": "short"
   },
   "branch-093": {
     "branch_id": "branch-093",
@@ -1149,7 +1241,8 @@
       "price wars",
       "petty complaints about neighbor"
     ],
-    "narrative_tone": "frustrated and competitive"
+    "narrative_tone": "frustrated and competitive",
+    "message_length": "short"
   },
   "branch-094": {
     "branch_id": "branch-094",
@@ -1162,7 +1255,8 @@
       "paparazzi",
       "set catering"
     ],
-    "narrative_tone": "starstruck and chaotic"
+    "narrative_tone": "starstruck and chaotic",
+    "message_length": "short"
   },
   "branch-095": {
     "branch_id": "branch-095",
@@ -1174,7 +1268,8 @@
       "contractor problems",
       "customer complaints about mess"
     ],
-    "narrative_tone": "exhausted and apologetic"
+    "narrative_tone": "exhausted and apologetic",
+    "message_length": "short"
   },
   "branch-096": {
     "branch_id": "branch-096",
@@ -1187,7 +1282,8 @@
       "lost tourists",
       "seasonal swings"
     ],
-    "narrative_tone": "patient but weary"
+    "narrative_tone": "patient but weary",
+    "message_length": "short"
   },
   "branch-097": {
     "branch_id": "branch-097",
@@ -1200,7 +1296,8 @@
       "noise",
       "spilled beer smell"
     ],
-    "narrative_tone": "exasperated but profitable"
+    "narrative_tone": "exasperated but profitable",
+    "message_length": "short"
   },
   "branch-098": {
     "branch_id": "branch-098",
@@ -1212,7 +1309,8 @@
       "emotional moments",
       "free coffee for nurses"
     ],
-    "narrative_tone": "compassionate and understanding"
+    "narrative_tone": "compassionate and understanding",
+    "message_length": "short"
   },
   "branch-099": {
     "branch_id": "branch-099",
@@ -1225,7 +1323,8 @@
       "people quitting",
       "manager being strict"
     ],
-    "narrative_tone": "professional but underlying tension"
+    "narrative_tone": "professional but underlying tension",
+    "message_length": "short"
   },
   "branch-100": {
     "branch_id": "branch-100",
@@ -1237,7 +1336,8 @@
       "mysterious equipment failures",
       "customers noticing weird vibes"
     ],
-    "narrative_tone": "half-joking but genuinely spooked"
+    "narrative_tone": "half-joking but genuinely spooked",
+    "message_length": "short"
   },
   "branch-101": {
     "branch_id": "branch-101",
@@ -1249,7 +1349,8 @@
       "maintenance relationship",
       "workarounds"
     ],
-    "narrative_tone": "darkly humorous and resigned"
+    "narrative_tone": "darkly humorous and resigned",
+    "message_length": "short"
   },
   "branch-102": {
     "branch_id": "branch-102",
@@ -1261,7 +1362,8 @@
       "scheduling conflicts",
       "holiday tensions"
     ],
-    "narrative_tone": "stressed and personal"
+    "narrative_tone": "stressed and personal",
+    "message_length": "short"
   },
   "branch-103": {
     "branch_id": "branch-103",
@@ -1273,7 +1375,8 @@
       "predictable issues",
       "quiet pride"
     ],
-    "narrative_tone": "calm and matter-of-fact"
+    "narrative_tone": "calm and matter-of-fact",
+    "message_length": "short"
   },
   "branch-104": {
     "branch_id": "branch-104",
@@ -1286,7 +1389,8 @@
       "viral moments",
       "celebrity sightings"
     ],
-    "narrative_tone": "excited but overwhelmed"
+    "narrative_tone": "excited but overwhelmed",
+    "message_length": "short"
   },
   "branch-105": {
     "branch_id": "branch-105",
@@ -1299,7 +1403,8 @@
       "broke customers",
       "professor regulars"
     ],
-    "narrative_tone": "youthful and chaotic"
+    "narrative_tone": "youthful and chaotic",
+    "message_length": "short"
   },
   "branch-106": {
     "branch_id": "branch-106",
@@ -1312,7 +1417,8 @@
       "team building",
       "proving doubters wrong"
     ],
-    "narrative_tone": "determined and hopeful"
+    "narrative_tone": "determined and hopeful",
+    "message_length": "short"
   },
   "branch-107": {
     "branch_id": "branch-107",
@@ -1324,7 +1430,8 @@
       "speed records",
       "transit delays affecting business"
     ],
-    "narrative_tone": "fast-paced and efficient"
+    "narrative_tone": "fast-paced and efficient",
+    "message_length": "short"
   },
   "branch-108": {
     "branch_id": "branch-108",
@@ -1336,7 +1443,8 @@
       "creative events",
       "staff pursuing dreams"
     ],
-    "narrative_tone": "supportive and creative"
+    "narrative_tone": "supportive and creative",
+    "message_length": "short"
   },
   "branch-109": {
     "branch_id": "branch-109",
@@ -1348,7 +1456,8 @@
       "supplier changes for ethics",
       "staff pushback"
     ],
-    "narrative_tone": "earnest and preachy"
+    "narrative_tone": "earnest and preachy",
+    "message_length": "short"
   },
   "branch-110": {
     "branch_id": "branch-110",
@@ -1361,7 +1470,8 @@
       "dog treat inventory",
       "allergic customers"
     ],
-    "narrative_tone": "dog-obsessed and cheerful"
+    "narrative_tone": "dog-obsessed and cheerful",
+    "message_length": "short"
   },
   "branch-111": {
     "branch_id": "branch-111",
@@ -1373,7 +1483,8 @@
       "staff taking sides",
       "breakup aftermath"
     ],
-    "narrative_tone": "gossipy and dramatic"
+    "narrative_tone": "gossipy and dramatic",
+    "message_length": "short"
   },
   "branch-112": {
     "branch_id": "branch-112",
