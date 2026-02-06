@@ -1,6 +1,6 @@
 """
-Enable the Agent Builder feature flag in Kibana.
-Sets agentBuilder:enabled to true via Kibana settings API.
+Enable the Agent Builder feature flag, Workflows UI, and configure default AI connector in Kibana.
+Sets agentBuilder:enabled, workflows:ui:enabled, and genAiSettings:defaultAIConnector.
 """
 
 import os
@@ -29,7 +29,9 @@ def main():
 
     payload = {
         "changes": {
-            "agentBuilder:enabled": True
+            "agentBuilder:enabled": True,
+            "workflows:ui:enabled": True,
+            "genAiSettings:defaultAIConnector": "Anthropic-Claude-Sonnet-4-5",
         }
     }
 
@@ -43,6 +45,8 @@ def main():
 
     if response.status_code == 200:
         print("Agent Builder successfully enabled.")
+        print("Workflows UI enabled.")
+        print("Default AI connector set to: Anthropic Claude Sonnet 4.5")
     else:
         print(f"Error: {response.status_code} - {response.text}")
 

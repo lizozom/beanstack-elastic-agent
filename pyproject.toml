@@ -9,5 +9,6 @@ dependencies = [
     "elasticsearch>=8.17.0",
     "faker>=40.1.2",
     "python-dotenv>=1.2.1",
+    "pyyaml>=6.0.3",
     "requests>=2.32.5",
 ]

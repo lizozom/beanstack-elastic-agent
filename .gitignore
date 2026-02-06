@@ -12,3 +12,4 @@ data/generated/reports/
 .python-version
 pyproject.toml
 .env
+.vscode/mcp.json
