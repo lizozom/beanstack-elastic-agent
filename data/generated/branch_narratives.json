@@ -1,0 +1,1390 @@
+{
+  "branch-001": {
+    "branch_id": "branch-001",
+    "narrative_id": "equipment_cursed",
+    "narrative_description": "Equipment breaks constantly and mysteriously. Nothing works right. Maintenance guy is basically a regular.",
+    "narrative_themes": [
+      "endless repairs",
+      "equipment mysteries",
+      "maintenance relationship",
+      "workarounds"
+    ],
+    "narrative_tone": "darkly humorous and resigned"
+  },
+  "branch-002": {
+    "branch_id": "branch-002",
+    "narrative_id": "family_drama",
+    "narrative_description": "Manager's family members work at the branch. Constant family drama spilling into work.",
+    "narrative_themes": [
+      "family arguments",
+      "favoritism accusations",
+      "scheduling conflicts",
+      "holiday tensions"
+    ],
+    "narrative_tone": "stressed and personal"
+  },
+  "branch-003": {
+    "branch_id": "branch-003",
+    "narrative_id": "steady_boring",
+    "narrative_description": "Nothing dramatic ever happens. Reliable, steady, almost suspiciously uneventful.",
+    "narrative_themes": [
+      "routine operations",
+      "same customers daily",
+      "predictable issues",
+      "quiet pride"
+    ],
+    "narrative_tone": "calm and matter-of-fact"
+  },
+  "branch-004": {
+    "branch_id": "branch-004",
+    "narrative_id": "tiktok_famous",
+    "narrative_description": "One of the baristas went viral on TikTok. Now they get influencers and tourists constantly.",
+    "narrative_themes": [
+      "social media chaos",
+      "long lines",
+      "photo opportunities",
+      "viral moments",
+      "celebrity sightings"
+    ],
+    "narrative_tone": "excited but overwhelmed"
+  },
+  "branch-005": {
+    "branch_id": "branch-005",
+    "narrative_id": "college_campus",
+    "narrative_description": "Near a university. Deals with students, finals week chaos, broke customers, study groups hogging tables.",
+    "narrative_themes": [
+      "finals week",
+      "student discounts",
+      "laptop campers",
+      "broke customers",
+      "professor regulars"
+    ],
+    "narrative_tone": "youthful and chaotic"
+  },
+  "branch-006": {
+    "branch_id": "branch-006",
+    "narrative_id": "struggling_turnaround",
+    "narrative_description": "Branch was nearly closed, new manager trying to turn it around. Underdog story.",
+    "narrative_themes": [
+      "improvement efforts",
+      "small wins",
+      "setbacks",
+      "team building",
+      "proving doubters wrong"
+    ],
+    "narrative_tone": "determined and hopeful"
+  },
+  "branch-007": {
+    "branch_id": "branch-007",
+    "narrative_id": "transit_hub",
+    "narrative_description": "In a major transit station. Extremely high volume, rushed customers, chaotic but profitable.",
+    "narrative_themes": [
+      "rush hour chaos",
+      "commuter regulars",
+      "speed records",
+      "transit delays affecting business"
+    ],
+    "narrative_tone": "fast-paced and efficient"
+  },
+  "branch-008": {
+    "branch_id": "branch-008",
+    "narrative_id": "aspiring_artists",
+    "narrative_description": "Most staff are aspiring artists/musicians. Lots of call-outs for auditions, gallery shows, etc.",
+    "narrative_themes": [
+      "audition call-outs",
+      "art displayed in store",
+      "creative events",
+      "staff pursuing dreams"
+    ],
+    "narrative_tone": "supportive and creative"
+  },
+  "branch-009": {
+    "branch_id": "branch-009",
+    "narrative_id": "eco_warrior",
+    "narrative_description": "Manager is passionate about sustainability. Always implementing new green initiatives, sometimes to staff annoyance.",
+    "narrative_themes": [
+      "composting battles",
+      "reusable cup campaigns",
+      "supplier changes for ethics",
+      "staff pushback"
+    ],
+    "narrative_tone": "earnest and preachy"
+  },
+  "branch-010": {
+    "branch_id": "branch-010",
+    "narrative_id": "dog_friendly",
+    "narrative_description": "Became the unofficial dog-friendly coffee spot. Now overrun with dogs, for better and worse.",
+    "narrative_themes": [
+      "dog incidents",
+      "cute dog moments",
+      "barking complaints",
+      "dog treat inventory",
+      "allergic customers"
+    ],
+    "narrative_tone": "dog-obsessed and cheerful"
+  },
+  "branch-011": {
+    "branch_id": "branch-011",
+    "narrative_id": "workplace_romance",
+    "narrative_description": "Two baristas are dating (or breaking up). The whole staff is invested in the drama.",
+    "narrative_themes": [
+      "relationship drama",
+      "scheduling awkwardness",
+      "staff taking sides",
+      "breakup aftermath"
+    ],
+    "narrative_tone": "gossipy and dramatic"
+  },
+  "branch-012": {
+    "branch_id": "branch-012",
+    "narrative_id": "gentrification_tension",
+    "narrative_description": "In a rapidly gentrifying neighborhood. Tension between new tech workers and longtime residents.",
+    "narrative_themes": [
+      "changing neighborhood",
+      "price complaints",
+      "old vs new customers",
+      "community events"
+    ],
+    "narrative_tone": "thoughtful and conflicted"
+  },
+  "branch-013": {
+    "branch_id": "branch-013",
+    "narrative_id": "rival_coffee_shop",
+    "narrative_description": "Constantly dealing with a competitor coffee shop next door (Java Junction) that plays loud music, steals customers, and the managers have a petty rivalry.",
+    "narrative_themes": [
+      "competitor drama",
+      "lost customers",
+      "price wars",
+      "petty complaints about neighbor"
+    ],
+    "narrative_tone": "frustrated and competitive"
+  },
+  "branch-014": {
+    "branch_id": "branch-014",
+    "narrative_id": "movie_set",
+    "narrative_description": "A movie/TV show is filming nearby. Celebrities, film crews, road closures, excitement.",
+    "narrative_themes": [
+      "celebrity sightings",
+      "film crew as customers",
+      "road closures",
+      "paparazzi",
+      "set catering"
+    ],
+    "narrative_tone": "starstruck and chaotic"
+  },
+  "branch-015": {
+    "branch_id": "branch-015",
+    "narrative_id": "renovation_saga",
+    "narrative_description": "Branch undergoing a long renovation that keeps getting delayed. Constant construction issues.",
+    "narrative_themes": [
+      "construction delays",
+      "dust and noise",
+      "contractor problems",
+      "customer complaints about mess"
+    ],
+    "narrative_tone": "exhausted and apologetic"
+  },
+  "branch-016": {
+    "branch_id": "branch-016",
+    "narrative_id": "tourist_trap",
+    "narrative_description": "In a major tourist area. Dealing with tourists, language barriers, unusual requests.",
+    "narrative_themes": [
+      "tourist questions",
+      "currency confusion",
+      "unusual drink requests",
+      "lost tourists",
+      "seasonal swings"
+    ],
+    "narrative_tone": "patient but weary"
+  },
+  "branch-017": {
+    "branch_id": "branch-017",
+    "narrative_id": "sports_bar_neighbor",
+    "narrative_description": "Located next to a sports bar. Game days are chaos, drunk customers wander in, parking nightmares.",
+    "narrative_themes": [
+      "game day rushes",
+      "rowdy customers",
+      "parking complaints",
+      "noise",
+      "spilled beer smell"
+    ],
+    "narrative_tone": "exasperated but profitable"
+  },
+  "branch-018": {
+    "branch_id": "branch-018",
+    "narrative_id": "medical_complex",
+    "narrative_description": "Located near a hospital. Lots of tired doctors/nurses, emotional customers, unusual hours.",
+    "narrative_themes": [
+      "exhausted healthcare workers",
+      "late night rushes",
+      "emotional moments",
+      "free coffee for nurses"
+    ],
+    "narrative_tone": "compassionate and understanding"
+  },
+  "branch-019": {
+    "branch_id": "branch-019",
+    "narrative_id": "overperformer_disliked_manager",
+    "narrative_description": "Top-performing branch but the manager is disliked by staff. High turnover despite great numbers.",
+    "narrative_themes": [
+      "staff complaints",
+      "tension",
+      "record sales",
+      "people quitting",
+      "manager being strict"
+    ],
+    "narrative_tone": "professional but underlying tension"
+  },
+  "branch-020": {
+    "branch_id": "branch-020",
+    "narrative_id": "haunted_building",
+    "narrative_description": "Staff believe the building is haunted. Weird things keep happening (lights flickering, cold spots, items moving).",
+    "narrative_themes": [
+      "spooky incidents",
+      "staff superstitions",
+      "mysterious equipment failures",
+      "customers noticing weird vibes"
+    ],
+    "narrative_tone": "half-joking but genuinely spooked"
+  },
+  "branch-021": {
+    "branch_id": "branch-021",
+    "narrative_id": "equipment_cursed",
+    "narrative_description": "Equipment breaks constantly and mysteriously. Nothing works right. Maintenance guy is basically a regular.",
+    "narrative_themes": [
+      "endless repairs",
+      "equipment mysteries",
+      "maintenance relationship",
+      "workarounds"
+    ],
+    "narrative_tone": "darkly humorous and resigned"
+  },
+  "branch-022": {
+    "branch_id": "branch-022",
+    "narrative_id": "family_drama",
+    "narrative_description": "Manager's family members work at the branch. Constant family drama spilling into work.",
+    "narrative_themes": [
+      "family arguments",
+      "favoritism accusations",
+      "scheduling conflicts",
+      "holiday tensions"
+    ],
+    "narrative_tone": "stressed and personal"
+  },
+  "branch-023": {
+    "branch_id": "branch-023",
+    "narrative_id": "steady_boring",
+    "narrative_description": "Nothing dramatic ever happens. Reliable, steady, almost suspiciously uneventful.",
+    "narrative_themes": [
+      "routine operations",
+      "same customers daily",
+      "predictable issues",
+      "quiet pride"
+    ],
+    "narrative_tone": "calm and matter-of-fact"
+  },
+  "branch-024": {
+    "branch_id": "branch-024",
+    "narrative_id": "tiktok_famous",
+    "narrative_description": "One of the baristas went viral on TikTok. Now they get influencers and tourists constantly.",
+    "narrative_themes": [
+      "social media chaos",
+      "long lines",
+      "photo opportunities",
+      "viral moments",
+      "celebrity sightings"
+    ],
+    "narrative_tone": "excited but overwhelmed"
+  },
+  "branch-025": {
+    "branch_id": "branch-025",
+    "narrative_id": "college_campus",
+    "narrative_description": "Near a university. Deals with students, finals week chaos, broke customers, study groups hogging tables.",
+    "narrative_themes": [
+      "finals week",
+      "student discounts",
+      "laptop campers",
+      "broke customers",
+      "professor regulars"
+    ],
+    "narrative_tone": "youthful and chaotic"
+  },
+  "branch-026": {
+    "branch_id": "branch-026",
+    "narrative_id": "struggling_turnaround",
+    "narrative_description": "Branch was nearly closed, new manager trying to turn it around. Underdog story.",
+    "narrative_themes": [
+      "improvement efforts",
+      "small wins",
+      "setbacks",
+      "team building",
+      "proving doubters wrong"
+    ],
+    "narrative_tone": "determined and hopeful"
+  },
+  "branch-027": {
+    "branch_id": "branch-027",
+    "narrative_id": "transit_hub",
+    "narrative_description": "In a major transit station. Extremely high volume, rushed customers, chaotic but profitable.",
+    "narrative_themes": [
+      "rush hour chaos",
+      "commuter regulars",
+      "speed records",
+      "transit delays affecting business"
+    ],
+    "narrative_tone": "fast-paced and efficient"
+  },
+  "branch-028": {
+    "branch_id": "branch-028",
+    "narrative_id": "aspiring_artists",
+    "narrative_description": "Most staff are aspiring artists/musicians. Lots of call-outs for auditions, gallery shows, etc.",
+    "narrative_themes": [
+      "audition call-outs",
+      "art displayed in store",
+      "creative events",
+      "staff pursuing dreams"
+    ],
+    "narrative_tone": "supportive and creative"
+  },
+  "branch-029": {
+    "branch_id": "branch-029",
+    "narrative_id": "eco_warrior",
+    "narrative_description": "Manager is passionate about sustainability. Always implementing new green initiatives, sometimes to staff annoyance.",
+    "narrative_themes": [
+      "composting battles",
+      "reusable cup campaigns",
+      "supplier changes for ethics",
+      "staff pushback"
+    ],
+    "narrative_tone": "earnest and preachy"
+  },
+  "branch-030": {
+    "branch_id": "branch-030",
+    "narrative_id": "dog_friendly",
+    "narrative_description": "Became the unofficial dog-friendly coffee spot. Now overrun with dogs, for better and worse.",
+    "narrative_themes": [
+      "dog incidents",
+      "cute dog moments",
+      "barking complaints",
+      "dog treat inventory",
+      "allergic customers"
+    ],
+    "narrative_tone": "dog-obsessed and cheerful"
+  },
+  "branch-031": {
+    "branch_id": "branch-031",
+    "narrative_id": "workplace_romance",
+    "narrative_description": "Two baristas are dating (or breaking up). The whole staff is invested in the drama.",
+    "narrative_themes": [
+      "relationship drama",
+      "scheduling awkwardness",
+      "staff taking sides",
+      "breakup aftermath"
+    ],
+    "narrative_tone": "gossipy and dramatic"
+  },
+  "branch-032": {
+    "branch_id": "branch-032",
+    "narrative_id": "gentrification_tension",
+    "narrative_description": "In a rapidly gentrifying neighborhood. Tension between new tech workers and longtime residents.",
+    "narrative_themes": [
+      "changing neighborhood",
+      "price complaints",
+      "old vs new customers",
+      "community events"
+    ],
+    "narrative_tone": "thoughtful and conflicted"
+  },
+  "branch-033": {
+    "branch_id": "branch-033",
+    "narrative_id": "rival_coffee_shop",
+    "narrative_description": "Constantly dealing with a competitor coffee shop next door (Java Junction) that plays loud music, steals customers, and the managers have a petty rivalry.",
+    "narrative_themes": [
+      "competitor drama",
+      "lost customers",
+      "price wars",
+      "petty complaints about neighbor"
+    ],
+    "narrative_tone": "frustrated and competitive"
+  },
+  "branch-034": {
+    "branch_id": "branch-034",
+    "narrative_id": "movie_set",
+    "narrative_description": "A movie/TV show is filming nearby. Celebrities, film crews, road closures, excitement.",
+    "narrative_themes": [
+      "celebrity sightings",
+      "film crew as customers",
+      "road closures",
+      "paparazzi",
+      "set catering"
+    ],
+    "narrative_tone": "starstruck and chaotic"
+  },
+  "branch-035": {
+    "branch_id": "branch-035",
+    "narrative_id": "renovation_saga",
+    "narrative_description": "Branch undergoing a long renovation that keeps getting delayed. Constant construction issues.",
+    "narrative_themes": [
+      "construction delays",
+      "dust and noise",
+      "contractor problems",
+      "customer complaints about mess"
+    ],
+    "narrative_tone": "exhausted and apologetic"
+  },
+  "branch-036": {
+    "branch_id": "branch-036",
+    "narrative_id": "tourist_trap",
+    "narrative_description": "In a major tourist area. Dealing with tourists, language barriers, unusual requests.",
+    "narrative_themes": [
+      "tourist questions",
+      "currency confusion",
+      "unusual drink requests",
+      "lost tourists",
+      "seasonal swings"
+    ],
+    "narrative_tone": "patient but weary"
+  },
+  "branch-037": {
+    "branch_id": "branch-037",
+    "narrative_id": "sports_bar_neighbor",
+    "narrative_description": "Located next to a sports bar. Game days are chaos, drunk customers wander in, parking nightmares.",
+    "narrative_themes": [
+      "game day rushes",
+      "rowdy customers",
+      "parking complaints",
+      "noise",
+      "spilled beer smell"
+    ],
+    "narrative_tone": "exasperated but profitable"
+  },
+  "branch-038": {
+    "branch_id": "branch-038",
+    "narrative_id": "medical_complex",
+    "narrative_description": "Located near a hospital. Lots of tired doctors/nurses, emotional customers, unusual hours.",
+    "narrative_themes": [
+      "exhausted healthcare workers",
+      "late night rushes",
+      "emotional moments",
+      "free coffee for nurses"
+    ],
+    "narrative_tone": "compassionate and understanding"
+  },
+  "branch-039": {
+    "branch_id": "branch-039",
+    "narrative_id": "overperformer_disliked_manager",
+    "narrative_description": "Top-performing branch but the manager is disliked by staff. High turnover despite great numbers.",
+    "narrative_themes": [
+      "staff complaints",
+      "tension",
+      "record sales",
+      "people quitting",
+      "manager being strict"
+    ],
+    "narrative_tone": "professional but underlying tension"
+  },
+  "branch-040": {
+    "branch_id": "branch-040",
+    "narrative_id": "haunted_building",
+    "narrative_description": "Staff believe the building is haunted. Weird things keep happening (lights flickering, cold spots, items moving).",
+    "narrative_themes": [
+      "spooky incidents",
+      "staff superstitions",
+      "mysterious equipment failures",
+      "customers noticing weird vibes"
+    ],
+    "narrative_tone": "half-joking but genuinely spooked"
+  },
+  "branch-041": {
+    "branch_id": "branch-041",
+    "narrative_id": "equipment_cursed",
+    "narrative_description": "Equipment breaks constantly and mysteriously. Nothing works right. Maintenance guy is basically a regular.",
+    "narrative_themes": [
+      "endless repairs",
+      "equipment mysteries",
+      "maintenance relationship",
+      "workarounds"
+    ],
+    "narrative_tone": "darkly humorous and resigned"
+  },
+  "branch-042": {
+    "branch_id": "branch-042",
+    "narrative_id": "family_drama",
+    "narrative_description": "Manager's family members work at the branch. Constant family drama spilling into work.",
+    "narrative_themes": [
+      "family arguments",
+      "favoritism accusations",
+      "scheduling conflicts",
+      "holiday tensions"
+    ],
+    "narrative_tone": "stressed and personal"
+  },
+  "branch-043": {
+    "branch_id": "branch-043",
+    "narrative_id": "steady_boring",
+    "narrative_description": "Nothing dramatic ever happens. Reliable, steady, almost suspiciously uneventful.",
+    "narrative_themes": [
+      "routine operations",
+      "same customers daily",
+      "predictable issues",
+      "quiet pride"
+    ],
+    "narrative_tone": "calm and matter-of-fact"
+  },
+  "branch-044": {
+    "branch_id": "branch-044",
+    "narrative_id": "tiktok_famous",
+    "narrative_description": "One of the baristas went viral on TikTok. Now they get influencers and tourists constantly.",
+    "narrative_themes": [
+      "social media chaos",
+      "long lines",
+      "photo opportunities",
+      "viral moments",
+      "celebrity sightings"
+    ],
+    "narrative_tone": "excited but overwhelmed"
+  },
+  "branch-045": {
+    "branch_id": "branch-045",
+    "narrative_id": "college_campus",
+    "narrative_description": "Near a university. Deals with students, finals week chaos, broke customers, study groups hogging tables.",
+    "narrative_themes": [
+      "finals week",
+      "student discounts",
+      "laptop campers",
+      "broke customers",
+      "professor regulars"
+    ],
+    "narrative_tone": "youthful and chaotic"
+  },
+  "branch-046": {
+    "branch_id": "branch-046",
+    "narrative_id": "struggling_turnaround",
+    "narrative_description": "Branch was nearly closed, new manager trying to turn it around. Underdog story.",
+    "narrative_themes": [
+      "improvement efforts",
+      "small wins",
+      "setbacks",
+      "team building",
+      "proving doubters wrong"
+    ],
+    "narrative_tone": "determined and hopeful"
+  },
+  "branch-047": {
+    "branch_id": "branch-047",
+    "narrative_id": "transit_hub",
+    "narrative_description": "In a major transit station. Extremely high volume, rushed customers, chaotic but profitable.",
+    "narrative_themes": [
+      "rush hour chaos",
+      "commuter regulars",
+      "speed records",
+      "transit delays affecting business"
+    ],
+    "narrative_tone": "fast-paced and efficient"
+  },
+  "branch-048": {
+    "branch_id": "branch-048",
+    "narrative_id": "aspiring_artists",
+    "narrative_description": "Most staff are aspiring artists/musicians. Lots of call-outs for auditions, gallery shows, etc.",
+    "narrative_themes": [
+      "audition call-outs",
+      "art displayed in store",
+      "creative events",
+      "staff pursuing dreams"
+    ],
+    "narrative_tone": "supportive and creative"
+  },
+  "branch-049": {
+    "branch_id": "branch-049",
+    "narrative_id": "eco_warrior",
+    "narrative_description": "Manager is passionate about sustainability. Always implementing new green initiatives, sometimes to staff annoyance.",
+    "narrative_themes": [
+      "composting battles",
+      "reusable cup campaigns",
+      "supplier changes for ethics",
+      "staff pushback"
+    ],
+    "narrative_tone": "earnest and preachy"
+  },
+  "branch-050": {
+    "branch_id": "branch-050",
+    "narrative_id": "dog_friendly",
+    "narrative_description": "Became the unofficial dog-friendly coffee spot. Now overrun with dogs, for better and worse.",
+    "narrative_themes": [
+      "dog incidents",
+      "cute dog moments",
+      "barking complaints",
+      "dog treat inventory",
+      "allergic customers"
+    ],
+    "narrative_tone": "dog-obsessed and cheerful"
+  },
+  "branch-051": {
+    "branch_id": "branch-051",
+    "narrative_id": "workplace_romance",
+    "narrative_description": "Two baristas are dating (or breaking up). The whole staff is invested in the drama.",
+    "narrative_themes": [
+      "relationship drama",
+      "scheduling awkwardness",
+      "staff taking sides",
+      "breakup aftermath"
+    ],
+    "narrative_tone": "gossipy and dramatic"
+  },
+  "branch-052": {
+    "branch_id": "branch-052",
+    "narrative_id": "gentrification_tension",
+    "narrative_description": "In a rapidly gentrifying neighborhood. Tension between new tech workers and longtime residents.",
+    "narrative_themes": [
+      "changing neighborhood",
+      "price complaints",
+      "old vs new customers",
+      "community events"
+    ],
+    "narrative_tone": "thoughtful and conflicted"
+  },
+  "branch-053": {
+    "branch_id": "branch-053",
+    "narrative_id": "rival_coffee_shop",
+    "narrative_description": "Constantly dealing with a competitor coffee shop next door (Java Junction) that plays loud music, steals customers, and the managers have a petty rivalry.",
+    "narrative_themes": [
+      "competitor drama",
+      "lost customers",
+      "price wars",
+      "petty complaints about neighbor"
+    ],
+    "narrative_tone": "frustrated and competitive"
+  },
+  "branch-054": {
+    "branch_id": "branch-054",
+    "narrative_id": "movie_set",
+    "narrative_description": "A movie/TV show is filming nearby. Celebrities, film crews, road closures, excitement.",
+    "narrative_themes": [
+      "celebrity sightings",
+      "film crew as customers",
+      "road closures",
+      "paparazzi",
+      "set catering"
+    ],
+    "narrative_tone": "starstruck and chaotic"
+  },
+  "branch-055": {
+    "branch_id": "branch-055",
+    "narrative_id": "renovation_saga",
+    "narrative_description": "Branch undergoing a long renovation that keeps getting delayed. Constant construction issues.",
+    "narrative_themes": [
+      "construction delays",
+      "dust and noise",
+      "contractor problems",
+      "customer complaints about mess"
+    ],
+    "narrative_tone": "exhausted and apologetic"
+  },
+  "branch-056": {
+    "branch_id": "branch-056",
+    "narrative_id": "tourist_trap",
+    "narrative_description": "In a major tourist area. Dealing with tourists, language barriers, unusual requests.",
+    "narrative_themes": [
+      "tourist questions",
+      "currency confusion",
+      "unusual drink requests",
+      "lost tourists",
+      "seasonal swings"
+    ],
+    "narrative_tone": "patient but weary"
+  },
+  "branch-057": {
+    "branch_id": "branch-057",
+    "narrative_id": "sports_bar_neighbor",
+    "narrative_description": "Located next to a sports bar. Game days are chaos, drunk customers wander in, parking nightmares.",
+    "narrative_themes": [
+      "game day rushes",
+      "rowdy customers",
+      "parking complaints",
+      "noise",
+      "spilled beer smell"
+    ],
+    "narrative_tone": "exasperated but profitable"
+  },
+  "branch-058": {
+    "branch_id": "branch-058",
+    "narrative_id": "medical_complex",
+    "narrative_description": "Located near a hospital. Lots of tired doctors/nurses, emotional customers, unusual hours.",
+    "narrative_themes": [
+      "exhausted healthcare workers",
+      "late night rushes",
+      "emotional moments",
+      "free coffee for nurses"
+    ],
+    "narrative_tone": "compassionate and understanding"
+  },
+  "branch-059": {
+    "branch_id": "branch-059",
+    "narrative_id": "overperformer_disliked_manager",
+    "narrative_description": "Top-performing branch but the manager is disliked by staff. High turnover despite great numbers.",
+    "narrative_themes": [
+      "staff complaints",
+      "tension",
+      "record sales",
+      "people quitting",
+      "manager being strict"
+    ],
+    "narrative_tone": "professional but underlying tension"
+  },
+  "branch-060": {
+    "branch_id": "branch-060",
+    "narrative_id": "haunted_building",
+    "narrative_description": "Staff believe the building is haunted. Weird things keep happening (lights flickering, cold spots, items moving).",
+    "narrative_themes": [
+      "spooky incidents",
+      "staff superstitions",
+      "mysterious equipment failures",
+      "customers noticing weird vibes"
+    ],
+    "narrative_tone": "half-joking but genuinely spooked"
+  },
+  "branch-061": {
+    "branch_id": "branch-061",
+    "narrative_id": "equipment_cursed",
+    "narrative_description": "Equipment breaks constantly and mysteriously. Nothing works right. Maintenance guy is basically a regular.",
+    "narrative_themes": [
+      "endless repairs",
+      "equipment mysteries",
+      "maintenance relationship",
+      "workarounds"
+    ],
+    "narrative_tone": "darkly humorous and resigned"
+  },
+  "branch-062": {
+    "branch_id": "branch-062",
+    "narrative_id": "family_drama",
+    "narrative_description": "Manager's family members work at the branch. Constant family drama spilling into work.",
+    "narrative_themes": [
+      "family arguments",
+      "favoritism accusations",
+      "scheduling conflicts",
+      "holiday tensions"
+    ],
+    "narrative_tone": "stressed and personal"
+  },
+  "branch-063": {
+    "branch_id": "branch-063",
+    "narrative_id": "steady_boring",
+    "narrative_description": "Nothing dramatic ever happens. Reliable, steady, almost suspiciously uneventful.",
+    "narrative_themes": [
+      "routine operations",
+      "same customers daily",
+      "predictable issues",
+      "quiet pride"
+    ],
+    "narrative_tone": "calm and matter-of-fact"
+  },
+  "branch-064": {
+    "branch_id": "branch-064",
+    "narrative_id": "tiktok_famous",
+    "narrative_description": "One of the baristas went viral on TikTok. Now they get influencers and tourists constantly.",
+    "narrative_themes": [
+      "social media chaos",
+      "long lines",
+      "photo opportunities",
+      "viral moments",
+      "celebrity sightings"
+    ],
+    "narrative_tone": "excited but overwhelmed"
+  },
+  "branch-065": {
+    "branch_id": "branch-065",
+    "narrative_id": "college_campus",
+    "narrative_description": "Near a university. Deals with students, finals week chaos, broke customers, study groups hogging tables.",
+    "narrative_themes": [
+      "finals week",
+      "student discounts",
+      "laptop campers",
+      "broke customers",
+      "professor regulars"
+    ],
+    "narrative_tone": "youthful and chaotic"
+  },
+  "branch-066": {
+    "branch_id": "branch-066",
+    "narrative_id": "struggling_turnaround",
+    "narrative_description": "Branch was nearly closed, new manager trying to turn it around. Underdog story.",
+    "narrative_themes": [
+      "improvement efforts",
+      "small wins",
+      "setbacks",
+      "team building",
+      "proving doubters wrong"
+    ],
+    "narrative_tone": "determined and hopeful"
+  },
+  "branch-067": {
+    "branch_id": "branch-067",
+    "narrative_id": "transit_hub",
+    "narrative_description": "In a major transit station. Extremely high volume, rushed customers, chaotic but profitable.",
+    "narrative_themes": [
+      "rush hour chaos",
+      "commuter regulars",
+      "speed records",
+      "transit delays affecting business"
+    ],
+    "narrative_tone": "fast-paced and efficient"
+  },
+  "branch-068": {
+    "branch_id": "branch-068",
+    "narrative_id": "aspiring_artists",
+    "narrative_description": "Most staff are aspiring artists/musicians. Lots of call-outs for auditions, gallery shows, etc.",
+    "narrative_themes": [
+      "audition call-outs",
+      "art displayed in store",
+      "creative events",
+      "staff pursuing dreams"
+    ],
+    "narrative_tone": "supportive and creative"
+  },
+  "branch-069": {
+    "branch_id": "branch-069",
+    "narrative_id": "eco_warrior",
+    "narrative_description": "Manager is passionate about sustainability. Always implementing new green initiatives, sometimes to staff annoyance.",
+    "narrative_themes": [
+      "composting battles",
+      "reusable cup campaigns",
+      "supplier changes for ethics",
+      "staff pushback"
+    ],
+    "narrative_tone": "earnest and preachy"
+  },
+  "branch-070": {
+    "branch_id": "branch-070",
+    "narrative_id": "dog_friendly",
+    "narrative_description": "Became the unofficial dog-friendly coffee spot. Now overrun with dogs, for better and worse.",
+    "narrative_themes": [
+      "dog incidents",
+      "cute dog moments",
+      "barking complaints",
+      "dog treat inventory",
+      "allergic customers"
+    ],
+    "narrative_tone": "dog-obsessed and cheerful"
+  },
+  "branch-071": {
+    "branch_id": "branch-071",
+    "narrative_id": "workplace_romance",
+    "narrative_description": "Two baristas are dating (or breaking up). The whole staff is invested in the drama.",
+    "narrative_themes": [
+      "relationship drama",
+      "scheduling awkwardness",
+      "staff taking sides",
+      "breakup aftermath"
+    ],
+    "narrative_tone": "gossipy and dramatic"
+  },
+  "branch-072": {
+    "branch_id": "branch-072",
+    "narrative_id": "gentrification_tension",
+    "narrative_description": "In a rapidly gentrifying neighborhood. Tension between new tech workers and longtime residents.",
+    "narrative_themes": [
+      "changing neighborhood",
+      "price complaints",
+      "old vs new customers",
+      "community events"
+    ],
+    "narrative_tone": "thoughtful and conflicted"
+  },
+  "branch-073": {
+    "branch_id": "branch-073",
+    "narrative_id": "rival_coffee_shop",
+    "narrative_description": "Constantly dealing with a competitor coffee shop next door (Java Junction) that plays loud music, steals customers, and the managers have a petty rivalry.",
+    "narrative_themes": [
+      "competitor drama",
+      "lost customers",
+      "price wars",
+      "petty complaints about neighbor"
+    ],
+    "narrative_tone": "frustrated and competitive"
+  },
+  "branch-074": {
+    "branch_id": "branch-074",
+    "narrative_id": "movie_set",
+    "narrative_description": "A movie/TV show is filming nearby. Celebrities, film crews, road closures, excitement.",
+    "narrative_themes": [
+      "celebrity sightings",
+      "film crew as customers",
+      "road closures",
+      "paparazzi",
+      "set catering"
+    ],
+    "narrative_tone": "starstruck and chaotic"
+  },
+  "branch-075": {
+    "branch_id": "branch-075",
+    "narrative_id": "renovation_saga",
+    "narrative_description": "Branch undergoing a long renovation that keeps getting delayed. Constant construction issues.",
+    "narrative_themes": [
+      "construction delays",
+      "dust and noise",
+      "contractor problems",
+      "customer complaints about mess"
+    ],
+    "narrative_tone": "exhausted and apologetic"
+  },
+  "branch-076": {
+    "branch_id": "branch-076",
+    "narrative_id": "tourist_trap",
+    "narrative_description": "In a major tourist area. Dealing with tourists, language barriers, unusual requests.",
+    "narrative_themes": [
+      "tourist questions",
+      "currency confusion",
+      "unusual drink requests",
+      "lost tourists",
+      "seasonal swings"
+    ],
+    "narrative_tone": "patient but weary"
+  },
+  "branch-077": {
+    "branch_id": "branch-077",
+    "narrative_id": "sports_bar_neighbor",
+    "narrative_description": "Located next to a sports bar. Game days are chaos, drunk customers wander in, parking nightmares.",
+    "narrative_themes": [
+      "game day rushes",
+      "rowdy customers",
+      "parking complaints",
+      "noise",
+      "spilled beer smell"
+    ],
+    "narrative_tone": "exasperated but profitable"
+  },
+  "branch-078": {
+    "branch_id": "branch-078",
+    "narrative_id": "medical_complex",
+    "narrative_description": "Located near a hospital. Lots of tired doctors/nurses, emotional customers, unusual hours.",
+    "narrative_themes": [
+      "exhausted healthcare workers",
+      "late night rushes",
+      "emotional moments",
+      "free coffee for nurses"
+    ],
+    "narrative_tone": "compassionate and understanding"
+  },
+  "branch-079": {
+    "branch_id": "branch-079",
+    "narrative_id": "overperformer_disliked_manager",
+    "narrative_description": "Top-performing branch but the manager is disliked by staff. High turnover despite great numbers.",
+    "narrative_themes": [
+      "staff complaints",
+      "tension",
+      "record sales",
+      "people quitting",
+      "manager being strict"
+    ],
+    "narrative_tone": "professional but underlying tension"
+  },
+  "branch-080": {
+    "branch_id": "branch-080",
+    "narrative_id": "haunted_building",
+    "narrative_description": "Staff believe the building is haunted. Weird things keep happening (lights flickering, cold spots, items moving).",
+    "narrative_themes": [
+      "spooky incidents",
+      "staff superstitions",
+      "mysterious equipment failures",
+      "customers noticing weird vibes"
+    ],
+    "narrative_tone": "half-joking but genuinely spooked"
+  },
+  "branch-081": {
+    "branch_id": "branch-081",
+    "narrative_id": "equipment_cursed",
+    "narrative_description": "Equipment breaks constantly and mysteriously. Nothing works right. Maintenance guy is basically a regular.",
+    "narrative_themes": [
+      "endless repairs",
+      "equipment mysteries",
+      "maintenance relationship",
+      "workarounds"
+    ],
+    "narrative_tone": "darkly humorous and resigned"
+  },
+  "branch-082": {
+    "branch_id": "branch-082",
+    "narrative_id": "family_drama",
+    "narrative_description": "Manager's family members work at the branch. Constant family drama spilling into work.",
+    "narrative_themes": [
+      "family arguments",
+      "favoritism accusations",
+      "scheduling conflicts",
+      "holiday tensions"
+    ],
+    "narrative_tone": "stressed and personal"
+  },
+  "branch-083": {
+    "branch_id": "branch-083",
+    "narrative_id": "steady_boring",
+    "narrative_description": "Nothing dramatic ever happens. Reliable, steady, almost suspiciously uneventful.",
+    "narrative_themes": [
+      "routine operations",
+      "same customers daily",
+      "predictable issues",
+      "quiet pride"
+    ],
+    "narrative_tone": "calm and matter-of-fact"
+  },
+  "branch-084": {
+    "branch_id": "branch-084",
+    "narrative_id": "tiktok_famous",
+    "narrative_description": "One of the baristas went viral on TikTok. Now they get influencers and tourists constantly.",
+    "narrative_themes": [
+      "social media chaos",
+      "long lines",
+      "photo opportunities",
+      "viral moments",
+      "celebrity sightings"
+    ],
+    "narrative_tone": "excited but overwhelmed"
+  },
+  "branch-085": {
+    "branch_id": "branch-085",
+    "narrative_id": "college_campus",
+    "narrative_description": "Near a university. Deals with students, finals week chaos, broke customers, study groups hogging tables.",
+    "narrative_themes": [
+      "finals week",
+      "student discounts",
+      "laptop campers",
+      "broke customers",
+      "professor regulars"
+    ],
+    "narrative_tone": "youthful and chaotic"
+  },
+  "branch-086": {
+    "branch_id": "branch-086",
+    "narrative_id": "struggling_turnaround",
+    "narrative_description": "Branch was nearly closed, new manager trying to turn it around. Underdog story.",
+    "narrative_themes": [
+      "improvement efforts",
+      "small wins",
+      "setbacks",
+      "team building",
+      "proving doubters wrong"
+    ],
+    "narrative_tone": "determined and hopeful"
+  },
+  "branch-087": {
+    "branch_id": "branch-087",
+    "narrative_id": "transit_hub",
+    "narrative_description": "In a major transit station. Extremely high volume, rushed customers, chaotic but profitable.",
+    "narrative_themes": [
+      "rush hour chaos",
+      "commuter regulars",
+      "speed records",
+      "transit delays affecting business"
+    ],
+    "narrative_tone": "fast-paced and efficient"
+  },
+  "branch-088": {
+    "branch_id": "branch-088",
+    "narrative_id": "aspiring_artists",
+    "narrative_description": "Most staff are aspiring artists/musicians. Lots of call-outs for auditions, gallery shows, etc.",
+    "narrative_themes": [
+      "audition call-outs",
+      "art displayed in store",
+      "creative events",
+      "staff pursuing dreams"
+    ],
+    "narrative_tone": "supportive and creative"
+  },
+  "branch-089": {
+    "branch_id": "branch-089",
+    "narrative_id": "eco_warrior",
+    "narrative_description": "Manager is passionate about sustainability. Always implementing new green initiatives, sometimes to staff annoyance.",
+    "narrative_themes": [
+      "composting battles",
+      "reusable cup campaigns",
+      "supplier changes for ethics",
+      "staff pushback"
+    ],
+    "narrative_tone": "earnest and preachy"
+  },
+  "branch-090": {
+    "branch_id": "branch-090",
+    "narrative_id": "dog_friendly",
+    "narrative_description": "Became the unofficial dog-friendly coffee spot. Now overrun with dogs, for better and worse.",
+    "narrative_themes": [
+      "dog incidents",
+      "cute dog moments",
+      "barking complaints",
+      "dog treat inventory",
+      "allergic customers"
+    ],
+    "narrative_tone": "dog-obsessed and cheerful"
+  },
+  "branch-091": {
+    "branch_id": "branch-091",
+    "narrative_id": "workplace_romance",
+    "narrative_description": "Two baristas are dating (or breaking up). The whole staff is invested in the drama.",
+    "narrative_themes": [
+      "relationship drama",
+      "scheduling awkwardness",
+      "staff taking sides",
+      "breakup aftermath"
+    ],
+    "narrative_tone": "gossipy and dramatic"
+  },
+  "branch-092": {
+    "branch_id": "branch-092",
+    "narrative_id": "gentrification_tension",
+    "narrative_description": "In a rapidly gentrifying neighborhood. Tension between new tech workers and longtime residents.",
+    "narrative_themes": [
+      "changing neighborhood",
+      "price complaints",
+      "old vs new customers",
+      "community events"
+    ],
+    "narrative_tone": "thoughtful and conflicted"
+  },
+  "branch-093": {
+    "branch_id": "branch-093",
+    "narrative_id": "rival_coffee_shop",
+    "narrative_description": "Constantly dealing with a competitor coffee shop next door (Java Junction) that plays loud music, steals customers, and the managers have a petty rivalry.",
+    "narrative_themes": [
+      "competitor drama",
+      "lost customers",
+      "price wars",
+      "petty complaints about neighbor"
+    ],
+    "narrative_tone": "frustrated and competitive"
+  },
+  "branch-094": {
+    "branch_id": "branch-094",
+    "narrative_id": "movie_set",
+    "narrative_description": "A movie/TV show is filming nearby. Celebrities, film crews, road closures, excitement.",
+    "narrative_themes": [
+      "celebrity sightings",
+      "film crew as customers",
+      "road closures",
+      "paparazzi",
+      "set catering"
+    ],
+    "narrative_tone": "starstruck and chaotic"
+  },
+  "branch-095": {
+    "branch_id": "branch-095",
+    "narrative_id": "renovation_saga",
+    "narrative_description": "Branch undergoing a long renovation that keeps getting delayed. Constant construction issues.",
+    "narrative_themes": [
+      "construction delays",
+      "dust and noise",
+      "contractor problems",
+      "customer complaints about mess"
+    ],
+    "narrative_tone": "exhausted and apologetic"
+  },
+  "branch-096": {
+    "branch_id": "branch-096",
+    "narrative_id": "tourist_trap",
+    "narrative_description": "In a major tourist area. Dealing with tourists, language barriers, unusual requests.",
+    "narrative_themes": [
+      "tourist questions",
+      "currency confusion",
+      "unusual drink requests",
+      "lost tourists",
+      "seasonal swings"
+    ],
+    "narrative_tone": "patient but weary"
+  },
+  "branch-097": {
+    "branch_id": "branch-097",
+    "narrative_id": "sports_bar_neighbor",
+    "narrative_description": "Located next to a sports bar. Game days are chaos, drunk customers wander in, parking nightmares.",
+    "narrative_themes": [
+      "game day rushes",
+      "rowdy customers",
+      "parking complaints",
+      "noise",
+      "spilled beer smell"
+    ],
+    "narrative_tone": "exasperated but profitable"
+  },
+  "branch-098": {
+    "branch_id": "branch-098",
+    "narrative_id": "medical_complex",
+    "narrative_description": "Located near a hospital. Lots of tired doctors/nurses, emotional customers, unusual hours.",
+    "narrative_themes": [
+      "exhausted healthcare workers",
+      "late night rushes",
+      "emotional moments",
+      "free coffee for nurses"
+    ],
+    "narrative_tone": "compassionate and understanding"
+  },
+  "branch-099": {
+    "branch_id": "branch-099",
+    "narrative_id": "overperformer_disliked_manager",
+    "narrative_description": "Top-performing branch but the manager is disliked by staff. High turnover despite great numbers.",
+    "narrative_themes": [
+      "staff complaints",
+      "tension",
+      "record sales",
+      "people quitting",
+      "manager being strict"
+    ],
+    "narrative_tone": "professional but underlying tension"
+  },
+  "branch-100": {
+    "branch_id": "branch-100",
+    "narrative_id": "haunted_building",
+    "narrative_description": "Staff believe the building is haunted. Weird things keep happening (lights flickering, cold spots, items moving).",
+    "narrative_themes": [
+      "spooky incidents",
+      "staff superstitions",
+      "mysterious equipment failures",
+      "customers noticing weird vibes"
+    ],
+    "narrative_tone": "half-joking but genuinely spooked"
+  },
+  "branch-101": {
+    "branch_id": "branch-101",
+    "narrative_id": "equipment_cursed",
+    "narrative_description": "Equipment breaks constantly and mysteriously. Nothing works right. Maintenance guy is basically a regular.",
+    "narrative_themes": [
+      "endless repairs",
+      "equipment mysteries",
+      "maintenance relationship",
+      "workarounds"
+    ],
+    "narrative_tone": "darkly humorous and resigned"
+  },
+  "branch-102": {
+    "branch_id": "branch-102",
+    "narrative_id": "family_drama",
+    "narrative_description": "Manager's family members work at the branch. Constant family drama spilling into work.",
+    "narrative_themes": [
+      "family arguments",
+      "favoritism accusations",
+      "scheduling conflicts",
+      "holiday tensions"
+    ],
+    "narrative_tone": "stressed and personal"
+  },
+  "branch-103": {
+    "branch_id": "branch-103",
+    "narrative_id": "steady_boring",
+    "narrative_description": "Nothing dramatic ever happens. Reliable, steady, almost suspiciously uneventful.",
+    "narrative_themes": [
+      "routine operations",
+      "same customers daily",
+      "predictable issues",
+      "quiet pride"
+    ],
+    "narrative_tone": "calm and matter-of-fact"
+  },
+  "branch-104": {
+    "branch_id": "branch-104",
+    "narrative_id": "tiktok_famous",
+    "narrative_description": "One of the baristas went viral on TikTok. Now they get influencers and tourists constantly.",
+    "narrative_themes": [
+      "social media chaos",
+      "long lines",
+      "photo opportunities",
+      "viral moments",
+      "celebrity sightings"
+    ],
+    "narrative_tone": "excited but overwhelmed"
+  },
+  "branch-105": {
+    "branch_id": "branch-105",
+    "narrative_id": "college_campus",
+    "narrative_description": "Near a university. Deals with students, finals week chaos, broke customers, study groups hogging tables.",
+    "narrative_themes": [
+      "finals week",
+      "student discounts",
+      "laptop campers",
+      "broke customers",
+      "professor regulars"
+    ],
+    "narrative_tone": "youthful and chaotic"
+  },
+  "branch-106": {
+    "branch_id": "branch-106",
+    "narrative_id": "struggling_turnaround",
+    "narrative_description": "Branch was nearly closed, new manager trying to turn it around. Underdog story.",
+    "narrative_themes": [
+      "improvement efforts",
+      "small wins",
+      "setbacks",
+      "team building",
+      "proving doubters wrong"
+    ],
+    "narrative_tone": "determined and hopeful"
+  },
+  "branch-107": {
+    "branch_id": "branch-107",
+    "narrative_id": "transit_hub",
+    "narrative_description": "In a major transit station. Extremely high volume, rushed customers, chaotic but profitable.",
+    "narrative_themes": [
+      "rush hour chaos",
+      "commuter regulars",
+      "speed records",
+      "transit delays affecting business"
+    ],
+    "narrative_tone": "fast-paced and efficient"
+  },
+  "branch-108": {
+    "branch_id": "branch-108",
+    "narrative_id": "aspiring_artists",
+    "narrative_description": "Most staff are aspiring artists/musicians. Lots of call-outs for auditions, gallery shows, etc.",
+    "narrative_themes": [
+      "audition call-outs",
+      "art displayed in store",
+      "creative events",
+      "staff pursuing dreams"
+    ],
+    "narrative_tone": "supportive and creative"
+  },
+  "branch-109": {
+    "branch_id": "branch-109",
+    "narrative_id": "eco_warrior",
+    "narrative_description": "Manager is passionate about sustainability. Always implementing new green initiatives, sometimes to staff annoyance.",
+    "narrative_themes": [
+      "composting battles",
+      "reusable cup campaigns",
+      "supplier changes for ethics",
+      "staff pushback"
+    ],
+    "narrative_tone": "earnest and preachy"
+  },
+  "branch-110": {
+    "branch_id": "branch-110",
+    "narrative_id": "dog_friendly",
+    "narrative_description": "Became the unofficial dog-friendly coffee spot. Now overrun with dogs, for better and worse.",
+    "narrative_themes": [
+      "dog incidents",
+      "cute dog moments",
+      "barking complaints",
+      "dog treat inventory",
+      "allergic customers"
+    ],
+    "narrative_tone": "dog-obsessed and cheerful"
+  },
+  "branch-111": {
+    "branch_id": "branch-111",
+    "narrative_id": "workplace_romance",
+    "narrative_description": "Two baristas are dating (or breaking up). The whole staff is invested in the drama.",
+    "narrative_themes": [
+      "relationship drama",
+      "scheduling awkwardness",
+      "staff taking sides",
+      "breakup aftermath"
+    ],
+    "narrative_tone": "gossipy and dramatic"
+  },
+  "branch-112": {
+    "branch_id": "branch-112",
+    "narrative_id": "gentrification_tension",
+    "narrative_description": "In a rapidly gentrifying neighborhood. Tension between new tech workers and longtime residents.",
+    "narrative_themes": [
+      "changing neighborhood",
+      "price complaints",
+      "old vs new customers",
+      "community events"
+    ],
+    "narrative_tone": "thoughtful and conflicted"
+  }
+}

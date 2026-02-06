@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "branch-001",
+    "name": "BeanStack Angel New York",
+    "address": "1680 Jeffrey Street",
+    "city": "New York",
+    "state": "NY",
+    "zip": "13935",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.651997,
+      "lon": -74.080808
+    },
+    "size": "medium",
+    "opened_date": "2023-02-19",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "allison.hill@beanstack.com"
+  },
+  {
+    "id": "branch-002",
+    "name": "BeanStack Brittany New York",
+    "address": "9196 Clayton Fort",
+    "city": "New York",
+    "state": "NY",
+    "zip": "66738",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.640546,
+      "lon": -73.978427
+    },
+    "size": "small",
+    "opened_date": "2023-07-08",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "connie.lawrence@beanstack.com"
+  },
+  {
+    "id": "branch-003",
+    "name": "BeanStack Station New York",
+    "address": "6925 Anna Stravenue",
+    "city": "New York",
+    "state": "NY",
+    "zip": "85682",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.579421,
+      "lon": -73.923346
+    },
+    "size": "medium",
+    "opened_date": "2017-04-25",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "monica.herrera@beanstack.com"
+  },
+  {
+    "id": "branch-004",
+    "name": "BeanStack Uptown New York",
+    "address": "4334 Robinson Radial",
+    "city": "New York",
+    "state": "NY",
+    "zip": "36964",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.674686,
+      "lon": -74.048174
+    },
+    "size": "large",
+    "opened_date": "2022-09-04",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "brian.ramirez@beanstack.com"
+  },
+  {
+    "id": "branch-005",
+    "name": "BeanStack Katherine New York",
+    "address": "5926 Peterson Drives",
+    "city": "New York",
+    "state": "NY",
+    "zip": "28722",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.656902,
+      "lon": -73.971232
+    },
+    "size": "medium",
+    "opened_date": "2016-01-22",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "ethan.adams@beanstack.com"
+  },
+  {
+    "id": "branch-006",
+    "name": "BeanStack Harbor New York",
+    "address": "6228 Garcia Light",
+    "city": "New York",
+    "state": "NY",
+    "zip": "13177",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.808832,
+      "lon": -73.90695
+    },
+    "size": "small",
+    "opened_date": "2020-03-12",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "zachary.hicks@beanstack.com"
+  },
+  {
+    "id": "branch-007",
+    "name": "BeanStack University New York",
+    "address": "4423 Abbott Rapids",
+    "city": "New York",
+    "state": "NY",
+    "zip": "35172",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.64383,
+      "lon": -74.0162
+    },
+    "size": "large",
+    "opened_date": "2023-04-22",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "nathan.maldonado@beanstack.com"
+  },
+  {
+    "id": "branch-008",
+    "name": "BeanStack Jessica New York",
+    "address": "4387 Teresa Lane",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10829",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.586341,
+      "lon": -74.055878
+    },
+    "size": "small",
+    "opened_date": "2024-12-11",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "fred.smith@beanstack.com"
+  },
+  {
+    "id": "branch-009",
+    "name": "BeanStack Waterfront New York",
+    "address": "4340 Calderon River",
+    "city": "New York",
+    "state": "NY",
+    "zip": "47901",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.82484,
+      "lon": -74.017121
+    },
+    "size": "small",
+    "opened_date": "2023-09-09",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "john.pierce@beanstack.com"
+  },
+  {
+    "id": "branch-010",
+    "name": "BeanStack Broadway New York",
+    "address": "2267 Janet Cape",
+    "city": "New York",
+    "state": "NY",
+    "zip": "87174",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.685611,
+      "lon": -74.081859
+    },
+    "size": "medium",
+    "opened_date": "2016-01-28",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "danny.morgan@beanstack.com"
+  },
+  {
+    "id": "branch-011",
+    "name": "BeanStack Market Street New York",
+    "address": "9065 Kendra Common",
+    "city": "New York",
+    "state": "NY",
+    "zip": "31013",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.846887,
+      "lon": -73.998131
+    },
+    "size": "large",
+    "opened_date": "2015-11-24",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "timothy.duncan@beanstack.com"
+  },
+  {
+    "id": "branch-012",
+    "name": "BeanStack Norman New York",
+    "address": "4316 Martin Knoll",
+    "city": "New York",
+    "state": "NY",
+    "zip": "27961",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.695169,
+      "lon": -74.018507
+    },
+    "size": "large",
+    "opened_date": "2017-09-04",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "donald.wright@beanstack.com"
+  },
+  {
+    "id": "branch-013",
+    "name": "BeanStack Harbor Boston",
+    "address": "6127 Miles Springs",
+    "city": "Boston",
+    "state": "MA",
+    "zip": "85440",
+    "region": "Northeast",
+    "location": {
+      "lat": 42.362171,
+      "lon": -71.140275
+    },
+    "size": "medium",
+    "opened_date": "2023-09-01",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "william.baker@beanstack.com"
+  },
+  {
+    "id": "branch-014",
+    "name": "BeanStack Chelsea Boston",
+    "address": "5039 Frank Light",
+    "city": "Boston",
+    "state": "MA",
+    "zip": "35883",
+    "region": "Northeast",
+    "location": {
+      "lat": 42.476073,
+      "lon": -70.956543
+    },
+    "size": "small",
+    "opened_date": "2018-10-03",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "angela.lopez@beanstack.com"
+  },
+  {
+    "id": "branch-015",
+    "name": "BeanStack Waterfront Boston",
+    "address": "2061 Gabrielle Ville",
+    "city": "Boston",
+    "state": "MA",
+    "zip": "07832",
+    "region": "Northeast",
+    "location": {
+      "lat": 42.489285,
+      "lon": -71.05006
+    },
+    "size": "small",
+    "opened_date": "2022-09-06",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "mike.allen@beanstack.com"
+  },
+  {
+    "id": "branch-016",
+    "name": "BeanStack Broadway Boston",
+    "address": "3296 Lydia Valley",
+    "city": "Boston",
+    "state": "MA",
+    "zip": "41848",
+    "region": "Northeast",
+    "location": {
+      "lat": 42.476023,
+      "lon": -70.989909
+    },
+    "size": "medium",
+    "opened_date": "2021-11-21",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "daniel.baker@beanstack.com"
+  },
+  {
+    "id": "branch-017",
+    "name": "BeanStack Adams Boston",
+    "address": "9639 Lewis Parks",
+    "city": "Boston",
+    "state": "MA",
+    "zip": "52357",
+    "region": "Northeast",
+    "location": {
+      "lat": 42.285694,
+      "lon": -71.102661
+    },
+    "size": "medium",
+    "opened_date": "2024-04-01",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "denise.jacobs@beanstack.com"
+  },
+  {
+    "id": "branch-018",
+    "name": "BeanStack Thomas Philadelphia",
+    "address": "1161 Julie Plain",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip": "34939",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.062173,
+      "lon": -75.068001
+    },
+    "size": "medium",
+    "opened_date": "2019-11-16",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "stephen.mckee@beanstack.com"
+  },
+  {
+    "id": "branch-019",
+    "name": "BeanStack Arts District Philadelphia",
+    "address": "3982 Hurst Locks",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip": "47948",
+    "region": "Northeast",
+    "location": {
+      "lat": 40.055947,
+      "lon": -75.144602
+    },
+    "size": "medium",
+    "opened_date": "2021-04-04",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "marc.moore@beanstack.com"
+  },
+  {
+    "id": "branch-020",
+    "name": "BeanStack Broadway Philadelphia",
+    "address": "888 Wendy Dam",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip": "67285",
+    "region": "Northeast",
+    "location": {
+      "lat": 39.928574,
+      "lon": -75.066866
+    },
+    "size": "medium",
+    "opened_date": "2016-01-13",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "shannon.walker@beanstack.com"
+  },
+  {
+    "id": "branch-021",
+    "name": "BeanStack Davis Philadelphia",
+    "address": "6913 Eric Estate",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip": "89693",
+    "region": "Northeast",
+    "location": {
+      "lat": 39.868873,
+      "lon": -75.179088
+    },
+    "size": "small",
+    "opened_date": "2022-04-28",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "william.herrera@beanstack.com"
+  },
+  {
+    "id": "branch-022",
+    "name": "BeanStack Central Washington",
+    "address": "8857 Carlson Lights",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "50520",
+    "region": "Northeast",
+    "location": {
+      "lat": 39.003407,
+      "lon": -77.145573
+    },
+    "size": "large",
+    "opened_date": "2016-04-06",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "larry.dixon@beanstack.com"
+  },
+  {
+    "id": "branch-023",
+    "name": "BeanStack Rice Washington",
+    "address": "6210 Erin Crescent",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "89854",
+    "region": "Northeast",
+    "location": {
+      "lat": 38.880454,
+      "lon": -77.156188
+    },
+    "size": "small",
+    "opened_date": "2021-05-26",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "cameron.fisher@beanstack.com"
+  },
+  {
+    "id": "branch-024",
+    "name": "BeanStack Harbor Washington",
+    "address": "9106 Mack Junctions",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "15122",
+    "region": "Northeast",
+    "location": {
+      "lat": 39.030799,
+      "lon": -76.903002
+    },
+    "size": "medium",
+    "opened_date": "2022-03-07",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "daniel.kennedy@beanstack.com"
+  },
+  {
+    "id": "branch-025",
+    "name": "BeanStack Midtown Washington",
+    "address": "937 Graham Motorway",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "00926",
+    "region": "Northeast",
+    "location": {
+      "lat": 38.918604,
+      "lon": -76.96988
+    },
+    "size": "small",
+    "opened_date": "2022-09-28",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "cheyenne.horton@beanstack.com"
+  },
+  {
+    "id": "branch-026",
+    "name": "BeanStack Uptown Washington",
+    "address": "3854 Stanton Track",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "23917",
+    "region": "Northeast",
+    "location": {
+      "lat": 38.790584,
+      "lon": -77.153667
+    },
+    "size": "medium",
+    "opened_date": "2024-04-19",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "amber.wright@beanstack.com"
+  },
+  {
+    "id": "branch-027",
+    "name": "BeanStack Uptown Miami",
+    "address": "4273 Monica Hills",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "84249",
+    "region": "Southeast",
+    "location": {
+      "lat": 25.784314,
+      "lon": -80.185643
+    },
+    "size": "small",
+    "opened_date": "2020-04-09",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "david.wright@beanstack.com"
+  },
+  {
+    "id": "branch-028",
+    "name": "BeanStack Harbor Miami",
+    "address": "153 Eric Track",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "21675",
+    "region": "Southeast",
+    "location": {
+      "lat": 25.877651,
+      "lon": -80.074034
+    },
+    "size": "medium",
+    "opened_date": "2024-02-03",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "michelle.brown@beanstack.com"
+  },
+  {
+    "id": "branch-029",
+    "name": "BeanStack Carol Miami",
+    "address": "4003 Daniel Lake",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "40807",
+    "region": "Southeast",
+    "location": {
+      "lat": 25.720892,
+      "lon": -80.308343
+    },
+    "size": "medium",
+    "opened_date": "2017-08-27",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "jeffrey.johnson@beanstack.com"
+  },
+  {
+    "id": "branch-030",
+    "name": "BeanStack Downtown Miami",
+    "address": "1698 Brian Wells",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "74865",
+    "region": "Southeast",
+    "location": {
+      "lat": 25.776457,
+      "lon": -80.075109
+    },
+    "size": "large",
+    "opened_date": "2017-05-04",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "daniel.murphy@beanstack.com"
+  },
+  {
+    "id": "branch-031",
+    "name": "BeanStack Christopher Miami",
+    "address": "3336 Tiffany Place",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "16984",
+    "region": "Southeast",
+    "location": {
+      "lat": 25.790032,
+      "lon": -80.132986
+    },
+    "size": "medium",
+    "opened_date": "2019-09-16",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "alex.hernandez@beanstack.com"
+  },
+  {
+    "id": "branch-032",
+    "name": "BeanStack Donna Miami",
+    "address": "59 Joseph Well",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "80008",
+    "region": "Southeast",
+    "location": {
+      "lat": 25.741045,
+      "lon": -80.252157
+    },
+    "size": "medium",
+    "opened_date": "2017-11-09",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "alexander.collins@beanstack.com"
+  },
+  {
+    "id": "branch-033",
+    "name": "BeanStack Central Atlanta",
+    "address": "1233 Brandt Plains",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "99495",
+    "region": "Southeast",
+    "location": {
+      "lat": 33.729456,
+      "lon": -84.520522
+    },
+    "size": "large",
+    "opened_date": "2017-09-02",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "jonathan.peterson@beanstack.com"
+  },
+  {
+    "id": "branch-034",
+    "name": "BeanStack Arts District Atlanta",
+    "address": "654 Jennifer Locks",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "88540",
+    "region": "Southeast",
+    "location": {
+      "lat": 33.62517,
+      "lon": -84.424581
+    },
+    "size": "large",
+    "opened_date": "2018-11-08",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "angelica.keith@beanstack.com"
+  },
+  {
+    "id": "branch-035",
+    "name": "BeanStack Main Street Atlanta",
+    "address": "2533 Kim Path",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "59678",
+    "region": "Southeast",
+    "location": {
+      "lat": 33.85282,
+      "lon": -84.413303
+    },
+    "size": "large",
+    "opened_date": "2018-03-26",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "nathan.freeman@beanstack.com"
+  },
+  {
+    "id": "branch-036",
+    "name": "BeanStack John Atlanta",
+    "address": "6746 Smith Plaza",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30662",
+    "region": "Southeast",
+    "location": {
+      "lat": 33.812936,
+      "lon": -84.433355
+    },
+    "size": "large",
+    "opened_date": "2018-05-06",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "bryan.herrera@beanstack.com"
+  },
+  {
+    "id": "branch-037",
+    "name": "BeanStack Financial District Atlanta",
+    "address": "3270 Adrian Station",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "83220",
+    "region": "Southeast",
+    "location": {
+      "lat": 33.624331,
+      "lon": -84.395922
+    },
+    "size": "large",
+    "opened_date": "2022-06-10",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "julie.alexander@beanstack.com"
+  },
+  {
+    "id": "branch-038",
+    "name": "BeanStack Jeremy Orlando",
+    "address": "4565 Jones Freeway",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "37001",
+    "region": "Southeast",
+    "location": {
+      "lat": 28.581552,
+      "lon": -81.406642
+    },
+    "size": "large",
+    "opened_date": "2019-06-21",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "elizabeth.dds@beanstack.com"
+  },
+  {
+    "id": "branch-039",
+    "name": "BeanStack Park Orlando",
+    "address": "2926 Lewis Curve",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "95312",
+    "region": "Southeast",
+    "location": {
+      "lat": 28.434338,
+      "lon": -81.252065
+    },
+    "size": "medium",
+    "opened_date": "2019-01-04",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "lori.guerrero@beanstack.com"
+  },
+  {
+    "id": "branch-040",
+    "name": "BeanStack Main Street Orlando",
+    "address": "8380 Sanchez Mountains",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "53855",
+    "region": "Southeast",
+    "location": {
+      "lat": 28.487943,
+      "lon": -81.350495
+    },
+    "size": "small",
+    "opened_date": "2024-04-09",
+    "closed_date": "2025-05-17",
+    "status": "closed",
+    "manager_email": ""
+  },
+  {
+    "id": "branch-041",
+    "name": "BeanStack Downtown Charlotte",
+    "address": "3229 Clinton Shoals",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip": "56999",
+    "region": "Southeast",
+    "location": {
+      "lat": 35.309941,
+      "lon": -80.792598
+    },
+    "size": "medium",
+    "opened_date": "2016-11-11",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "andrew.avila@beanstack.com"
+  },
+  {
+    "id": "branch-042",
+    "name": "BeanStack Financial District Charlotte",
+    "address": "6692 Henderson Mountain",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip": "96062",
+    "region": "Southeast",
+    "location": {
+      "lat": 35.173133,
+      "lon": -80.894645
+    },
+    "size": "medium",
+    "opened_date": "2019-09-05",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "krista.gibson@beanstack.com"
+  },
+  {
+    "id": "branch-043",
+    "name": "BeanStack Market Street Charlotte",
+    "address": "4931 Emily Rue",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip": "13400",
+    "region": "Southeast",
+    "location": {
+      "lat": 35.335966,
+      "lon": -80.81188
+    },
+    "size": "medium",
+    "opened_date": "2015-05-10",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "tanya.kim@beanstack.com"
+  },
+  {
+    "id": "branch-044",
+    "name": "BeanStack Park Chicago",
+    "address": "7753 Richard Junction",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "14823",
+    "region": "Midwest",
+    "location": {
+      "lat": 41.862468,
+      "lon": -87.707178
+    },
+    "size": "medium",
+    "opened_date": "2017-11-03",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "kathleen.moran@beanstack.com"
+  },
+  {
+    "id": "branch-045",
+    "name": "BeanStack James Chicago",
+    "address": "5086 Taylor Falls",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "37010",
+    "region": "Midwest",
+    "location": {
+      "lat": 42.000262,
+      "lon": -87.701457
+    },
+    "size": "small",
+    "opened_date": "2018-03-01",
+    "closed_date": "2023-12-26",
+    "status": "closed",
+    "manager_email": ""
+  },
+  {
+    "id": "branch-046",
+    "name": "BeanStack Uptown Chicago",
+    "address": "6292 Wright Club",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "58583",
+    "region": "Midwest",
+    "location": {
+      "lat": 41.982461,
+      "lon": -87.609348
+    },
+    "size": "medium",
+    "opened_date": "2018-03-21",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "cynthia.rowe@beanstack.com"
+  },
+  {
+    "id": "branch-047",
+    "name": "BeanStack Financial District Chicago",
+    "address": "8487 Brent Plains",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "02435",
+    "region": "Midwest",
+    "location": {
+      "lat": 41.802111,
+      "lon": -87.547608
+    },
+    "size": "medium",
+    "opened_date": "2023-04-28",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "matthew.moore@beanstack.com"
+  },
+  {
+    "id": "branch-048",
+    "name": "BeanStack Arts District Chicago",
+    "address": "9756 Sara Vista",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "31483",
+    "region": "Midwest",
+    "location": {
+      "lat": 41.923391,
+      "lon": -87.497937
+    },
+    "size": "medium",
+    "opened_date": "2022-10-27",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "amanda.jones@beanstack.com"
+  },
+  {
+    "id": "branch-049",
+    "name": "BeanStack Broadway Chicago",
+    "address": "7778 Richard Orchard",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "28517",
+    "region": "Midwest",
+    "location": {
+      "lat": 41.891038,
+      "lon": -87.522446
+    },
+    "size": "medium",
+    "opened_date": "2018-11-09",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "elaine.brooks@beanstack.com"
+  },
+  {
+    "id": "branch-050",
+    "name": "BeanStack Waterfront Chicago",
+    "address": "4682 Barrera Expressway",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "50173",
+    "region": "Midwest",
+    "location": {
+      "lat": 41.81718,
+      "lon": -87.743994
+    },
+    "size": "small",
+    "opened_date": "2020-06-18",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "margaret.coleman@beanstack.com"
+  },
+  {
+    "id": "branch-051",
+    "name": "BeanStack Tricia Chicago",
+    "address": "1053 Mitchell Square",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "96249",
+    "region": "Midwest",
+    "location": {
+      "lat": 41.930519,
+      "lon": -87.574011
+    },
+    "size": "medium",
+    "opened_date": "2020-09-15",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "william.barrett@beanstack.com"
+  },
+  {
+    "id": "branch-052",
+    "name": "BeanStack Airport Detroit",
+    "address": "321 Moore Hill",
+    "city": "Detroit",
+    "state": "MI",
+    "zip": "29035",
+    "region": "Midwest",
+    "location": {
+      "lat": 42.301529,
+      "lon": -82.972882
+    },
+    "size": "large",
+    "opened_date": "2024-07-16",
+    "closed_date": "2025-07-11",
+    "status": "closed",
+    "manager_email": ""
+  },
+  {
+    "id": "branch-053",
+    "name": "BeanStack Harbor Detroit",
+    "address": "6866 Beth Plains",
+    "city": "Detroit",
+    "state": "MI",
+    "zip": "08490",
+    "region": "Midwest",
+    "location": {
+      "lat": 42.426926,
+      "lon": -82.923251
+    },
+    "size": "medium",
+    "opened_date": "2023-10-08",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "kiara.mcintyre@beanstack.com"
+  },
+  {
+    "id": "branch-054",
+    "name": "BeanStack Station Detroit",
+    "address": "6625 Brown Prairie",
+    "city": "Detroit",
+    "state": "MI",
+    "zip": "62994",
+    "region": "Midwest",
+    "location": {
+      "lat": 42.204109,
+      "lon": -83.090089
+    },
+    "size": "medium",
+    "opened_date": "2022-03-20",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "tracy.ballard@beanstack.com"
+  },
+  {
+    "id": "branch-055",
+    "name": "BeanStack Market Street Minneapolis",
+    "address": "7023 Brian Pass",
+    "city": "Minneapolis",
+    "state": "MN",
+    "zip": "11001",
+    "region": "Midwest",
+    "location": {
+      "lat": 45.021854,
+      "lon": -93.377447
+    },
+    "size": "small",
+    "opened_date": "2022-03-02",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "charles.shah@beanstack.com"
+  },
+  {
+    "id": "branch-056",
+    "name": "BeanStack Casey Minneapolis",
+    "address": "6212 Richard Port",
+    "city": "Minneapolis",
+    "state": "MN",
+    "zip": "32772",
+    "region": "Midwest",
+    "location": {
+      "lat": 44.931002,
+      "lon": -93.194397
+    },
+    "size": "small",
+    "opened_date": "2021-05-27",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "trevor.johnson@beanstack.com"
+  },
+  {
+    "id": "branch-057",
+    "name": "BeanStack Downtown Minneapolis",
+    "address": "3674 Christine Manor",
+    "city": "Minneapolis",
+    "state": "MN",
+    "zip": "86664",
+    "region": "Midwest",
+    "location": {
+      "lat": 44.856742,
+      "lon": -93.14286
+    },
+    "size": "medium",
+    "opened_date": "2015-01-08",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "jordan.bates@beanstack.com"
+  },
+  {
+    "id": "branch-058",
+    "name": "BeanStack Downtown Columbus",
+    "address": "1875 Donovan Ford",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "88283",
+    "region": "Midwest",
+    "location": {
+      "lat": 39.890536,
+      "lon": -83.005946
+    },
+    "size": "medium",
+    "opened_date": "2018-08-23",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "charles.lester@beanstack.com"
+  },
+  {
+    "id": "branch-059",
+    "name": "BeanStack Allen Columbus",
+    "address": "1877 Emily Hills",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "60430",
+    "region": "Midwest",
+    "location": {
+      "lat": 39.990186,
+      "lon": -82.931793
+    },
+    "size": "medium",
+    "opened_date": "2017-05-04",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "nichole.alvarez@beanstack.com"
+  },
+  {
+    "id": "branch-060",
+    "name": "BeanStack Harbor Austin",
+    "address": "3250 Hickman Cliffs",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "01721",
+    "region": "Southwest",
+    "location": {
+      "lat": 30.377477,
+      "lon": -97.776801
+    },
+    "size": "small",
+    "opened_date": "2018-02-23",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "theodore.jr.@beanstack.com"
+  },
+  {
+    "id": "branch-061",
+    "name": "BeanStack Financial District Austin",
+    "address": "8729 Howell Port",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "13605",
+    "region": "Southwest",
+    "location": {
+      "lat": 30.28502,
+      "lon": -97.867135
+    },
+    "size": "medium",
+    "opened_date": "2020-02-17",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "patricia.le@beanstack.com"
+  },
+  {
+    "id": "branch-062",
+    "name": "BeanStack Downtown Austin",
+    "address": "5935 Amanda Parkways",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "35261",
+    "region": "Southwest",
+    "location": {
+      "lat": 30.354316,
+      "lon": -97.849711
+    },
+    "size": "medium",
+    "opened_date": "2022-12-05",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "parker.cain@beanstack.com"
+  },
+  {
+    "id": "branch-063",
+    "name": "BeanStack Station Austin",
+    "address": "7617 Sarah Cliff",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "32519",
+    "region": "Southwest",
+    "location": {
+      "lat": 30.38061,
+      "lon": -97.668873
+    },
+    "size": "medium",
+    "opened_date": "2024-05-11",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "kenneth.lewis@beanstack.com"
+  },
+  {
+    "id": "branch-064",
+    "name": "BeanStack Mitchell Austin",
+    "address": "9337 Carr Valley",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "86218",
+    "region": "Southwest",
+    "location": {
+      "lat": 30.253903,
+      "lon": -97.675404
+    },
+    "size": "medium",
+    "opened_date": "2021-06-01",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "allison.hickman@beanstack.com"
+  },
+  {
+    "id": "branch-065",
+    "name": "BeanStack Elizabeth Houston",
+    "address": "5577 Huynh Cove",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "18102",
+    "region": "Southwest",
+    "location": {
+      "lat": 29.682595,
+      "lon": -95.289305
+    },
+    "size": "small",
+    "opened_date": "2024-12-09",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "paul.lewis@beanstack.com"
+  },
+  {
+    "id": "branch-066",
+    "name": "BeanStack Wilson Houston",
+    "address": "3938 Joseph Rapids",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "28108",
+    "region": "Southwest",
+    "location": {
+      "lat": 29.81988,
+      "lon": -95.372887
+    },
+    "size": "medium",
+    "opened_date": "2022-08-26",
+    "closed_date": "2024-10-16",
+    "status": "closed",
+    "manager_email": ""
+  },
+  {
+    "id": "branch-067",
+    "name": "BeanStack Mall Houston",
+    "address": "6047 Harris Roads",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "35101",
+    "region": "Southwest",
+    "location": {
+      "lat": 29.691023,
+      "lon": -95.325486
+    },
+    "size": "medium",
+    "opened_date": "2023-06-14",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "aimee.turner@beanstack.com"
+  },
+  {
+    "id": "branch-068",
+    "name": "BeanStack Park Houston",
+    "address": "3778 King Vista",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "07159",
+    "region": "Southwest",
+    "location": {
+      "lat": 29.747899,
+      "lon": -95.422064
+    },
+    "size": "small",
+    "opened_date": "2018-06-04",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "thomas.atkins@beanstack.com"
+  },
+  {
+    "id": "branch-069",
+    "name": "BeanStack Cynthia Houston",
+    "address": "9660 Williams Isle",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "17647",
+    "region": "Southwest",
+    "location": {
+      "lat": 29.824888,
+      "lon": -95.430206
+    },
+    "size": "large",
+    "opened_date": "2023-10-10",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "dana.chapman@beanstack.com"
+  },
+  {
+    "id": "branch-070",
+    "name": "BeanStack Martin Houston",
+    "address": "8752 Hoffman Creek",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "10363",
+    "region": "Southwest",
+    "location": {
+      "lat": 29.7228,
+      "lon": -95.423241
+    },
+    "size": "small",
+    "opened_date": "2015-01-18",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "craig.morrison@beanstack.com"
+  },
+  {
+    "id": "branch-071",
+    "name": "BeanStack Arts District Dallas",
+    "address": "201 Amy Village",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "48894",
+    "region": "Southwest",
+    "location": {
+      "lat": 32.845022,
+      "lon": -96.904409
+    },
+    "size": "medium",
+    "opened_date": "2022-08-15",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "lori.hernandez@beanstack.com"
+  },
+  {
+    "id": "branch-072",
+    "name": "BeanStack Russell Dallas",
+    "address": "1071 Diaz Underpass",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "05730",
+    "region": "Southwest",
+    "location": {
+      "lat": 32.874463,
+      "lon": -96.901301
+    },
+    "size": "medium",
+    "opened_date": "2016-10-21",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "julian.conner@beanstack.com"
+  },
+  {
+    "id": "branch-073",
+    "name": "BeanStack Clark Dallas",
+    "address": "4067 Michael Points",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "53765",
+    "region": "Southwest",
+    "location": {
+      "lat": 32.793684,
+      "lon": -96.850017
+    },
+    "size": "small",
+    "opened_date": "2021-10-20",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "carrie.wright@beanstack.com"
+  },
+  {
+    "id": "branch-074",
+    "name": "BeanStack Mall Dallas",
+    "address": "4872 Sara Freeway",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "21800",
+    "region": "Southwest",
+    "location": {
+      "lat": 32.74437,
+      "lon": -96.686593
+    },
+    "size": "large",
+    "opened_date": "2021-05-19",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "maria.jones@beanstack.com"
+  },
+  {
+    "id": "branch-075",
+    "name": "BeanStack Financial District Dallas",
+    "address": "1331 Nicole Burg",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "24010",
+    "region": "Southwest",
+    "location": {
+      "lat": 32.697724,
+      "lon": -96.875101
+    },
+    "size": "small",
+    "opened_date": "2017-09-03",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "emily.bennett@beanstack.com"
+  },
+  {
+    "id": "branch-076",
+    "name": "BeanStack Broadway Phoenix",
+    "address": "3793 Patton Loop",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "88307",
+    "region": "Southwest",
+    "location": {
+      "lat": 33.473754,
+      "lon": -112.130416
+    },
+    "size": "small",
+    "opened_date": "2019-12-28",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "travis.tucker@beanstack.com"
+  },
+  {
+    "id": "branch-077",
+    "name": "BeanStack Mall Phoenix",
+    "address": "3242 Joseph Turnpike",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "92418",
+    "region": "Southwest",
+    "location": {
+      "lat": 33.526191,
+      "lon": -112.040201
+    },
+    "size": "medium",
+    "opened_date": "2023-04-21",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "christopher.guerra@beanstack.com"
+  },
+  {
+    "id": "branch-078",
+    "name": "BeanStack Station Phoenix",
+    "address": "5040 Patrick Camp",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "62195",
+    "region": "Southwest",
+    "location": {
+      "lat": 33.332565,
+      "lon": -112.164291
+    },
+    "size": "medium",
+    "opened_date": "2024-05-15",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "tracy.montoya@beanstack.com"
+  },
+  {
+    "id": "branch-079",
+    "name": "BeanStack Harbor Phoenix",
+    "address": "8091 James Mount",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "46331",
+    "region": "Southwest",
+    "location": {
+      "lat": 33.568042,
+      "lon": -112.073872
+    },
+    "size": "medium",
+    "opened_date": "2024-01-14",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "courtney.hayes@beanstack.com"
+  },
+  {
+    "id": "branch-080",
+    "name": "BeanStack Hoover Denver",
+    "address": "9425 Jeffrey Shoals",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "25814",
+    "region": "Southwest",
+    "location": {
+      "lat": 39.665936,
+      "lon": -104.943192
+    },
+    "size": "medium",
+    "opened_date": "2015-11-27",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "aaron.miller@beanstack.com"
+  },
+  {
+    "id": "branch-081",
+    "name": "BeanStack Midtown Denver",
+    "address": "7246 Murphy Way",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "09600",
+    "region": "Southwest",
+    "location": {
+      "lat": 39.651414,
+      "lon": -104.985175
+    },
+    "size": "large",
+    "opened_date": "2017-10-14",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "jose.allen@beanstack.com"
+  },
+  {
+    "id": "branch-082",
+    "name": "BeanStack Waterfront Denver",
+    "address": "5261 Bell Pass",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "52887",
+    "region": "Southwest",
+    "location": {
+      "lat": 39.731095,
+      "lon": -105.015071
+    },
+    "size": "medium",
+    "opened_date": "2017-06-14",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "veronica.king@beanstack.com"
+  },
+  {
+    "id": "branch-083",
+    "name": "BeanStack Harbor Denver",
+    "address": "602 Crosby Crescent",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "34738",
+    "region": "Southwest",
+    "location": {
+      "lat": 39.712295,
+      "lon": -104.919895
+    },
+    "size": "medium",
+    "opened_date": "2020-05-11",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "robin.brown@beanstack.com"
+  },
+  {
+    "id": "branch-084",
+    "name": "BeanStack Market Street Los Angeles",
+    "address": "8890 Beverly Greens",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "05515",
+    "region": "West",
+    "location": {
+      "lat": 34.140018,
+      "lon": -118.378524
+    },
+    "size": "medium",
+    "opened_date": "2015-04-17",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "howard.norman@beanstack.com"
+  },
+  {
+    "id": "branch-085",
+    "name": "BeanStack Waterfront Los Angeles",
+    "address": "8999 Candace Key",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "95992",
+    "region": "West",
+    "location": {
+      "lat": 34.122468,
+      "lon": -118.323819
+    },
+    "size": "small",
+    "opened_date": "2019-08-23",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "monica.miller@beanstack.com"
+  },
+  {
+    "id": "branch-086",
+    "name": "BeanStack Downtown Los Angeles",
+    "address": "2595 Graham Pass",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "15658",
+    "region": "West",
+    "location": {
+      "lat": 34.081625,
+      "lon": -118.31416
+    },
+    "size": "medium",
+    "opened_date": "2015-09-14",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "heather.bolton@beanstack.com"
+  },
+  {
+    "id": "branch-087",
+    "name": "BeanStack Financial District Los Angeles",
+    "address": "8166 Lam Field",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "33887",
+    "region": "West",
+    "location": {
+      "lat": 33.948812,
+      "lon": -118.153932
+    },
+    "size": "large",
+    "opened_date": "2019-09-23",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "james.bradley@beanstack.com"
+  },
+  {
+    "id": "branch-088",
+    "name": "BeanStack Mall Los Angeles",
+    "address": "9821 Jeanne Alley",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "68647",
+    "region": "West",
+    "location": {
+      "lat": 33.956157,
+      "lon": -118.327319
+    },
+    "size": "medium",
+    "opened_date": "2017-02-09",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "katherine.martinez@beanstack.com"
+  },
+  {
+    "id": "branch-089",
+    "name": "BeanStack Broadway Los Angeles",
+    "address": "43 Michael Cliff",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "87563",
+    "region": "West",
+    "location": {
+      "lat": 34.129961,
+      "lon": -118.306626
+    },
+    "size": "small",
+    "opened_date": "2019-10-19",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "rebecca.hicks@beanstack.com"
+  },
+  {
+    "id": "branch-090",
+    "name": "BeanStack Central Los Angeles",
+    "address": "8904 Hanson Shore",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "16835",
+    "region": "West",
+    "location": {
+      "lat": 34.010342,
+      "lon": -118.229668
+    },
+    "size": "medium",
+    "opened_date": "2020-04-23",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "dr..dvm@beanstack.com"
+  },
+  {
+    "id": "branch-091",
+    "name": "BeanStack Hunter Los Angeles",
+    "address": "7750 Nguyen Square",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "39253",
+    "region": "West",
+    "location": {
+      "lat": 34.126671,
+      "lon": -118.367039
+    },
+    "size": "medium",
+    "opened_date": "2021-07-22",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "christopher.morris@beanstack.com"
+  },
+  {
+    "id": "branch-092",
+    "name": "BeanStack Arts District Los Angeles",
+    "address": "9670 James Shores",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "50196",
+    "region": "West",
+    "location": {
+      "lat": 33.92707,
+      "lon": -118.243081
+    },
+    "size": "medium",
+    "opened_date": "2016-08-04",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "todd.moore@beanstack.com"
+  },
+  {
+    "id": "branch-093",
+    "name": "BeanStack Christina Los Angeles",
+    "address": "2530 Kelley Alley",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "40330",
+    "region": "West",
+    "location": {
+      "lat": 33.956026,
+      "lon": -118.143448
+    },
+    "size": "small",
+    "opened_date": "2019-06-20",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "donna.frye@beanstack.com"
+  },
+  {
+    "id": "branch-094",
+    "name": "BeanStack Uptown San Francisco",
+    "address": "6227 Clark Turnpike",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "76520",
+    "region": "West",
+    "location": {
+      "lat": 37.870127,
+      "lon": -122.32228
+    },
+    "size": "large",
+    "opened_date": "2022-09-02",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "bianca.wood@beanstack.com"
+  },
+  {
+    "id": "branch-095",
+    "name": "BeanStack Mall San Francisco",
+    "address": "1481 Marshall Mills",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "89056",
+    "region": "West",
+    "location": {
+      "lat": 37.888665,
+      "lon": -122.284961
+    },
+    "size": "medium",
+    "opened_date": "2016-11-23",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "kathleen.robertson@beanstack.com"
+  },
+  {
+    "id": "branch-096",
+    "name": "BeanStack William San Francisco",
+    "address": "5315 Donna Haven",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "68062",
+    "region": "West",
+    "location": {
+      "lat": 37.720702,
+      "lon": -122.546712
+    },
+    "size": "medium",
+    "opened_date": "2019-06-12",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "pamela.diaz@beanstack.com"
+  },
+  {
+    "id": "branch-097",
+    "name": "BeanStack Davis San Francisco",
+    "address": "3946 Emily Fork",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "26601",
+    "region": "West",
+    "location": {
+      "lat": 37.661108,
+      "lon": -122.319173
+    },
+    "size": "medium",
+    "opened_date": "2024-03-08",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "nicole.gonzalez@beanstack.com"
+  },
+  {
+    "id": "branch-098",
+    "name": "BeanStack Station San Francisco",
+    "address": "7623 Andrew Gardens",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "62778",
+    "region": "West",
+    "location": {
+      "lat": 37.819992,
+      "lon": -122.311587
+    },
+    "size": "large",
+    "opened_date": "2023-03-03",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "nancy.md@beanstack.com"
+  },
+  {
+    "id": "branch-099",
+    "name": "BeanStack Main Street San Francisco",
+    "address": "4098 Stanley Roads",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "75955",
+    "region": "West",
+    "location": {
+      "lat": 37.720617,
+      "lon": -122.294527
+    },
+    "size": "medium",
+    "opened_date": "2019-04-13",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "lisa.randall@beanstack.com"
+  },
+  {
+    "id": "branch-100",
+    "name": "BeanStack Jennifer Seattle",
+    "address": "4838 Ross Drive",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "86491",
+    "region": "West",
+    "location": {
+      "lat": 47.625639,
+      "lon": -122.311881
+    },
+    "size": "small",
+    "opened_date": "2021-05-01",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "nancy.brown@beanstack.com"
+  },
+  {
+    "id": "branch-101",
+    "name": "BeanStack Midtown Seattle",
+    "address": "4690 Patricia Wall",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "14471",
+    "region": "West",
+    "location": {
+      "lat": 47.672463,
+      "lon": -122.242144
+    },
+    "size": "medium",
+    "opened_date": "2018-10-26",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "raymond.le@beanstack.com"
+  },
+  {
+    "id": "branch-102",
+    "name": "BeanStack Airport Seattle",
+    "address": "2241 Robinson Unions",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "91715",
+    "region": "West",
+    "location": {
+      "lat": 47.654244,
+      "lon": -122.27239
+    },
+    "size": "medium",
+    "opened_date": "2015-05-26",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "denise.martinez@beanstack.com"
+  },
+  {
+    "id": "branch-103",
+    "name": "BeanStack Main Street Seattle",
+    "address": "6808 Williams Gateway",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "16407",
+    "region": "West",
+    "location": {
+      "lat": 47.495425,
+      "lon": -122.387476
+    },
+    "size": "small",
+    "opened_date": "2017-09-12",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "melissa.taylor@beanstack.com"
+  },
+  {
+    "id": "branch-104",
+    "name": "BeanStack Station Seattle",
+    "address": "7895 Anderson Mountain",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "88001",
+    "region": "West",
+    "location": {
+      "lat": 47.540516,
+      "lon": -122.244346
+    },
+    "size": "large",
+    "opened_date": "2019-12-28",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "tanya.russell@beanstack.com"
+  },
+  {
+    "id": "branch-105",
+    "name": "BeanStack Financial District Seattle",
+    "address": "3697 Dodson Mills",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "80802",
+    "region": "West",
+    "location": {
+      "lat": 47.491416,
+      "lon": -122.26341
+    },
+    "size": "large",
+    "opened_date": "2021-09-12",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "jennifer.dvm@beanstack.com"
+  },
+  {
+    "id": "branch-106",
+    "name": "BeanStack Rivas San Diego",
+    "address": "4296 Merritt Summit",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "62717",
+    "region": "West",
+    "location": {
+      "lat": 32.725584,
+      "lon": -117.17332
+    },
+    "size": "medium",
+    "opened_date": "2020-02-22",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "casey.chase@beanstack.com"
+  },
+  {
+    "id": "branch-107",
+    "name": "BeanStack Downtown San Diego",
+    "address": "9996 Green Gateway",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "84080",
+    "region": "West",
+    "location": {
+      "lat": 32.835475,
+      "lon": -117.207585
+    },
+    "size": "small",
+    "opened_date": "2016-11-27",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "elizabeth.sharp@beanstack.com"
+  },
+  {
+    "id": "branch-108",
+    "name": "BeanStack Harbor San Diego",
+    "address": "610 Cannon Pike",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "64018",
+    "region": "West",
+    "location": {
+      "lat": 32.612099,
+      "lon": -117.283979
+    },
+    "size": "medium",
+    "opened_date": "2022-02-04",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "emily.wilson@beanstack.com"
+  },
+  {
+    "id": "branch-109",
+    "name": "BeanStack Arts District San Diego",
+    "address": "8851 Joshua Club",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "94026",
+    "region": "West",
+    "location": {
+      "lat": 32.680838,
+      "lon": -117.039646
+    },
+    "size": "medium",
+    "opened_date": "2017-07-21",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "michael.miller@beanstack.com"
+  },
+  {
+    "id": "branch-110",
+    "name": "BeanStack Waterfront Portland",
+    "address": "6071 Young Isle",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "42405",
+    "region": "West",
+    "location": {
+      "lat": 45.633863,
+      "lon": -122.73793
+    },
+    "size": "small",
+    "opened_date": "2022-04-28",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "robert.cummings@beanstack.com"
+  },
+  {
+    "id": "branch-111",
+    "name": "BeanStack Main Street Portland",
+    "address": "6524 Devon Fort",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "50706",
+    "region": "West",
+    "location": {
+      "lat": 45.644347,
+      "lon": -122.716596
+    },
+    "size": "small",
+    "opened_date": "2016-08-03",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "randy.cannon@beanstack.com"
+  },
+  {
+    "id": "branch-112",
+    "name": "BeanStack Jasmine Portland",
+    "address": "9251 Russell Plains",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "61570",
+    "region": "West",
+    "location": {
+      "lat": 45.470202,
+      "lon": -122.546286
+    },
+    "size": "small",
+    "opened_date": "2023-04-19",
+    "closed_date": "",
+    "status": "open",
+    "manager_email": "joshua.rice@beanstack.com"
+  }
+]

@@ -1,0 +1,6462 @@
+[
+  {
+    "id": "staff-0001",
+    "name": "Allison Hill",
+    "email": "allison.hill@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-001",
+    "branch_name": "BeanStack Angel New York",
+    "start_date": "2023-01-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0002",
+    "name": "Noah Rhodes",
+    "email": "noah.rhodes@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-001",
+    "branch_name": "BeanStack Angel New York",
+    "start_date": "2023-04-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0003",
+    "name": "Angie Henderson",
+    "email": "angie.henderson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-001",
+    "branch_name": "BeanStack Angel New York",
+    "start_date": "2024-07-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0004",
+    "name": "Daniel Wagner",
+    "email": "daniel.wagner@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-001",
+    "branch_name": "BeanStack Angel New York",
+    "start_date": "2024-05-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0005",
+    "name": "Cristian Santos",
+    "email": "cristian.santos@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-001",
+    "branch_name": "BeanStack Angel New York",
+    "start_date": "2023-12-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0006",
+    "name": "Connie Lawrence",
+    "email": "connie.lawrence@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-002",
+    "branch_name": "BeanStack Brittany New York",
+    "start_date": "2023-08-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0007",
+    "name": "Abigail Shaffer",
+    "email": "abigail.shaffer@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-002",
+    "branch_name": "BeanStack Brittany New York",
+    "start_date": "2024-09-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0008",
+    "name": "Gina Moore",
+    "email": "gina.moore@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-002",
+    "branch_name": "BeanStack Brittany New York",
+    "start_date": "2023-08-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0009",
+    "name": "Gabrielle Davis",
+    "email": "gabrielle.davis@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-002",
+    "branch_name": "BeanStack Brittany New York",
+    "start_date": "2023-08-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0010",
+    "name": "Ryan Munoz",
+    "email": "ryan.munoz@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-002",
+    "branch_name": "BeanStack Brittany New York",
+    "start_date": "2025-02-01",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0011",
+    "name": "Monica Herrera",
+    "email": "monica.herrera@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-003",
+    "branch_name": "BeanStack Station New York",
+    "start_date": "2017-06-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0012",
+    "name": "Jamie Arnold",
+    "email": "jamie.arnold@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-003",
+    "branch_name": "BeanStack Station New York",
+    "start_date": "2017-10-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0013",
+    "name": "Lisa Hensley",
+    "email": "lisa.hensley@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-003",
+    "branch_name": "BeanStack Station New York",
+    "start_date": "2023-06-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0014",
+    "name": "Michele Williams",
+    "email": "michele.williams@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-003",
+    "branch_name": "BeanStack Station New York",
+    "start_date": "2022-01-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0015",
+    "name": "Dylan Miller",
+    "email": "dylan.miller@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-003",
+    "branch_name": "BeanStack Station New York",
+    "start_date": "2019-10-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0016",
+    "name": "Brian Ramirez",
+    "email": "brian.ramirez@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-004",
+    "branch_name": "BeanStack Uptown New York",
+    "start_date": "2022-08-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0017",
+    "name": "Holly Wood",
+    "email": "holly.wood@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-004",
+    "branch_name": "BeanStack Uptown New York",
+    "start_date": "2022-10-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0018",
+    "name": "Derek Zuniga",
+    "email": "derek.zuniga@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-004",
+    "branch_name": "BeanStack Uptown New York",
+    "start_date": "2025-01-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0019",
+    "name": "Lisa Jackson",
+    "email": "lisa.jackson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-004",
+    "branch_name": "BeanStack Uptown New York",
+    "start_date": "2024-07-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0020",
+    "name": "Carla Gray",
+    "email": "carla.gray@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-004",
+    "branch_name": "BeanStack Uptown New York",
+    "start_date": "2024-03-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0021",
+    "name": "Margaret Hawkins DDS",
+    "email": "margaret.dds@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-004",
+    "branch_name": "BeanStack Uptown New York",
+    "start_date": "2023-07-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0022",
+    "name": "Patty Perez",
+    "email": "patty.perez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-004",
+    "branch_name": "BeanStack Uptown New York",
+    "start_date": "2023-11-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0023",
+    "name": "Ethan Adams",
+    "email": "ethan.adams@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-005",
+    "branch_name": "BeanStack Katherine New York",
+    "start_date": "2016-01-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0024",
+    "name": "Tommy Walter",
+    "email": "tommy.walter@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-005",
+    "branch_name": "BeanStack Katherine New York",
+    "start_date": "2016-02-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0025",
+    "name": "Matthew Foster",
+    "email": "matthew.foster@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-005",
+    "branch_name": "BeanStack Katherine New York",
+    "start_date": "2020-04-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0026",
+    "name": "Judy Baker",
+    "email": "judy.baker@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-005",
+    "branch_name": "BeanStack Katherine New York",
+    "start_date": "2017-02-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0027",
+    "name": "Justin Baker",
+    "email": "justin.baker@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-005",
+    "branch_name": "BeanStack Katherine New York",
+    "start_date": "2020-01-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0028",
+    "name": "Stephanie Ross",
+    "email": "stephanie.ross@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-005",
+    "branch_name": "BeanStack Katherine New York",
+    "start_date": "2025-07-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0029",
+    "name": "Zachary Hicks",
+    "email": "zachary.hicks@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-006",
+    "branch_name": "BeanStack Harbor New York",
+    "start_date": "2020-02-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0030",
+    "name": "Anthony Rodriguez",
+    "email": "anthony.rodriguez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-006",
+    "branch_name": "BeanStack Harbor New York",
+    "start_date": "2025-05-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0031",
+    "name": "Rebecca Henderson",
+    "email": "rebecca.henderson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-006",
+    "branch_name": "BeanStack Harbor New York",
+    "start_date": "2021-08-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0032",
+    "name": "James Ferrell",
+    "email": "james.ferrell@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-006",
+    "branch_name": "BeanStack Harbor New York",
+    "start_date": "2024-06-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0033",
+    "name": "Tricia Valencia",
+    "email": "tricia.valencia@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-006",
+    "branch_name": "BeanStack Harbor New York",
+    "start_date": "2021-01-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0034",
+    "name": "Nathan Maldonado",
+    "email": "nathan.maldonado@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-007",
+    "branch_name": "BeanStack University New York",
+    "start_date": "2023-06-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0035",
+    "name": "Debra Davidson",
+    "email": "debra.davidson@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-007",
+    "branch_name": "BeanStack University New York",
+    "start_date": "2023-07-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0036",
+    "name": "Jeffrey Chavez",
+    "email": "jeffrey.chavez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-007",
+    "branch_name": "BeanStack University New York",
+    "start_date": "2024-12-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0037",
+    "name": "Sherri Baker",
+    "email": "sherri.baker@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-007",
+    "branch_name": "BeanStack University New York",
+    "start_date": "2023-11-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0038",
+    "name": "Cassandra Gaines",
+    "email": "cassandra.gaines@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-007",
+    "branch_name": "BeanStack University New York",
+    "start_date": "2025-04-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0039",
+    "name": "Elizabeth Fowler",
+    "email": "elizabeth.fowler@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-007",
+    "branch_name": "BeanStack University New York",
+    "start_date": "2023-07-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0040",
+    "name": "Brittany Farmer",
+    "email": "brittany.farmer@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-007",
+    "branch_name": "BeanStack University New York",
+    "start_date": "2023-06-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0041",
+    "name": "Paula Moreno",
+    "email": "paula.moreno@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-007",
+    "branch_name": "BeanStack University New York",
+    "start_date": "2025-02-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0042",
+    "name": "Fred Smith",
+    "email": "fred.smith@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-008",
+    "branch_name": "BeanStack Jessica New York",
+    "start_date": "2024-11-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0043",
+    "name": "Sherry Decker",
+    "email": "sherry.decker@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-008",
+    "branch_name": "BeanStack Jessica New York",
+    "start_date": "2025-04-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0044",
+    "name": "Anthony Humphrey",
+    "email": "anthony.humphrey@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-008",
+    "branch_name": "BeanStack Jessica New York",
+    "start_date": "2025-01-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0045",
+    "name": "Angelica Tucker",
+    "email": "angelica.tucker@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-008",
+    "branch_name": "BeanStack Jessica New York",
+    "start_date": "2025-06-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0046",
+    "name": "Philip Cannon",
+    "email": "philip.cannon@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-008",
+    "branch_name": "BeanStack Jessica New York",
+    "start_date": "2025-05-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0047",
+    "name": "John Pierce",
+    "email": "john.pierce@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-009",
+    "branch_name": "BeanStack Waterfront New York",
+    "start_date": "2023-08-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0048",
+    "name": "Shane Henderson",
+    "email": "shane.henderson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-009",
+    "branch_name": "BeanStack Waterfront New York",
+    "start_date": "2024-09-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0049",
+    "name": "Joshua Blair",
+    "email": "joshua.blair@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-009",
+    "branch_name": "BeanStack Waterfront New York",
+    "start_date": "2024-09-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0050",
+    "name": "Eric Carney",
+    "email": "eric.carney@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-009",
+    "branch_name": "BeanStack Waterfront New York",
+    "start_date": "2024-04-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0051",
+    "name": "Jessica Holmes",
+    "email": "jessica.holmes@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-009",
+    "branch_name": "BeanStack Waterfront New York",
+    "start_date": "2025-07-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0052",
+    "name": "Danny Morgan",
+    "email": "danny.morgan@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-010",
+    "branch_name": "BeanStack Broadway New York",
+    "start_date": "2016-03-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0053",
+    "name": "Crystal Robinson",
+    "email": "crystal.robinson@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-010",
+    "branch_name": "BeanStack Broadway New York",
+    "start_date": "2016-07-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0054",
+    "name": "Mark Perez",
+    "email": "mark.perez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-010",
+    "branch_name": "BeanStack Broadway New York",
+    "start_date": "2017-12-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0055",
+    "name": "Shannon Jones",
+    "email": "shannon.jones@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-010",
+    "branch_name": "BeanStack Broadway New York",
+    "start_date": "2022-01-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0056",
+    "name": "Michael Lewis",
+    "email": "michael.lewis@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-010",
+    "branch_name": "BeanStack Broadway New York",
+    "start_date": "2024-04-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0057",
+    "name": "Timothy Duncan",
+    "email": "timothy.duncan@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-011",
+    "branch_name": "BeanStack Market Street New York",
+    "start_date": "2015-12-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0058",
+    "name": "Richard Aguirre",
+    "email": "richard.aguirre@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-011",
+    "branch_name": "BeanStack Market Street New York",
+    "start_date": "2016-02-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0059",
+    "name": "Brent Jordan",
+    "email": "brent.jordan@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-011",
+    "branch_name": "BeanStack Market Street New York",
+    "start_date": "2023-01-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0060",
+    "name": "John Daniel",
+    "email": "john.daniel@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-011",
+    "branch_name": "BeanStack Market Street New York",
+    "start_date": "2023-08-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0061",
+    "name": "Victoria Garcia",
+    "email": "victoria.garcia@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-011",
+    "branch_name": "BeanStack Market Street New York",
+    "start_date": "2022-02-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0062",
+    "name": "Gerald Hensley",
+    "email": "gerald.hensley@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-011",
+    "branch_name": "BeanStack Market Street New York",
+    "start_date": "2018-05-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0063",
+    "name": "Connor West",
+    "email": "connor.west@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-011",
+    "branch_name": "BeanStack Market Street New York",
+    "start_date": "2023-07-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0064",
+    "name": "Donald Wright",
+    "email": "donald.wright@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-012",
+    "branch_name": "BeanStack Norman New York",
+    "start_date": "2017-09-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0065",
+    "name": "Jessica Callahan",
+    "email": "jessica.callahan@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-012",
+    "branch_name": "BeanStack Norman New York",
+    "start_date": "2017-09-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0066",
+    "name": "Amber Kidd",
+    "email": "amber.kidd@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-012",
+    "branch_name": "BeanStack Norman New York",
+    "start_date": "2021-03-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0067",
+    "name": "Tracy House",
+    "email": "tracy.house@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-012",
+    "branch_name": "BeanStack Norman New York",
+    "start_date": "2022-03-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0068",
+    "name": "Carol Tucker",
+    "email": "carol.tucker@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-012",
+    "branch_name": "BeanStack Norman New York",
+    "start_date": "2020-09-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0069",
+    "name": "James Brown",
+    "email": "james.brown@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-012",
+    "branch_name": "BeanStack Norman New York",
+    "start_date": "2018-06-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0070",
+    "name": "William Baker",
+    "email": "william.baker@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-013",
+    "branch_name": "BeanStack Harbor Boston",
+    "start_date": "2023-08-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0071",
+    "name": "Jordan Henderson",
+    "email": "jordan.henderson@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-013",
+    "branch_name": "BeanStack Harbor Boston",
+    "start_date": "2024-02-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0072",
+    "name": "Whitney Peters",
+    "email": "whitney.peters@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-013",
+    "branch_name": "BeanStack Harbor Boston",
+    "start_date": "2025-01-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0073",
+    "name": "Brittney Phillips",
+    "email": "brittney.phillips@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-013",
+    "branch_name": "BeanStack Harbor Boston",
+    "start_date": "2024-10-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0074",
+    "name": "Lauren Daniels",
+    "email": "lauren.daniels@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-013",
+    "branch_name": "BeanStack Harbor Boston",
+    "start_date": "2025-06-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0075",
+    "name": "Amy Silva",
+    "email": "amy.silva@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-013",
+    "branch_name": "BeanStack Harbor Boston",
+    "start_date": "2024-12-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0076",
+    "name": "Sarah Moore",
+    "email": "sarah.moore@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-013",
+    "branch_name": "BeanStack Harbor Boston",
+    "start_date": "2025-10-02",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0077",
+    "name": "Angela Lopez",
+    "email": "angela.lopez@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-014",
+    "branch_name": "BeanStack Chelsea Boston",
+    "start_date": "2018-11-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0078",
+    "name": "Megan Young",
+    "email": "megan.young@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-014",
+    "branch_name": "BeanStack Chelsea Boston",
+    "start_date": "2023-07-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0079",
+    "name": "Steve Sanchez",
+    "email": "steve.sanchez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-014",
+    "branch_name": "BeanStack Chelsea Boston",
+    "start_date": "2025-04-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0080",
+    "name": "Lisa Barnes",
+    "email": "lisa.barnes@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-014",
+    "branch_name": "BeanStack Chelsea Boston",
+    "start_date": "2023-03-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0081",
+    "name": "Kelly Donovan",
+    "email": "kelly.donovan@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-014",
+    "branch_name": "BeanStack Chelsea Boston",
+    "start_date": "2022-10-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0082",
+    "name": "Mike Allen",
+    "email": "mike.allen@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-015",
+    "branch_name": "BeanStack Waterfront Boston",
+    "start_date": "2022-10-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0083",
+    "name": "Michael Evans",
+    "email": "michael.evans@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-015",
+    "branch_name": "BeanStack Waterfront Boston",
+    "start_date": "2025-06-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0084",
+    "name": "Paul Jones",
+    "email": "paul.jones@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-015",
+    "branch_name": "BeanStack Waterfront Boston",
+    "start_date": "2023-03-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0085",
+    "name": "Zachary Ferrell",
+    "email": "zachary.ferrell@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-015",
+    "branch_name": "BeanStack Waterfront Boston",
+    "start_date": "2022-12-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0086",
+    "name": "Daniel Baker",
+    "email": "daniel.baker@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-016",
+    "branch_name": "BeanStack Broadway Boston",
+    "start_date": "2022-01-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0087",
+    "name": "Shirley Suarez",
+    "email": "shirley.suarez@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-016",
+    "branch_name": "BeanStack Broadway Boston",
+    "start_date": "2021-12-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0088",
+    "name": "Christopher Bass",
+    "email": "christopher.bass@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-016",
+    "branch_name": "BeanStack Broadway Boston",
+    "start_date": "2025-09-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0089",
+    "name": "Lisa Archer",
+    "email": "lisa.archer@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-016",
+    "branch_name": "BeanStack Broadway Boston",
+    "start_date": "2024-04-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0090",
+    "name": "Aimee Montoya",
+    "email": "aimee.montoya@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-016",
+    "branch_name": "BeanStack Broadway Boston",
+    "start_date": "2025-03-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0091",
+    "name": "Matthew Mcmillan",
+    "email": "matthew.mcmillan@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-016",
+    "branch_name": "BeanStack Broadway Boston",
+    "start_date": "2024-11-08",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0092",
+    "name": "Brian Rodriguez",
+    "email": "brian.rodriguez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-016",
+    "branch_name": "BeanStack Broadway Boston",
+    "start_date": "2024-12-28",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0093",
+    "name": "Denise Jacobs",
+    "email": "denise.jacobs@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-017",
+    "branch_name": "BeanStack Adams Boston",
+    "start_date": "2024-05-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0094",
+    "name": "Christina Walters",
+    "email": "christina.walters@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-017",
+    "branch_name": "BeanStack Adams Boston",
+    "start_date": "2024-04-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0095",
+    "name": "John Whitehead",
+    "email": "john.whitehead@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-017",
+    "branch_name": "BeanStack Adams Boston",
+    "start_date": "2025-10-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0096",
+    "name": "Anna Henderson",
+    "email": "anna.henderson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-017",
+    "branch_name": "BeanStack Adams Boston",
+    "start_date": "2024-12-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0097",
+    "name": "Aaron Wise",
+    "email": "aaron.wise@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-017",
+    "branch_name": "BeanStack Adams Boston",
+    "start_date": "2025-03-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0098",
+    "name": "Deborah Figueroa",
+    "email": "deborah.figueroa@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-017",
+    "branch_name": "BeanStack Adams Boston",
+    "start_date": "2025-07-09",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0099",
+    "name": "Jessica Smith",
+    "email": "jessica.smith@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-017",
+    "branch_name": "BeanStack Adams Boston",
+    "start_date": "2024-12-26",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0100",
+    "name": "Stephen Mckee",
+    "email": "stephen.mckee@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-018",
+    "branch_name": "BeanStack Thomas Philadelphia",
+    "start_date": "2019-12-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0101",
+    "name": "Sandra Aguilar",
+    "email": "sandra.aguilar@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-018",
+    "branch_name": "BeanStack Thomas Philadelphia",
+    "start_date": "2019-12-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0102",
+    "name": "Cameron Parker",
+    "email": "cameron.parker@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-018",
+    "branch_name": "BeanStack Thomas Philadelphia",
+    "start_date": "2023-03-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0103",
+    "name": "Rebecca Valencia",
+    "email": "rebecca.valencia@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-018",
+    "branch_name": "BeanStack Thomas Philadelphia",
+    "start_date": "2025-07-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0104",
+    "name": "Christine Wright",
+    "email": "christine.wright@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-018",
+    "branch_name": "BeanStack Thomas Philadelphia",
+    "start_date": "2022-02-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0105",
+    "name": "Richard Henson",
+    "email": "richard.henson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-018",
+    "branch_name": "BeanStack Thomas Philadelphia",
+    "start_date": "2023-07-05",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0106",
+    "name": "Marc Moore",
+    "email": "marc.moore@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-019",
+    "branch_name": "BeanStack Arts District Philadelphia",
+    "start_date": "2021-03-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0107",
+    "name": "Sharon Cherry",
+    "email": "sharon.cherry@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-019",
+    "branch_name": "BeanStack Arts District Philadelphia",
+    "start_date": "2021-05-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0108",
+    "name": "Sierra Johnson",
+    "email": "sierra.johnson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-019",
+    "branch_name": "BeanStack Arts District Philadelphia",
+    "start_date": "2023-04-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0109",
+    "name": "Evelyn Galvan",
+    "email": "evelyn.galvan@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-019",
+    "branch_name": "BeanStack Arts District Philadelphia",
+    "start_date": "2025-12-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0110",
+    "name": "Sharon Cochran",
+    "email": "sharon.cochran@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-019",
+    "branch_name": "BeanStack Arts District Philadelphia",
+    "start_date": "2025-10-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0111",
+    "name": "Richard Rodriguez",
+    "email": "richard.rodriguez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-019",
+    "branch_name": "BeanStack Arts District Philadelphia",
+    "start_date": "2022-12-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0112",
+    "name": "Shannon Walker",
+    "email": "shannon.walker@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-020",
+    "branch_name": "BeanStack Broadway Philadelphia",
+    "start_date": "2016-02-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0113",
+    "name": "Julia Torres",
+    "email": "julia.torres@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-020",
+    "branch_name": "BeanStack Broadway Philadelphia",
+    "start_date": "2016-02-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0114",
+    "name": "Crystal Johnson",
+    "email": "crystal.johnson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-020",
+    "branch_name": "BeanStack Broadway Philadelphia",
+    "start_date": "2016-12-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0115",
+    "name": "Garrett Lin",
+    "email": "garrett.lin@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-020",
+    "branch_name": "BeanStack Broadway Philadelphia",
+    "start_date": "2024-03-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0116",
+    "name": "Diana May",
+    "email": "diana.may@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-020",
+    "branch_name": "BeanStack Broadway Philadelphia",
+    "start_date": "2021-06-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0117",
+    "name": "William Herrera",
+    "email": "william.herrera@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-021",
+    "branch_name": "BeanStack Davis Philadelphia",
+    "start_date": "2022-04-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0118",
+    "name": "Ashley Waller",
+    "email": "ashley.waller@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-021",
+    "branch_name": "BeanStack Davis Philadelphia",
+    "start_date": "2024-12-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0119",
+    "name": "Victor Baker",
+    "email": "victor.baker@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-021",
+    "branch_name": "BeanStack Davis Philadelphia",
+    "start_date": "2025-05-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0120",
+    "name": "Jeffrey Chandler",
+    "email": "jeffrey.chandler@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-021",
+    "branch_name": "BeanStack Davis Philadelphia",
+    "start_date": "2023-04-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0121",
+    "name": "Larry Dixon",
+    "email": "larry.dixon@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-022",
+    "branch_name": "BeanStack Central Washington",
+    "start_date": "2016-04-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0122",
+    "name": "Kenneth Scott",
+    "email": "kenneth.scott@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-022",
+    "branch_name": "BeanStack Central Washington",
+    "start_date": "2016-05-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0123",
+    "name": "April Frost",
+    "email": "april.frost@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-022",
+    "branch_name": "BeanStack Central Washington",
+    "start_date": "2022-04-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0124",
+    "name": "Michelle Harmon",
+    "email": "michelle.harmon@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-022",
+    "branch_name": "BeanStack Central Washington",
+    "start_date": "2024-09-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0125",
+    "name": "Helen Jones",
+    "email": "helen.jones@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-022",
+    "branch_name": "BeanStack Central Washington",
+    "start_date": "2024-06-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0126",
+    "name": "Erin Edwards",
+    "email": "erin.edwards@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-022",
+    "branch_name": "BeanStack Central Washington",
+    "start_date": "2023-12-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0127",
+    "name": "Michelle Evans",
+    "email": "michelle.evans@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-022",
+    "branch_name": "BeanStack Central Washington",
+    "start_date": "2018-07-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0128",
+    "name": "Jason Powell",
+    "email": "jason.powell@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-022",
+    "branch_name": "BeanStack Central Washington",
+    "start_date": "2024-04-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0129",
+    "name": "Cameron Fisher",
+    "email": "cameron.fisher@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-023",
+    "branch_name": "BeanStack Rice Washington",
+    "start_date": "2021-06-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0130",
+    "name": "Megan Orr",
+    "email": "megan.orr@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-023",
+    "branch_name": "BeanStack Rice Washington",
+    "start_date": "2024-04-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0131",
+    "name": "Elizabeth Kelley",
+    "email": "elizabeth.kelley@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-023",
+    "branch_name": "BeanStack Rice Washington",
+    "start_date": "2023-12-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0132",
+    "name": "Dustin Jordan",
+    "email": "dustin.jordan@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-023",
+    "branch_name": "BeanStack Rice Washington",
+    "start_date": "2022-01-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0133",
+    "name": "Mary Marshall",
+    "email": "mary.marshall@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-023",
+    "branch_name": "BeanStack Rice Washington",
+    "start_date": "2022-10-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0134",
+    "name": "Daniel Kennedy",
+    "email": "daniel.kennedy@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-024",
+    "branch_name": "BeanStack Harbor Washington",
+    "start_date": "2022-02-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0135",
+    "name": "Rebecca Jackson",
+    "email": "rebecca.jackson@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-024",
+    "branch_name": "BeanStack Harbor Washington",
+    "start_date": "2022-08-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0136",
+    "name": "Jose Schultz",
+    "email": "jose.schultz@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-024",
+    "branch_name": "BeanStack Harbor Washington",
+    "start_date": "2025-04-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0137",
+    "name": "Robert Potter",
+    "email": "robert.potter@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-024",
+    "branch_name": "BeanStack Harbor Washington",
+    "start_date": "2023-06-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0138",
+    "name": "Courtney Gonzalez",
+    "email": "courtney.gonzalez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-024",
+    "branch_name": "BeanStack Harbor Washington",
+    "start_date": "2025-06-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0139",
+    "name": "David Alvarez",
+    "email": "david.alvarez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-024",
+    "branch_name": "BeanStack Harbor Washington",
+    "start_date": "2023-06-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0140",
+    "name": "Angel Perry",
+    "email": "angel.perry@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-024",
+    "branch_name": "BeanStack Harbor Washington",
+    "start_date": "2022-07-23",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0141",
+    "name": "Cheyenne Horton",
+    "email": "cheyenne.horton@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-025",
+    "branch_name": "BeanStack Midtown Washington",
+    "start_date": "2022-10-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0142",
+    "name": "David Douglas Jr.",
+    "email": "david.jr.@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-025",
+    "branch_name": "BeanStack Midtown Washington",
+    "start_date": "2023-02-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0143",
+    "name": "Patricia Rodriguez",
+    "email": "patricia.rodriguez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-025",
+    "branch_name": "BeanStack Midtown Washington",
+    "start_date": "2025-08-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0144",
+    "name": "Christopher Rubio",
+    "email": "christopher.rubio@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-025",
+    "branch_name": "BeanStack Midtown Washington",
+    "start_date": "2024-01-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0145",
+    "name": "Amber Wright",
+    "email": "amber.wright@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-026",
+    "branch_name": "BeanStack Uptown Washington",
+    "start_date": "2024-04-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0146",
+    "name": "Joyce Solis",
+    "email": "joyce.solis@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-026",
+    "branch_name": "BeanStack Uptown Washington",
+    "start_date": "2024-09-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0147",
+    "name": "Victoria Larson",
+    "email": "victoria.larson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-026",
+    "branch_name": "BeanStack Uptown Washington",
+    "start_date": "2024-09-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0148",
+    "name": "Stephanie Salazar",
+    "email": "stephanie.salazar@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-026",
+    "branch_name": "BeanStack Uptown Washington",
+    "start_date": "2025-11-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0149",
+    "name": "Kathy Rivas",
+    "email": "kathy.rivas@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-026",
+    "branch_name": "BeanStack Uptown Washington",
+    "start_date": "2025-11-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0150",
+    "name": "Stephanie Manning",
+    "email": "stephanie.manning@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-026",
+    "branch_name": "BeanStack Uptown Washington",
+    "start_date": "2025-08-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0151",
+    "name": "David Wright",
+    "email": "david.wright@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-027",
+    "branch_name": "BeanStack Uptown Miami",
+    "start_date": "2020-05-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0152",
+    "name": "Pamela Boyd",
+    "email": "pamela.boyd@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-027",
+    "branch_name": "BeanStack Uptown Miami",
+    "start_date": "2022-05-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0153",
+    "name": "Denise Jones",
+    "email": "denise.jones@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-027",
+    "branch_name": "BeanStack Uptown Miami",
+    "start_date": "2021-04-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0154",
+    "name": "Devon Flores",
+    "email": "devon.flores@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-027",
+    "branch_name": "BeanStack Uptown Miami",
+    "start_date": "2021-05-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0155",
+    "name": "Brenda Hall",
+    "email": "brenda.hall@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-027",
+    "branch_name": "BeanStack Uptown Miami",
+    "start_date": "2025-02-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0156",
+    "name": "Michelle Brown",
+    "email": "michelle.brown@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-028",
+    "branch_name": "BeanStack Harbor Miami",
+    "start_date": "2024-03-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0157",
+    "name": "Joshua Perry",
+    "email": "joshua.perry@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-028",
+    "branch_name": "BeanStack Harbor Miami",
+    "start_date": "2024-02-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0158",
+    "name": "Jason Stein",
+    "email": "jason.stein@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-028",
+    "branch_name": "BeanStack Harbor Miami",
+    "start_date": "2025-12-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0159",
+    "name": "Melissa Gates",
+    "email": "melissa.gates@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-028",
+    "branch_name": "BeanStack Harbor Miami",
+    "start_date": "2025-12-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0160",
+    "name": "Jamie Smith",
+    "email": "jamie.smith@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-028",
+    "branch_name": "BeanStack Harbor Miami",
+    "start_date": "2025-11-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0161",
+    "name": "Paul Castaneda",
+    "email": "paul.castaneda@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-028",
+    "branch_name": "BeanStack Harbor Miami",
+    "start_date": "2024-05-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0162",
+    "name": "Jennifer Adkins",
+    "email": "jennifer.adkins@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-028",
+    "branch_name": "BeanStack Harbor Miami",
+    "start_date": "2024-10-14",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0163",
+    "name": "Lindsey Walker",
+    "email": "lindsey.walker@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-028",
+    "branch_name": "BeanStack Harbor Miami",
+    "start_date": "2024-08-15",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0164",
+    "name": "Jeffrey Johnson",
+    "email": "jeffrey.johnson@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-029",
+    "branch_name": "BeanStack Carol Miami",
+    "start_date": "2017-08-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0165",
+    "name": "Michael Powell",
+    "email": "michael.powell@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-029",
+    "branch_name": "BeanStack Carol Miami",
+    "start_date": "2017-12-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0166",
+    "name": "John Anderson",
+    "email": "john.anderson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-029",
+    "branch_name": "BeanStack Carol Miami",
+    "start_date": "2019-09-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0167",
+    "name": "Alyssa Long",
+    "email": "alyssa.long@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-029",
+    "branch_name": "BeanStack Carol Miami",
+    "start_date": "2020-10-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0168",
+    "name": "Alyssa Day",
+    "email": "alyssa.day@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-029",
+    "branch_name": "BeanStack Carol Miami",
+    "start_date": "2022-11-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0169",
+    "name": "Joel Williams",
+    "email": "joel.williams@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-029",
+    "branch_name": "BeanStack Carol Miami",
+    "start_date": "2020-06-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0170",
+    "name": "Daniel Murphy",
+    "email": "daniel.murphy@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-030",
+    "branch_name": "BeanStack Downtown Miami",
+    "start_date": "2017-05-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0171",
+    "name": "Jamie Walton",
+    "email": "jamie.walton@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-030",
+    "branch_name": "BeanStack Downtown Miami",
+    "start_date": "2017-09-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0172",
+    "name": "Darlene Miller",
+    "email": "darlene.miller@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-030",
+    "branch_name": "BeanStack Downtown Miami",
+    "start_date": "2018-06-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0173",
+    "name": "Joshua Cooke",
+    "email": "joshua.cooke@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-030",
+    "branch_name": "BeanStack Downtown Miami",
+    "start_date": "2017-11-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0174",
+    "name": "Matthew Harrington",
+    "email": "matthew.harrington@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-030",
+    "branch_name": "BeanStack Downtown Miami",
+    "start_date": "2024-08-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0175",
+    "name": "Nicole Herring",
+    "email": "nicole.herring@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-030",
+    "branch_name": "BeanStack Downtown Miami",
+    "start_date": "2023-05-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0176",
+    "name": "Alex Hernandez",
+    "email": "alex.hernandez@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-031",
+    "branch_name": "BeanStack Christopher Miami",
+    "start_date": "2019-09-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0177",
+    "name": "Michael Elliott",
+    "email": "michael.elliott@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-031",
+    "branch_name": "BeanStack Christopher Miami",
+    "start_date": "2019-10-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0178",
+    "name": "Michael Wang",
+    "email": "michael.wang@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-031",
+    "branch_name": "BeanStack Christopher Miami",
+    "start_date": "2024-04-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0179",
+    "name": "Lawrence Adkins",
+    "email": "lawrence.adkins@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-031",
+    "branch_name": "BeanStack Christopher Miami",
+    "start_date": "2025-02-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0180",
+    "name": "Robert Oconnell",
+    "email": "robert.oconnell@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-031",
+    "branch_name": "BeanStack Christopher Miami",
+    "start_date": "2025-02-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0181",
+    "name": "Alexander Collins",
+    "email": "alexander.collins@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-032",
+    "branch_name": "BeanStack Donna Miami",
+    "start_date": "2017-10-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0182",
+    "name": "Tina Sanders",
+    "email": "tina.sanders@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-032",
+    "branch_name": "BeanStack Donna Miami",
+    "start_date": "2017-12-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0183",
+    "name": "Angela Vaughn",
+    "email": "angela.vaughn@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-032",
+    "branch_name": "BeanStack Donna Miami",
+    "start_date": "2022-02-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0184",
+    "name": "Ashley Barton",
+    "email": "ashley.barton@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-032",
+    "branch_name": "BeanStack Donna Miami",
+    "start_date": "2017-11-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0185",
+    "name": "Lindsay Martinez",
+    "email": "lindsay.martinez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-032",
+    "branch_name": "BeanStack Donna Miami",
+    "start_date": "2022-03-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0186",
+    "name": "Dr. Hannah Patterson",
+    "email": "dr..patterson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-032",
+    "branch_name": "BeanStack Donna Miami",
+    "start_date": "2020-10-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0187",
+    "name": "Jonathan Peterson",
+    "email": "jonathan.peterson@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-033",
+    "branch_name": "BeanStack Central Atlanta",
+    "start_date": "2017-09-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0188",
+    "name": "Samantha Garcia",
+    "email": "samantha.garcia@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-033",
+    "branch_name": "BeanStack Central Atlanta",
+    "start_date": "2017-12-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0189",
+    "name": "Madison Poole",
+    "email": "madison.poole@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-033",
+    "branch_name": "BeanStack Central Atlanta",
+    "start_date": "2025-06-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0190",
+    "name": "Jessica Gross",
+    "email": "jessica.gross@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-033",
+    "branch_name": "BeanStack Central Atlanta",
+    "start_date": "2025-11-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0191",
+    "name": "Debra Morton",
+    "email": "debra.morton@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-033",
+    "branch_name": "BeanStack Central Atlanta",
+    "start_date": "2023-11-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0192",
+    "name": "Karen Graham",
+    "email": "karen.graham@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-033",
+    "branch_name": "BeanStack Central Atlanta",
+    "start_date": "2025-02-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0193",
+    "name": "Debra Christian",
+    "email": "debra.christian@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-033",
+    "branch_name": "BeanStack Central Atlanta",
+    "start_date": "2025-09-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0194",
+    "name": "Angelica Keith",
+    "email": "angelica.keith@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-034",
+    "branch_name": "BeanStack Arts District Atlanta",
+    "start_date": "2018-11-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0195",
+    "name": "John Bishop",
+    "email": "john.bishop@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-034",
+    "branch_name": "BeanStack Arts District Atlanta",
+    "start_date": "2019-01-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0196",
+    "name": "Allen Rosales",
+    "email": "allen.rosales@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-034",
+    "branch_name": "BeanStack Arts District Atlanta",
+    "start_date": "2019-07-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0197",
+    "name": "Daniel Salinas",
+    "email": "daniel.salinas@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-034",
+    "branch_name": "BeanStack Arts District Atlanta",
+    "start_date": "2025-05-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0198",
+    "name": "Spencer Haynes",
+    "email": "spencer.haynes@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-034",
+    "branch_name": "BeanStack Arts District Atlanta",
+    "start_date": "2024-12-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0199",
+    "name": "Adam Vaughan",
+    "email": "adam.vaughan@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-034",
+    "branch_name": "BeanStack Arts District Atlanta",
+    "start_date": "2019-07-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0200",
+    "name": "Nathan Freeman",
+    "email": "nathan.freeman@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-035",
+    "branch_name": "BeanStack Main Street Atlanta",
+    "start_date": "2018-03-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0201",
+    "name": "Melissa Brewer",
+    "email": "melissa.brewer@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-035",
+    "branch_name": "BeanStack Main Street Atlanta",
+    "start_date": "2018-08-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0202",
+    "name": "Ricky Davis II",
+    "email": "ricky.ii@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-035",
+    "branch_name": "BeanStack Main Street Atlanta",
+    "start_date": "2023-07-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0203",
+    "name": "Elizabeth Perkins",
+    "email": "elizabeth.perkins@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-035",
+    "branch_name": "BeanStack Main Street Atlanta",
+    "start_date": "2023-11-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0204",
+    "name": "Joseph Coleman",
+    "email": "joseph.coleman@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-035",
+    "branch_name": "BeanStack Main Street Atlanta",
+    "start_date": "2024-03-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0205",
+    "name": "Erin Warner",
+    "email": "erin.warner@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-035",
+    "branch_name": "BeanStack Main Street Atlanta",
+    "start_date": "2019-12-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0206",
+    "name": "David Martinez",
+    "email": "david.martinez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-035",
+    "branch_name": "BeanStack Main Street Atlanta",
+    "start_date": "2018-12-31",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0207",
+    "name": "Bryan Herrera",
+    "email": "bryan.herrera@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-036",
+    "branch_name": "BeanStack John Atlanta",
+    "start_date": "2018-04-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0208",
+    "name": "Cathy Robinson",
+    "email": "cathy.robinson@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-036",
+    "branch_name": "BeanStack John Atlanta",
+    "start_date": "2018-10-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0209",
+    "name": "Dr. William Warren",
+    "email": "dr..warren@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-036",
+    "branch_name": "BeanStack John Atlanta",
+    "start_date": "2020-12-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0210",
+    "name": "Brian Lee",
+    "email": "brian.lee@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-036",
+    "branch_name": "BeanStack John Atlanta",
+    "start_date": "2022-11-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0211",
+    "name": "Christopher Smith",
+    "email": "christopher.smith@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-036",
+    "branch_name": "BeanStack John Atlanta",
+    "start_date": "2019-09-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0212",
+    "name": "Denise Mccann",
+    "email": "denise.mccann@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-036",
+    "branch_name": "BeanStack John Atlanta",
+    "start_date": "2024-09-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0213",
+    "name": "Melissa Martinez",
+    "email": "melissa.martinez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-036",
+    "branch_name": "BeanStack John Atlanta",
+    "start_date": "2021-02-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0214",
+    "name": "Katherine Salas",
+    "email": "katherine.salas@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-036",
+    "branch_name": "BeanStack John Atlanta",
+    "start_date": "2024-11-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0215",
+    "name": "Julie Alexander",
+    "email": "julie.alexander@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-037",
+    "branch_name": "BeanStack Financial District Atlanta",
+    "start_date": "2022-05-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0216",
+    "name": "Anthony Everett",
+    "email": "anthony.everett@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-037",
+    "branch_name": "BeanStack Financial District Atlanta",
+    "start_date": "2022-09-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0217",
+    "name": "Rodney Morales",
+    "email": "rodney.morales@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-037",
+    "branch_name": "BeanStack Financial District Atlanta",
+    "start_date": "2025-09-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0218",
+    "name": "Mark Brown",
+    "email": "mark.brown@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-037",
+    "branch_name": "BeanStack Financial District Atlanta",
+    "start_date": "2025-08-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0219",
+    "name": "Justin Torres",
+    "email": "justin.torres@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-037",
+    "branch_name": "BeanStack Financial District Atlanta",
+    "start_date": "2025-05-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0220",
+    "name": "Bailey Duran DDS",
+    "email": "bailey.dds@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-037",
+    "branch_name": "BeanStack Financial District Atlanta",
+    "start_date": "2024-03-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0221",
+    "name": "Courtney Mills",
+    "email": "courtney.mills@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-037",
+    "branch_name": "BeanStack Financial District Atlanta",
+    "start_date": "2023-11-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0222",
+    "name": "Jeremy Dalton",
+    "email": "jeremy.dalton@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-037",
+    "branch_name": "BeanStack Financial District Atlanta",
+    "start_date": "2023-08-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0223",
+    "name": "Elizabeth Oliver DDS",
+    "email": "elizabeth.dds@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-038",
+    "branch_name": "BeanStack Jeremy Orlando",
+    "start_date": "2019-06-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0224",
+    "name": "Theresa Clark",
+    "email": "theresa.clark@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-038",
+    "branch_name": "BeanStack Jeremy Orlando",
+    "start_date": "2019-08-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0225",
+    "name": "Matthew Moore",
+    "email": "matthew.moore@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-038",
+    "branch_name": "BeanStack Jeremy Orlando",
+    "start_date": "2023-11-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0226",
+    "name": "Benjamin Smith",
+    "email": "benjamin.smith@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-038",
+    "branch_name": "BeanStack Jeremy Orlando",
+    "start_date": "2020-12-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0227",
+    "name": "Kirk Carter",
+    "email": "kirk.carter@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-038",
+    "branch_name": "BeanStack Jeremy Orlando",
+    "start_date": "2022-10-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0228",
+    "name": "Michael Warner",
+    "email": "michael.warner@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-038",
+    "branch_name": "BeanStack Jeremy Orlando",
+    "start_date": "2024-08-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0229",
+    "name": "Michael Bradshaw",
+    "email": "michael.bradshaw@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-038",
+    "branch_name": "BeanStack Jeremy Orlando",
+    "start_date": "2023-01-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0230",
+    "name": "Lori Guerrero",
+    "email": "lori.guerrero@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-039",
+    "branch_name": "BeanStack Park Orlando",
+    "start_date": "2018-12-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0231",
+    "name": "Jessica Stephens",
+    "email": "jessica.stephens@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-039",
+    "branch_name": "BeanStack Park Orlando",
+    "start_date": "2019-05-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0232",
+    "name": "Susan Serrano",
+    "email": "susan.serrano@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-039",
+    "branch_name": "BeanStack Park Orlando",
+    "start_date": "2025-12-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0233",
+    "name": "Christopher Parker",
+    "email": "christopher.parker@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-039",
+    "branch_name": "BeanStack Park Orlando",
+    "start_date": "2025-04-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0234",
+    "name": "Laura Roberts",
+    "email": "laura.roberts@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-039",
+    "branch_name": "BeanStack Park Orlando",
+    "start_date": "2020-02-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0235",
+    "name": "Michael Lyons",
+    "email": "michael.lyons@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-039",
+    "branch_name": "BeanStack Park Orlando",
+    "start_date": "2020-06-29",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0236",
+    "name": "Kathryn Snyder",
+    "email": "kathryn.snyder@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-040",
+    "branch_name": "BeanStack Main Street Orlando",
+    "start_date": "2024-03-18",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0237",
+    "name": "Andrew Reynolds",
+    "email": "andrew.reynolds@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-040",
+    "branch_name": "BeanStack Main Street Orlando",
+    "start_date": "2024-12-15",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0238",
+    "name": "David Davis",
+    "email": "david.davis@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-040",
+    "branch_name": "BeanStack Main Street Orlando",
+    "start_date": "2025-04-22",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0239",
+    "name": "Sara Johnston",
+    "email": "sara.johnston@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-040",
+    "branch_name": "BeanStack Main Street Orlando",
+    "start_date": "2025-01-25",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0240",
+    "name": "Yvonne Chambers",
+    "email": "yvonne.chambers@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-040",
+    "branch_name": "BeanStack Main Street Orlando",
+    "start_date": "2024-09-17",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0241",
+    "name": "Andrew Avila",
+    "email": "andrew.avila@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-041",
+    "branch_name": "BeanStack Downtown Charlotte",
+    "start_date": "2016-12-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0242",
+    "name": "Matthew Moon",
+    "email": "matthew.moon@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-041",
+    "branch_name": "BeanStack Downtown Charlotte",
+    "start_date": "2017-05-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0243",
+    "name": "Kevin Walters",
+    "email": "kevin.walters@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-041",
+    "branch_name": "BeanStack Downtown Charlotte",
+    "start_date": "2020-04-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0244",
+    "name": "Brandon Bailey MD",
+    "email": "brandon.md@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-041",
+    "branch_name": "BeanStack Downtown Charlotte",
+    "start_date": "2023-09-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0245",
+    "name": "Shannon Rivera",
+    "email": "shannon.rivera@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-041",
+    "branch_name": "BeanStack Downtown Charlotte",
+    "start_date": "2025-11-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0246",
+    "name": "Donna Landry",
+    "email": "donna.landry@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-041",
+    "branch_name": "BeanStack Downtown Charlotte",
+    "start_date": "2024-03-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0247",
+    "name": "Krista Gibson",
+    "email": "krista.gibson@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-042",
+    "branch_name": "BeanStack Financial District Charlotte",
+    "start_date": "2019-10-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0248",
+    "name": "Frank Cordova",
+    "email": "frank.cordova@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-042",
+    "branch_name": "BeanStack Financial District Charlotte",
+    "start_date": "2019-10-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0249",
+    "name": "Jose Travis",
+    "email": "jose.travis@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-042",
+    "branch_name": "BeanStack Financial District Charlotte",
+    "start_date": "2021-03-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0250",
+    "name": "Kimberly Gutierrez",
+    "email": "kimberly.gutierrez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-042",
+    "branch_name": "BeanStack Financial District Charlotte",
+    "start_date": "2022-08-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0251",
+    "name": "Isaiah Avila",
+    "email": "isaiah.avila@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-042",
+    "branch_name": "BeanStack Financial District Charlotte",
+    "start_date": "2020-12-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0252",
+    "name": "Olivia Harris",
+    "email": "olivia.harris@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-042",
+    "branch_name": "BeanStack Financial District Charlotte",
+    "start_date": "2020-11-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0253",
+    "name": "Tanya Kim",
+    "email": "tanya.kim@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-043",
+    "branch_name": "BeanStack Market Street Charlotte",
+    "start_date": "2015-05-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0254",
+    "name": "Barbara Dudley",
+    "email": "barbara.dudley@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-043",
+    "branch_name": "BeanStack Market Street Charlotte",
+    "start_date": "2015-07-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0255",
+    "name": "Cynthia Moore",
+    "email": "cynthia.moore@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-043",
+    "branch_name": "BeanStack Market Street Charlotte",
+    "start_date": "2022-02-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0256",
+    "name": "Kristen Davis",
+    "email": "kristen.davis@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-043",
+    "branch_name": "BeanStack Market Street Charlotte",
+    "start_date": "2017-09-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0257",
+    "name": "Susan Murray MD",
+    "email": "susan.md@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-043",
+    "branch_name": "BeanStack Market Street Charlotte",
+    "start_date": "2023-05-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0258",
+    "name": "Kathleen Moran",
+    "email": "kathleen.moran@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-044",
+    "branch_name": "BeanStack Park Chicago",
+    "start_date": "2017-12-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0259",
+    "name": "Denise Davenport",
+    "email": "denise.davenport@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-044",
+    "branch_name": "BeanStack Park Chicago",
+    "start_date": "2018-03-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0260",
+    "name": "Mrs. Kristen Reyes",
+    "email": "mrs..reyes@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-044",
+    "branch_name": "BeanStack Park Chicago",
+    "start_date": "2020-08-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0261",
+    "name": "Katie Suarez",
+    "email": "katie.suarez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-044",
+    "branch_name": "BeanStack Park Chicago",
+    "start_date": "2018-05-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0262",
+    "name": "Desiree Tyler",
+    "email": "desiree.tyler@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-044",
+    "branch_name": "BeanStack Park Chicago",
+    "start_date": "2018-11-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0263",
+    "name": "Timothy Romero",
+    "email": "timothy.romero@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-044",
+    "branch_name": "BeanStack Park Chicago",
+    "start_date": "2024-12-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0264",
+    "name": "Diane Evans",
+    "email": "diane.evans@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-045",
+    "branch_name": "BeanStack James Chicago",
+    "start_date": "2018-02-04",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0265",
+    "name": "Yvonne Burns",
+    "email": "yvonne.burns@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-045",
+    "branch_name": "BeanStack James Chicago",
+    "start_date": "2018-03-15",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0266",
+    "name": "Joshua Reed",
+    "email": "joshua.reed@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-045",
+    "branch_name": "BeanStack James Chicago",
+    "start_date": "2021-11-26",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0267",
+    "name": "Kimberly Gibson",
+    "email": "kimberly.gibson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-045",
+    "branch_name": "BeanStack James Chicago",
+    "start_date": "2019-08-18",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0268",
+    "name": "Colin Terry",
+    "email": "colin.terry@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-045",
+    "branch_name": "BeanStack James Chicago",
+    "start_date": "2025-04-22",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0269",
+    "name": "Cynthia Rowe",
+    "email": "cynthia.rowe@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-046",
+    "branch_name": "BeanStack Uptown Chicago",
+    "start_date": "2018-03-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0270",
+    "name": "Patrick Thornton",
+    "email": "patrick.thornton@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-046",
+    "branch_name": "BeanStack Uptown Chicago",
+    "start_date": "2018-07-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0271",
+    "name": "Jasmin Alvarado",
+    "email": "jasmin.alvarado@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-046",
+    "branch_name": "BeanStack Uptown Chicago",
+    "start_date": "2024-05-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0272",
+    "name": "Veronica Simpson",
+    "email": "veronica.simpson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-046",
+    "branch_name": "BeanStack Uptown Chicago",
+    "start_date": "2023-01-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0273",
+    "name": "Jonathan Lawrence",
+    "email": "jonathan.lawrence@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-046",
+    "branch_name": "BeanStack Uptown Chicago",
+    "start_date": "2024-07-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0274",
+    "name": "Shelly Alexander",
+    "email": "shelly.alexander@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-046",
+    "branch_name": "BeanStack Uptown Chicago",
+    "start_date": "2018-04-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0275",
+    "name": "Joyce Bowen",
+    "email": "joyce.bowen@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-046",
+    "branch_name": "BeanStack Uptown Chicago",
+    "start_date": "2022-05-11",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0276",
+    "name": "Matthew Moore",
+    "email": "matthew.moore@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-047",
+    "branch_name": "BeanStack Financial District Chicago",
+    "start_date": "2023-05-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0277",
+    "name": "Wayne Morgan",
+    "email": "wayne.morgan@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-047",
+    "branch_name": "BeanStack Financial District Chicago",
+    "start_date": "2023-05-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0278",
+    "name": "Marie Christian",
+    "email": "marie.christian@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-047",
+    "branch_name": "BeanStack Financial District Chicago",
+    "start_date": "2023-06-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0279",
+    "name": "Shannon James",
+    "email": "shannon.james@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-047",
+    "branch_name": "BeanStack Financial District Chicago",
+    "start_date": "2024-03-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0280",
+    "name": "Nathan Malone",
+    "email": "nathan.malone@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-047",
+    "branch_name": "BeanStack Financial District Chicago",
+    "start_date": "2024-05-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0281",
+    "name": "Amanda Jones",
+    "email": "amanda.jones@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-048",
+    "branch_name": "BeanStack Arts District Chicago",
+    "start_date": "2022-11-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0282",
+    "name": "Tammie Bright",
+    "email": "tammie.bright@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-048",
+    "branch_name": "BeanStack Arts District Chicago",
+    "start_date": "2022-12-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0283",
+    "name": "Jessica Garcia",
+    "email": "jessica.garcia@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-048",
+    "branch_name": "BeanStack Arts District Chicago",
+    "start_date": "2024-03-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0284",
+    "name": "Shelia Wallace",
+    "email": "shelia.wallace@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-048",
+    "branch_name": "BeanStack Arts District Chicago",
+    "start_date": "2023-05-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0285",
+    "name": "Stephanie Williams",
+    "email": "stephanie.williams@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-048",
+    "branch_name": "BeanStack Arts District Chicago",
+    "start_date": "2024-10-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0286",
+    "name": "Elaine Brooks",
+    "email": "elaine.brooks@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-049",
+    "branch_name": "BeanStack Broadway Chicago",
+    "start_date": "2018-12-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0287",
+    "name": "Joseph Knight",
+    "email": "joseph.knight@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-049",
+    "branch_name": "BeanStack Broadway Chicago",
+    "start_date": "2018-12-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0288",
+    "name": "Carolyn Miller",
+    "email": "carolyn.miller@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-049",
+    "branch_name": "BeanStack Broadway Chicago",
+    "start_date": "2021-07-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0289",
+    "name": "Lisa Allen",
+    "email": "lisa.allen@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-049",
+    "branch_name": "BeanStack Broadway Chicago",
+    "start_date": "2020-09-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0290",
+    "name": "Briana Murray",
+    "email": "briana.murray@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-049",
+    "branch_name": "BeanStack Broadway Chicago",
+    "start_date": "2020-11-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0291",
+    "name": "David Smith",
+    "email": "david.smith@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-049",
+    "branch_name": "BeanStack Broadway Chicago",
+    "start_date": "2023-06-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0292",
+    "name": "Stephanie Byrd",
+    "email": "stephanie.byrd@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-049",
+    "branch_name": "BeanStack Broadway Chicago",
+    "start_date": "2021-08-21",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0293",
+    "name": "Jeremy Reed",
+    "email": "jeremy.reed@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-049",
+    "branch_name": "BeanStack Broadway Chicago",
+    "start_date": "2020-08-22",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0294",
+    "name": "Margaret Coleman",
+    "email": "margaret.coleman@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-050",
+    "branch_name": "BeanStack Waterfront Chicago",
+    "start_date": "2020-07-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0295",
+    "name": "Ryan Gonzalez",
+    "email": "ryan.gonzalez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-050",
+    "branch_name": "BeanStack Waterfront Chicago",
+    "start_date": "2025-05-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0296",
+    "name": "John Young",
+    "email": "john.young@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-050",
+    "branch_name": "BeanStack Waterfront Chicago",
+    "start_date": "2020-09-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0297",
+    "name": "Laura Haney",
+    "email": "laura.haney@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-050",
+    "branch_name": "BeanStack Waterfront Chicago",
+    "start_date": "2025-04-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0298",
+    "name": "William Barrett",
+    "email": "william.barrett@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-051",
+    "branch_name": "BeanStack Tricia Chicago",
+    "start_date": "2020-10-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0299",
+    "name": "Keith Jennings",
+    "email": "keith.jennings@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-051",
+    "branch_name": "BeanStack Tricia Chicago",
+    "start_date": "2020-12-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0300",
+    "name": "Amber Obrien",
+    "email": "amber.obrien@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-051",
+    "branch_name": "BeanStack Tricia Chicago",
+    "start_date": "2022-06-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0301",
+    "name": "Tanner Mitchell DDS",
+    "email": "tanner.dds@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-051",
+    "branch_name": "BeanStack Tricia Chicago",
+    "start_date": "2025-04-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0302",
+    "name": "Heather Fields",
+    "email": "heather.fields@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-051",
+    "branch_name": "BeanStack Tricia Chicago",
+    "start_date": "2025-03-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0303",
+    "name": "Megan Le",
+    "email": "megan.le@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-052",
+    "branch_name": "BeanStack Airport Detroit",
+    "start_date": "2024-06-19",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0304",
+    "name": "Sara Fuller",
+    "email": "sara.fuller@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-052",
+    "branch_name": "BeanStack Airport Detroit",
+    "start_date": "2024-12-31",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0305",
+    "name": "Maria Parker",
+    "email": "maria.parker@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-052",
+    "branch_name": "BeanStack Airport Detroit",
+    "start_date": "2025-01-29",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0306",
+    "name": "Kevin Oconnor",
+    "email": "kevin.oconnor@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-052",
+    "branch_name": "BeanStack Airport Detroit",
+    "start_date": "2025-08-28",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0307",
+    "name": "Edward Burgess",
+    "email": "edward.burgess@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-052",
+    "branch_name": "BeanStack Airport Detroit",
+    "start_date": "2025-06-17",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0308",
+    "name": "Carlos Ryan",
+    "email": "carlos.ryan@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-052",
+    "branch_name": "BeanStack Airport Detroit",
+    "start_date": "2025-04-27",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0309",
+    "name": "Kiara Mcintyre",
+    "email": "kiara.mcintyre@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-053",
+    "branch_name": "BeanStack Harbor Detroit",
+    "start_date": "2023-10-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0310",
+    "name": "Dawn Summers",
+    "email": "dawn.summers@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-053",
+    "branch_name": "BeanStack Harbor Detroit",
+    "start_date": "2024-01-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0311",
+    "name": "Dr. Paul Morgan",
+    "email": "dr..morgan@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-053",
+    "branch_name": "BeanStack Harbor Detroit",
+    "start_date": "2025-07-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0312",
+    "name": "Victor Taylor",
+    "email": "victor.taylor@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-053",
+    "branch_name": "BeanStack Harbor Detroit",
+    "start_date": "2025-03-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0313",
+    "name": "Shannon Ramsey",
+    "email": "shannon.ramsey@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-053",
+    "branch_name": "BeanStack Harbor Detroit",
+    "start_date": "2024-11-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0314",
+    "name": "Tracy Ballard",
+    "email": "tracy.ballard@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-054",
+    "branch_name": "BeanStack Station Detroit",
+    "start_date": "2022-02-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0315",
+    "name": "Richard Smith",
+    "email": "richard.smith@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-054",
+    "branch_name": "BeanStack Station Detroit",
+    "start_date": "2022-04-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0316",
+    "name": "Jordan Chambers",
+    "email": "jordan.chambers@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-054",
+    "branch_name": "BeanStack Station Detroit",
+    "start_date": "2023-09-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0317",
+    "name": "Lauren Carson",
+    "email": "lauren.carson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-054",
+    "branch_name": "BeanStack Station Detroit",
+    "start_date": "2023-03-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0318",
+    "name": "Ashley Hall",
+    "email": "ashley.hall@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-054",
+    "branch_name": "BeanStack Station Detroit",
+    "start_date": "2025-06-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0319",
+    "name": "Stephen Hoffman",
+    "email": "stephen.hoffman@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-054",
+    "branch_name": "BeanStack Station Detroit",
+    "start_date": "2023-09-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0320",
+    "name": "Connie Brown",
+    "email": "connie.brown@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-054",
+    "branch_name": "BeanStack Station Detroit",
+    "start_date": "2023-12-22",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0321",
+    "name": "Susan Turner",
+    "email": "susan.turner@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-054",
+    "branch_name": "BeanStack Station Detroit",
+    "start_date": "2025-08-12",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0322",
+    "name": "Charles Shah",
+    "email": "charles.shah@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-055",
+    "branch_name": "BeanStack Market Street Minneapolis",
+    "start_date": "2022-03-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0323",
+    "name": "Johnathan Davis",
+    "email": "johnathan.davis@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-055",
+    "branch_name": "BeanStack Market Street Minneapolis",
+    "start_date": "2025-05-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0324",
+    "name": "Brandy Chavez",
+    "email": "brandy.chavez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-055",
+    "branch_name": "BeanStack Market Street Minneapolis",
+    "start_date": "2023-03-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0325",
+    "name": "Natalie Bautista",
+    "email": "natalie.bautista@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-055",
+    "branch_name": "BeanStack Market Street Minneapolis",
+    "start_date": "2023-08-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0326",
+    "name": "Patrick Moore",
+    "email": "patrick.moore@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-055",
+    "branch_name": "BeanStack Market Street Minneapolis",
+    "start_date": "2025-01-29",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0327",
+    "name": "Brett Burns",
+    "email": "brett.burns@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-055",
+    "branch_name": "BeanStack Market Street Minneapolis",
+    "start_date": "2024-03-16",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0328",
+    "name": "Trevor Johnson",
+    "email": "trevor.johnson@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-056",
+    "branch_name": "BeanStack Casey Minneapolis",
+    "start_date": "2021-05-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0329",
+    "name": "Jeremy Sampson",
+    "email": "jeremy.sampson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-056",
+    "branch_name": "BeanStack Casey Minneapolis",
+    "start_date": "2025-02-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0330",
+    "name": "Ariana Jennings",
+    "email": "ariana.jennings@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-056",
+    "branch_name": "BeanStack Casey Minneapolis",
+    "start_date": "2023-04-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0331",
+    "name": "Vanessa Howard",
+    "email": "vanessa.howard@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-056",
+    "branch_name": "BeanStack Casey Minneapolis",
+    "start_date": "2024-11-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0332",
+    "name": "Colton Martinez",
+    "email": "colton.martinez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-056",
+    "branch_name": "BeanStack Casey Minneapolis",
+    "start_date": "2023-02-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0333",
+    "name": "Jordan Bates",
+    "email": "jordan.bates@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-057",
+    "branch_name": "BeanStack Downtown Minneapolis",
+    "start_date": "2015-01-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0334",
+    "name": "Linda Smith",
+    "email": "linda.smith@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-057",
+    "branch_name": "BeanStack Downtown Minneapolis",
+    "start_date": "2015-05-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0335",
+    "name": "Dana Martinez",
+    "email": "dana.martinez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-057",
+    "branch_name": "BeanStack Downtown Minneapolis",
+    "start_date": "2018-06-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0336",
+    "name": "Andrea Hubbard",
+    "email": "andrea.hubbard@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-057",
+    "branch_name": "BeanStack Downtown Minneapolis",
+    "start_date": "2022-07-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0337",
+    "name": "Daniel Kane",
+    "email": "daniel.kane@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-057",
+    "branch_name": "BeanStack Downtown Minneapolis",
+    "start_date": "2019-08-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0338",
+    "name": "Charles Lester",
+    "email": "charles.lester@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-058",
+    "branch_name": "BeanStack Downtown Columbus",
+    "start_date": "2018-10-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0339",
+    "name": "Scott Thomas",
+    "email": "scott.thomas@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-058",
+    "branch_name": "BeanStack Downtown Columbus",
+    "start_date": "2018-09-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0340",
+    "name": "David Thompson",
+    "email": "david.thompson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-058",
+    "branch_name": "BeanStack Downtown Columbus",
+    "start_date": "2020-10-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0341",
+    "name": "Allison Smith",
+    "email": "allison.smith@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-058",
+    "branch_name": "BeanStack Downtown Columbus",
+    "start_date": "2023-05-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0342",
+    "name": "Cynthia Morris",
+    "email": "cynthia.morris@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-058",
+    "branch_name": "BeanStack Downtown Columbus",
+    "start_date": "2022-11-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0343",
+    "name": "Anthony Harmon",
+    "email": "anthony.harmon@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-058",
+    "branch_name": "BeanStack Downtown Columbus",
+    "start_date": "2020-08-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0344",
+    "name": "Nichole Alvarez",
+    "email": "nichole.alvarez@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-059",
+    "branch_name": "BeanStack Allen Columbus",
+    "start_date": "2017-05-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0345",
+    "name": "Kayla Rodriguez",
+    "email": "kayla.rodriguez@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-059",
+    "branch_name": "BeanStack Allen Columbus",
+    "start_date": "2017-09-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0346",
+    "name": "Theresa Williams",
+    "email": "theresa.williams@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-059",
+    "branch_name": "BeanStack Allen Columbus",
+    "start_date": "2017-05-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0347",
+    "name": "Sharon Boyd",
+    "email": "sharon.boyd@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-059",
+    "branch_name": "BeanStack Allen Columbus",
+    "start_date": "2020-09-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0348",
+    "name": "Victor Brown",
+    "email": "victor.brown@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-059",
+    "branch_name": "BeanStack Allen Columbus",
+    "start_date": "2020-07-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0349",
+    "name": "James Parks",
+    "email": "james.parks@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-059",
+    "branch_name": "BeanStack Allen Columbus",
+    "start_date": "2019-09-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0350",
+    "name": "Theodore Jones Jr.",
+    "email": "theodore.jr.@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-060",
+    "branch_name": "BeanStack Harbor Austin",
+    "start_date": "2018-03-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0351",
+    "name": "Ana Hill",
+    "email": "ana.hill@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-060",
+    "branch_name": "BeanStack Harbor Austin",
+    "start_date": "2023-02-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0352",
+    "name": "Kimberly Nguyen",
+    "email": "kimberly.nguyen@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-060",
+    "branch_name": "BeanStack Harbor Austin",
+    "start_date": "2023-02-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0353",
+    "name": "Kerry Chavez DDS",
+    "email": "kerry.dds@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-060",
+    "branch_name": "BeanStack Harbor Austin",
+    "start_date": "2025-09-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0354",
+    "name": "Michael Farrell",
+    "email": "michael.farrell@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-060",
+    "branch_name": "BeanStack Harbor Austin",
+    "start_date": "2020-07-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0355",
+    "name": "Patricia Le",
+    "email": "patricia.le@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-061",
+    "branch_name": "BeanStack Financial District Austin",
+    "start_date": "2020-04-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0356",
+    "name": "Jesse Perez",
+    "email": "jesse.perez@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-061",
+    "branch_name": "BeanStack Financial District Austin",
+    "start_date": "2020-03-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0357",
+    "name": "Jesse Perry",
+    "email": "jesse.perry@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-061",
+    "branch_name": "BeanStack Financial District Austin",
+    "start_date": "2023-04-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0358",
+    "name": "Jeffery Ortega",
+    "email": "jeffery.ortega@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-061",
+    "branch_name": "BeanStack Financial District Austin",
+    "start_date": "2025-11-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0359",
+    "name": "Christian Leblanc",
+    "email": "christian.leblanc@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-061",
+    "branch_name": "BeanStack Financial District Austin",
+    "start_date": "2023-11-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0360",
+    "name": "Ronald Davis",
+    "email": "ronald.davis@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-061",
+    "branch_name": "BeanStack Financial District Austin",
+    "start_date": "2022-08-25",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0361",
+    "name": "Parker Cain",
+    "email": "parker.cain@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-062",
+    "branch_name": "BeanStack Downtown Austin",
+    "start_date": "2022-11-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0362",
+    "name": "Laurie Hoffman",
+    "email": "laurie.hoffman@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-062",
+    "branch_name": "BeanStack Downtown Austin",
+    "start_date": "2022-12-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0363",
+    "name": "Bryan Gomez",
+    "email": "bryan.gomez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-062",
+    "branch_name": "BeanStack Downtown Austin",
+    "start_date": "2023-03-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0364",
+    "name": "Nicole Parrish",
+    "email": "nicole.parrish@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-062",
+    "branch_name": "BeanStack Downtown Austin",
+    "start_date": "2024-04-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0365",
+    "name": "Tracy Burke",
+    "email": "tracy.burke@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-062",
+    "branch_name": "BeanStack Downtown Austin",
+    "start_date": "2025-08-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0366",
+    "name": "Kenneth Lewis",
+    "email": "kenneth.lewis@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-063",
+    "branch_name": "BeanStack Station Austin",
+    "start_date": "2024-06-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0367",
+    "name": "Courtney Rodriguez",
+    "email": "courtney.rodriguez@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-063",
+    "branch_name": "BeanStack Station Austin",
+    "start_date": "2024-08-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0368",
+    "name": "Holly Farmer",
+    "email": "holly.farmer@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-063",
+    "branch_name": "BeanStack Station Austin",
+    "start_date": "2025-12-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0369",
+    "name": "Renee Bruce",
+    "email": "renee.bruce@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-063",
+    "branch_name": "BeanStack Station Austin",
+    "start_date": "2024-11-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0370",
+    "name": "Sabrina Austin",
+    "email": "sabrina.austin@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-063",
+    "branch_name": "BeanStack Station Austin",
+    "start_date": "2025-06-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0371",
+    "name": "Allison Hickman",
+    "email": "allison.hickman@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-064",
+    "branch_name": "BeanStack Mitchell Austin",
+    "start_date": "2021-05-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0372",
+    "name": "Debra White",
+    "email": "debra.white@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-064",
+    "branch_name": "BeanStack Mitchell Austin",
+    "start_date": "2021-11-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0373",
+    "name": "Ellen Morgan",
+    "email": "ellen.morgan@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-064",
+    "branch_name": "BeanStack Mitchell Austin",
+    "start_date": "2025-04-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0374",
+    "name": "Sergio Knight",
+    "email": "sergio.knight@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-064",
+    "branch_name": "BeanStack Mitchell Austin",
+    "start_date": "2021-06-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0375",
+    "name": "Charles Schultz",
+    "email": "charles.schultz@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-064",
+    "branch_name": "BeanStack Mitchell Austin",
+    "start_date": "2025-08-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0376",
+    "name": "Paul Lewis",
+    "email": "paul.lewis@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-065",
+    "branch_name": "BeanStack Elizabeth Houston",
+    "start_date": "2025-01-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0377",
+    "name": "Glen Wood",
+    "email": "glen.wood@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-065",
+    "branch_name": "BeanStack Elizabeth Houston",
+    "start_date": "2025-03-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0378",
+    "name": "Paula Bradley",
+    "email": "paula.bradley@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-065",
+    "branch_name": "BeanStack Elizabeth Houston",
+    "start_date": "2025-03-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0379",
+    "name": "Anthony Moore",
+    "email": "anthony.moore@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-065",
+    "branch_name": "BeanStack Elizabeth Houston",
+    "start_date": "2025-11-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0380",
+    "name": "Megan Nelson",
+    "email": "megan.nelson@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-066",
+    "branch_name": "BeanStack Wilson Houston",
+    "start_date": "2022-10-06",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0381",
+    "name": "Karla Ramos",
+    "email": "karla.ramos@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-066",
+    "branch_name": "BeanStack Wilson Houston",
+    "start_date": "2022-10-28",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0382",
+    "name": "Paul Wilson",
+    "email": "paul.wilson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-066",
+    "branch_name": "BeanStack Wilson Houston",
+    "start_date": "2023-05-01",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0383",
+    "name": "Douglas Gregory",
+    "email": "douglas.gregory@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-066",
+    "branch_name": "BeanStack Wilson Houston",
+    "start_date": "2025-03-17",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0384",
+    "name": "Mr. Andrew Foster",
+    "email": "mr..foster@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-066",
+    "branch_name": "BeanStack Wilson Houston",
+    "start_date": "2023-05-26",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0385",
+    "name": "Aimee Turner",
+    "email": "aimee.turner@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-067",
+    "branch_name": "BeanStack Mall Houston",
+    "start_date": "2023-08-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0386",
+    "name": "Chad Scott",
+    "email": "chad.scott@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-067",
+    "branch_name": "BeanStack Mall Houston",
+    "start_date": "2023-10-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0387",
+    "name": "Adam Burgess",
+    "email": "adam.burgess@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-067",
+    "branch_name": "BeanStack Mall Houston",
+    "start_date": "2025-01-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0388",
+    "name": "James Padilla",
+    "email": "james.padilla@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-067",
+    "branch_name": "BeanStack Mall Houston",
+    "start_date": "2025-02-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0389",
+    "name": "Sandra Drake",
+    "email": "sandra.drake@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-067",
+    "branch_name": "BeanStack Mall Houston",
+    "start_date": "2024-05-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0390",
+    "name": "Scott Williams",
+    "email": "scott.williams@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-067",
+    "branch_name": "BeanStack Mall Houston",
+    "start_date": "2025-07-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0391",
+    "name": "Thomas Atkins",
+    "email": "thomas.atkins@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-068",
+    "branch_name": "BeanStack Park Houston",
+    "start_date": "2018-07-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0392",
+    "name": "Laura Mckinney",
+    "email": "laura.mckinney@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-068",
+    "branch_name": "BeanStack Park Houston",
+    "start_date": "2023-06-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0393",
+    "name": "Brian Smith",
+    "email": "brian.smith@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-068",
+    "branch_name": "BeanStack Park Houston",
+    "start_date": "2020-03-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0394",
+    "name": "Robert Montgomery",
+    "email": "robert.montgomery@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-068",
+    "branch_name": "BeanStack Park Houston",
+    "start_date": "2023-09-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0395",
+    "name": "Tamara Davis",
+    "email": "tamara.davis@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-068",
+    "branch_name": "BeanStack Park Houston",
+    "start_date": "2023-06-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0396",
+    "name": "Dana Chapman",
+    "email": "dana.chapman@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-069",
+    "branch_name": "BeanStack Cynthia Houston",
+    "start_date": "2023-11-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0397",
+    "name": "Jennifer Collins",
+    "email": "jennifer.collins@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-069",
+    "branch_name": "BeanStack Cynthia Houston",
+    "start_date": "2023-12-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0398",
+    "name": "Gary Jackson",
+    "email": "gary.jackson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-069",
+    "branch_name": "BeanStack Cynthia Houston",
+    "start_date": "2025-12-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0399",
+    "name": "Ashley Hicks",
+    "email": "ashley.hicks@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-069",
+    "branch_name": "BeanStack Cynthia Houston",
+    "start_date": "2025-12-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0400",
+    "name": "Hannah Luna",
+    "email": "hannah.luna@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-069",
+    "branch_name": "BeanStack Cynthia Houston",
+    "start_date": "2025-03-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0401",
+    "name": "Robin Young",
+    "email": "robin.young@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-069",
+    "branch_name": "BeanStack Cynthia Houston",
+    "start_date": "2025-02-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0402",
+    "name": "Craig Morrison",
+    "email": "craig.morrison@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-070",
+    "branch_name": "BeanStack Martin Houston",
+    "start_date": "2015-02-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0403",
+    "name": "Mary Thompson",
+    "email": "mary.thompson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-070",
+    "branch_name": "BeanStack Martin Houston",
+    "start_date": "2015-12-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0404",
+    "name": "Kathleen Webster",
+    "email": "kathleen.webster@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-070",
+    "branch_name": "BeanStack Martin Houston",
+    "start_date": "2023-01-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0405",
+    "name": "Joann Glass",
+    "email": "joann.glass@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-070",
+    "branch_name": "BeanStack Martin Houston",
+    "start_date": "2018-04-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0406",
+    "name": "Madison Weber",
+    "email": "madison.weber@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-070",
+    "branch_name": "BeanStack Martin Houston",
+    "start_date": "2017-09-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0407",
+    "name": "Lori Hernandez",
+    "email": "lori.hernandez@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-071",
+    "branch_name": "BeanStack Arts District Dallas",
+    "start_date": "2022-09-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0408",
+    "name": "Jeremy Turner",
+    "email": "jeremy.turner@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-071",
+    "branch_name": "BeanStack Arts District Dallas",
+    "start_date": "2022-09-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0409",
+    "name": "Anthony Romero",
+    "email": "anthony.romero@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-071",
+    "branch_name": "BeanStack Arts District Dallas",
+    "start_date": "2023-05-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0410",
+    "name": "Jesse Brown",
+    "email": "jesse.brown@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-071",
+    "branch_name": "BeanStack Arts District Dallas",
+    "start_date": "2023-06-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0411",
+    "name": "Angela Lin",
+    "email": "angela.lin@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-071",
+    "branch_name": "BeanStack Arts District Dallas",
+    "start_date": "2023-12-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0412",
+    "name": "Lisa Hunter",
+    "email": "lisa.hunter@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-071",
+    "branch_name": "BeanStack Arts District Dallas",
+    "start_date": "2024-10-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0413",
+    "name": "Julian Conner",
+    "email": "julian.conner@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-072",
+    "branch_name": "BeanStack Russell Dallas",
+    "start_date": "2016-09-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0414",
+    "name": "Joanna Pacheco",
+    "email": "joanna.pacheco@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-072",
+    "branch_name": "BeanStack Russell Dallas",
+    "start_date": "2017-02-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0415",
+    "name": "Erica Alvarez",
+    "email": "erica.alvarez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-072",
+    "branch_name": "BeanStack Russell Dallas",
+    "start_date": "2021-05-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0416",
+    "name": "Antonio Garcia",
+    "email": "antonio.garcia@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-072",
+    "branch_name": "BeanStack Russell Dallas",
+    "start_date": "2020-07-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0417",
+    "name": "Gwendolyn Klein",
+    "email": "gwendolyn.klein@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-072",
+    "branch_name": "BeanStack Russell Dallas",
+    "start_date": "2022-11-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0418",
+    "name": "Carrie Wright",
+    "email": "carrie.wright@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-073",
+    "branch_name": "BeanStack Clark Dallas",
+    "start_date": "2021-10-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0419",
+    "name": "Jeffrey Mills",
+    "email": "jeffrey.mills@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-073",
+    "branch_name": "BeanStack Clark Dallas",
+    "start_date": "2024-02-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0420",
+    "name": "Jake Campbell",
+    "email": "jake.campbell@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-073",
+    "branch_name": "BeanStack Clark Dallas",
+    "start_date": "2023-12-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0421",
+    "name": "George Harper",
+    "email": "george.harper@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-073",
+    "branch_name": "BeanStack Clark Dallas",
+    "start_date": "2025-01-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0422",
+    "name": "Maria Jones",
+    "email": "maria.jones@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-074",
+    "branch_name": "BeanStack Mall Dallas",
+    "start_date": "2021-07-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0423",
+    "name": "Michael Mitchell",
+    "email": "michael.mitchell@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-074",
+    "branch_name": "BeanStack Mall Dallas",
+    "start_date": "2021-08-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0424",
+    "name": "Mary Escobar",
+    "email": "mary.escobar@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-074",
+    "branch_name": "BeanStack Mall Dallas",
+    "start_date": "2024-01-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0425",
+    "name": "Felicia Aguilar",
+    "email": "felicia.aguilar@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-074",
+    "branch_name": "BeanStack Mall Dallas",
+    "start_date": "2021-05-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0426",
+    "name": "Gregory Ponce",
+    "email": "gregory.ponce@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-074",
+    "branch_name": "BeanStack Mall Dallas",
+    "start_date": "2023-05-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0427",
+    "name": "Jenna Larson",
+    "email": "jenna.larson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-074",
+    "branch_name": "BeanStack Mall Dallas",
+    "start_date": "2023-01-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0428",
+    "name": "Emily Bennett",
+    "email": "emily.bennett@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-075",
+    "branch_name": "BeanStack Financial District Dallas",
+    "start_date": "2017-10-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0429",
+    "name": "Robin Santiago",
+    "email": "robin.santiago@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-075",
+    "branch_name": "BeanStack Financial District Dallas",
+    "start_date": "2025-11-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0430",
+    "name": "Nancy Jennings",
+    "email": "nancy.jennings@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-075",
+    "branch_name": "BeanStack Financial District Dallas",
+    "start_date": "2023-10-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0431",
+    "name": "Maria Henderson",
+    "email": "maria.henderson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-075",
+    "branch_name": "BeanStack Financial District Dallas",
+    "start_date": "2024-06-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0432",
+    "name": "Jack White",
+    "email": "jack.white@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-075",
+    "branch_name": "BeanStack Financial District Dallas",
+    "start_date": "2020-02-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0433",
+    "name": "Travis Tucker",
+    "email": "travis.tucker@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-076",
+    "branch_name": "BeanStack Broadway Phoenix",
+    "start_date": "2020-01-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0434",
+    "name": "Chad Jones",
+    "email": "chad.jones@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-076",
+    "branch_name": "BeanStack Broadway Phoenix",
+    "start_date": "2025-06-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0435",
+    "name": "Ashley Wise",
+    "email": "ashley.wise@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-076",
+    "branch_name": "BeanStack Broadway Phoenix",
+    "start_date": "2020-04-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0436",
+    "name": "Sophia Johnson",
+    "email": "sophia.johnson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-076",
+    "branch_name": "BeanStack Broadway Phoenix",
+    "start_date": "2024-05-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0437",
+    "name": "Ralph Anderson",
+    "email": "ralph.anderson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-076",
+    "branch_name": "BeanStack Broadway Phoenix",
+    "start_date": "2023-10-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0438",
+    "name": "Christopher Guerra",
+    "email": "christopher.guerra@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-077",
+    "branch_name": "BeanStack Mall Phoenix",
+    "start_date": "2023-04-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0439",
+    "name": "Rhonda Martin",
+    "email": "rhonda.martin@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-077",
+    "branch_name": "BeanStack Mall Phoenix",
+    "start_date": "2023-08-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0440",
+    "name": "Jason Rhodes",
+    "email": "jason.rhodes@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-077",
+    "branch_name": "BeanStack Mall Phoenix",
+    "start_date": "2025-11-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0441",
+    "name": "Jeremy Mitchell",
+    "email": "jeremy.mitchell@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-077",
+    "branch_name": "BeanStack Mall Phoenix",
+    "start_date": "2023-08-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0442",
+    "name": "Joann Ferguson",
+    "email": "joann.ferguson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-077",
+    "branch_name": "BeanStack Mall Phoenix",
+    "start_date": "2025-01-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0443",
+    "name": "Robert Harrison",
+    "email": "robert.harrison@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-077",
+    "branch_name": "BeanStack Mall Phoenix",
+    "start_date": "2024-10-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0444",
+    "name": "Holly Valentine",
+    "email": "holly.valentine@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-077",
+    "branch_name": "BeanStack Mall Phoenix",
+    "start_date": "2023-07-15",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0445",
+    "name": "Mrs. Diane Reyes",
+    "email": "mrs..reyes@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-077",
+    "branch_name": "BeanStack Mall Phoenix",
+    "start_date": "2023-09-06",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0446",
+    "name": "Tracy Montoya",
+    "email": "tracy.montoya@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-078",
+    "branch_name": "BeanStack Station Phoenix",
+    "start_date": "2024-05-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0447",
+    "name": "Brenda Wright",
+    "email": "brenda.wright@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-078",
+    "branch_name": "BeanStack Station Phoenix",
+    "start_date": "2024-05-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0448",
+    "name": "Shelly Spencer",
+    "email": "shelly.spencer@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-078",
+    "branch_name": "BeanStack Station Phoenix",
+    "start_date": "2025-02-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0449",
+    "name": "Ryan Rosales",
+    "email": "ryan.rosales@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-078",
+    "branch_name": "BeanStack Station Phoenix",
+    "start_date": "2025-06-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0450",
+    "name": "Phillip Nelson",
+    "email": "phillip.nelson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-078",
+    "branch_name": "BeanStack Station Phoenix",
+    "start_date": "2025-04-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0451",
+    "name": "Brittany Kim",
+    "email": "brittany.kim@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-078",
+    "branch_name": "BeanStack Station Phoenix",
+    "start_date": "2024-12-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0452",
+    "name": "Courtney Hayes",
+    "email": "courtney.hayes@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-079",
+    "branch_name": "BeanStack Harbor Phoenix",
+    "start_date": "2024-02-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0453",
+    "name": "Alexander Brown",
+    "email": "alexander.brown@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-079",
+    "branch_name": "BeanStack Harbor Phoenix",
+    "start_date": "2024-03-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0454",
+    "name": "Cynthia Vang",
+    "email": "cynthia.vang@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-079",
+    "branch_name": "BeanStack Harbor Phoenix",
+    "start_date": "2025-03-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0455",
+    "name": "Alfred Galvan",
+    "email": "alfred.galvan@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-079",
+    "branch_name": "BeanStack Harbor Phoenix",
+    "start_date": "2024-09-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0456",
+    "name": "Marie Moody",
+    "email": "marie.moody@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-079",
+    "branch_name": "BeanStack Harbor Phoenix",
+    "start_date": "2024-04-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0457",
+    "name": "Dustin Gallegos",
+    "email": "dustin.gallegos@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-079",
+    "branch_name": "BeanStack Harbor Phoenix",
+    "start_date": "2025-05-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0458",
+    "name": "Brenda Thornton",
+    "email": "brenda.thornton@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-079",
+    "branch_name": "BeanStack Harbor Phoenix",
+    "start_date": "2024-08-30",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0459",
+    "name": "Aaron Miller",
+    "email": "aaron.miller@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-080",
+    "branch_name": "BeanStack Hoover Denver",
+    "start_date": "2016-01-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0460",
+    "name": "Ruben Dunn",
+    "email": "ruben.dunn@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-080",
+    "branch_name": "BeanStack Hoover Denver",
+    "start_date": "2015-12-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0461",
+    "name": "Kelsey Rodriguez",
+    "email": "kelsey.rodriguez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-080",
+    "branch_name": "BeanStack Hoover Denver",
+    "start_date": "2024-05-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0462",
+    "name": "Eric Williams",
+    "email": "eric.williams@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-080",
+    "branch_name": "BeanStack Hoover Denver",
+    "start_date": "2016-04-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0463",
+    "name": "Riley Bryant",
+    "email": "riley.bryant@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-080",
+    "branch_name": "BeanStack Hoover Denver",
+    "start_date": "2018-09-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0464",
+    "name": "Taylor Carlson",
+    "email": "taylor.carlson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-080",
+    "branch_name": "BeanStack Hoover Denver",
+    "start_date": "2018-07-31",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0465",
+    "name": "Jose Allen",
+    "email": "jose.allen@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-081",
+    "branch_name": "BeanStack Midtown Denver",
+    "start_date": "2017-11-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0466",
+    "name": "Jeffrey Mendez",
+    "email": "jeffrey.mendez@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-081",
+    "branch_name": "BeanStack Midtown Denver",
+    "start_date": "2018-04-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0467",
+    "name": "Jason Beck",
+    "email": "jason.beck@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-081",
+    "branch_name": "BeanStack Midtown Denver",
+    "start_date": "2019-01-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0468",
+    "name": "William Jones",
+    "email": "william.jones@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-081",
+    "branch_name": "BeanStack Midtown Denver",
+    "start_date": "2024-02-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0469",
+    "name": "Katie Mcneil",
+    "email": "katie.mcneil@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-081",
+    "branch_name": "BeanStack Midtown Denver",
+    "start_date": "2020-03-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0470",
+    "name": "Jeanette Harrison",
+    "email": "jeanette.harrison@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-081",
+    "branch_name": "BeanStack Midtown Denver",
+    "start_date": "2022-12-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0471",
+    "name": "Veronica King",
+    "email": "veronica.king@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-082",
+    "branch_name": "BeanStack Waterfront Denver",
+    "start_date": "2017-06-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0472",
+    "name": "Richard Cooper",
+    "email": "richard.cooper@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-082",
+    "branch_name": "BeanStack Waterfront Denver",
+    "start_date": "2017-11-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0473",
+    "name": "Lori Ingram",
+    "email": "lori.ingram@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-082",
+    "branch_name": "BeanStack Waterfront Denver",
+    "start_date": "2024-04-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0474",
+    "name": "Evelyn Williams",
+    "email": "evelyn.williams@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-082",
+    "branch_name": "BeanStack Waterfront Denver",
+    "start_date": "2025-11-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0475",
+    "name": "Robin Thompson",
+    "email": "robin.thompson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-082",
+    "branch_name": "BeanStack Waterfront Denver",
+    "start_date": "2025-07-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0476",
+    "name": "Julie Dominguez",
+    "email": "julie.dominguez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-082",
+    "branch_name": "BeanStack Waterfront Denver",
+    "start_date": "2018-09-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0477",
+    "name": "Robin Brown",
+    "email": "robin.brown@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-083",
+    "branch_name": "BeanStack Harbor Denver",
+    "start_date": "2020-05-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0478",
+    "name": "Judith Carter",
+    "email": "judith.carter@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-083",
+    "branch_name": "BeanStack Harbor Denver",
+    "start_date": "2020-06-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0479",
+    "name": "Curtis Williams",
+    "email": "curtis.williams@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-083",
+    "branch_name": "BeanStack Harbor Denver",
+    "start_date": "2020-08-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0480",
+    "name": "Kaylee Hays",
+    "email": "kaylee.hays@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-083",
+    "branch_name": "BeanStack Harbor Denver",
+    "start_date": "2023-11-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0481",
+    "name": "Dawn Mullins",
+    "email": "dawn.mullins@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-083",
+    "branch_name": "BeanStack Harbor Denver",
+    "start_date": "2024-07-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0482",
+    "name": "Howard Norman",
+    "email": "howard.norman@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-084",
+    "branch_name": "BeanStack Market Street Los Angeles",
+    "start_date": "2015-03-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0483",
+    "name": "Evelyn Martinez",
+    "email": "evelyn.martinez@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-084",
+    "branch_name": "BeanStack Market Street Los Angeles",
+    "start_date": "2015-09-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0484",
+    "name": "Steve Paul",
+    "email": "steve.paul@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-084",
+    "branch_name": "BeanStack Market Street Los Angeles",
+    "start_date": "2023-01-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0485",
+    "name": "Jasmine Beltran",
+    "email": "jasmine.beltran@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-084",
+    "branch_name": "BeanStack Market Street Los Angeles",
+    "start_date": "2024-08-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0486",
+    "name": "Jonathan Glass MD",
+    "email": "jonathan.md@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-084",
+    "branch_name": "BeanStack Market Street Los Angeles",
+    "start_date": "2022-04-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0487",
+    "name": "Monica Miller",
+    "email": "monica.miller@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-085",
+    "branch_name": "BeanStack Waterfront Los Angeles",
+    "start_date": "2019-10-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0488",
+    "name": "Samantha Gardner",
+    "email": "samantha.gardner@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-085",
+    "branch_name": "BeanStack Waterfront Los Angeles",
+    "start_date": "2020-12-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0489",
+    "name": "Bobby Guerrero",
+    "email": "bobby.guerrero@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-085",
+    "branch_name": "BeanStack Waterfront Los Angeles",
+    "start_date": "2025-12-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0490",
+    "name": "Lance Simmons",
+    "email": "lance.simmons@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-085",
+    "branch_name": "BeanStack Waterfront Los Angeles",
+    "start_date": "2020-02-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0491",
+    "name": "Heather Williams",
+    "email": "heather.williams@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-085",
+    "branch_name": "BeanStack Waterfront Los Angeles",
+    "start_date": "2023-07-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0492",
+    "name": "Heather Bolton",
+    "email": "heather.bolton@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-086",
+    "branch_name": "BeanStack Downtown Los Angeles",
+    "start_date": "2015-08-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0493",
+    "name": "William Gould",
+    "email": "william.gould@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-086",
+    "branch_name": "BeanStack Downtown Los Angeles",
+    "start_date": "2016-01-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0494",
+    "name": "Mark Cox",
+    "email": "mark.cox@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-086",
+    "branch_name": "BeanStack Downtown Los Angeles",
+    "start_date": "2022-12-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0495",
+    "name": "Meghan Cisneros",
+    "email": "meghan.cisneros@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-086",
+    "branch_name": "BeanStack Downtown Los Angeles",
+    "start_date": "2019-07-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0496",
+    "name": "Lawrence Harrington",
+    "email": "lawrence.harrington@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-086",
+    "branch_name": "BeanStack Downtown Los Angeles",
+    "start_date": "2015-11-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0497",
+    "name": "Austin Osborne",
+    "email": "austin.osborne@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-086",
+    "branch_name": "BeanStack Downtown Los Angeles",
+    "start_date": "2025-03-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0498",
+    "name": "James Bradley",
+    "email": "james.bradley@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-087",
+    "branch_name": "BeanStack Financial District Los Angeles",
+    "start_date": "2019-09-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0499",
+    "name": "Meghan Rush",
+    "email": "meghan.rush@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-087",
+    "branch_name": "BeanStack Financial District Los Angeles",
+    "start_date": "2020-01-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0500",
+    "name": "Phillip Berry",
+    "email": "phillip.berry@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-087",
+    "branch_name": "BeanStack Financial District Los Angeles",
+    "start_date": "2023-10-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0501",
+    "name": "Jennifer Banks",
+    "email": "jennifer.banks@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-087",
+    "branch_name": "BeanStack Financial District Los Angeles",
+    "start_date": "2024-11-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0502",
+    "name": "Brian Fitzgerald",
+    "email": "brian.fitzgerald@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-087",
+    "branch_name": "BeanStack Financial District Los Angeles",
+    "start_date": "2021-06-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0503",
+    "name": "Mr. Justin Green III",
+    "email": "mr..iii@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-087",
+    "branch_name": "BeanStack Financial District Los Angeles",
+    "start_date": "2024-08-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0504",
+    "name": "Zachary Mitchell",
+    "email": "zachary.mitchell@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-087",
+    "branch_name": "BeanStack Financial District Los Angeles",
+    "start_date": "2021-09-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0505",
+    "name": "Katherine Martinez",
+    "email": "katherine.martinez@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-088",
+    "branch_name": "BeanStack Mall Los Angeles",
+    "start_date": "2017-03-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0506",
+    "name": "Jodi Roach",
+    "email": "jodi.roach@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-088",
+    "branch_name": "BeanStack Mall Los Angeles",
+    "start_date": "2017-06-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0507",
+    "name": "Brandon Fleming",
+    "email": "brandon.fleming@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-088",
+    "branch_name": "BeanStack Mall Los Angeles",
+    "start_date": "2025-10-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0508",
+    "name": "Emma Reed",
+    "email": "emma.reed@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-088",
+    "branch_name": "BeanStack Mall Los Angeles",
+    "start_date": "2022-07-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0509",
+    "name": "Joshua Vance",
+    "email": "joshua.vance@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-088",
+    "branch_name": "BeanStack Mall Los Angeles",
+    "start_date": "2022-04-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0510",
+    "name": "Michelle Ho",
+    "email": "michelle.ho@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-088",
+    "branch_name": "BeanStack Mall Los Angeles",
+    "start_date": "2021-12-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0511",
+    "name": "Rebecca Hicks",
+    "email": "rebecca.hicks@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-089",
+    "branch_name": "BeanStack Broadway Los Angeles",
+    "start_date": "2019-10-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0512",
+    "name": "Curtis Taylor",
+    "email": "curtis.taylor@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-089",
+    "branch_name": "BeanStack Broadway Los Angeles",
+    "start_date": "2022-07-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0513",
+    "name": "Allison Spencer",
+    "email": "allison.spencer@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-089",
+    "branch_name": "BeanStack Broadway Los Angeles",
+    "start_date": "2020-10-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0514",
+    "name": "Robert Arnold",
+    "email": "robert.arnold@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-089",
+    "branch_name": "BeanStack Broadway Los Angeles",
+    "start_date": "2022-12-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0515",
+    "name": "Angelica Parker",
+    "email": "angelica.parker@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-089",
+    "branch_name": "BeanStack Broadway Los Angeles",
+    "start_date": "2024-11-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0516",
+    "name": "Dr. Kelly Hammond DVM",
+    "email": "dr..dvm@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-090",
+    "branch_name": "BeanStack Central Los Angeles",
+    "start_date": "2020-06-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0517",
+    "name": "William Day",
+    "email": "william.day@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-090",
+    "branch_name": "BeanStack Central Los Angeles",
+    "start_date": "2020-09-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0518",
+    "name": "Michael Cooper",
+    "email": "michael.cooper@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-090",
+    "branch_name": "BeanStack Central Los Angeles",
+    "start_date": "2024-07-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0519",
+    "name": "Penny Bowman",
+    "email": "penny.bowman@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-090",
+    "branch_name": "BeanStack Central Los Angeles",
+    "start_date": "2024-01-30",
+    "status": "active"
+  },
+  {
+    "id": "staff-0520",
+    "name": "Vincent Reynolds",
+    "email": "vincent.reynolds@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-090",
+    "branch_name": "BeanStack Central Los Angeles",
+    "start_date": "2020-08-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0521",
+    "name": "Amy Martinez",
+    "email": "amy.martinez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-090",
+    "branch_name": "BeanStack Central Los Angeles",
+    "start_date": "2025-11-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0522",
+    "name": "Christopher Morris",
+    "email": "christopher.morris@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-091",
+    "branch_name": "BeanStack Hunter Los Angeles",
+    "start_date": "2021-08-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0523",
+    "name": "Hannah Everett",
+    "email": "hannah.everett@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-091",
+    "branch_name": "BeanStack Hunter Los Angeles",
+    "start_date": "2021-09-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0524",
+    "name": "Sarah King",
+    "email": "sarah.king@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-091",
+    "branch_name": "BeanStack Hunter Los Angeles",
+    "start_date": "2023-07-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0525",
+    "name": "Krista Martinez",
+    "email": "krista.martinez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-091",
+    "branch_name": "BeanStack Hunter Los Angeles",
+    "start_date": "2023-01-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0526",
+    "name": "Joseph Shaw",
+    "email": "joseph.shaw@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-091",
+    "branch_name": "BeanStack Hunter Los Angeles",
+    "start_date": "2023-06-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0527",
+    "name": "Todd Moore",
+    "email": "todd.moore@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-092",
+    "branch_name": "BeanStack Arts District Los Angeles",
+    "start_date": "2016-09-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0528",
+    "name": "Michelle Jacobs",
+    "email": "michelle.jacobs@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-092",
+    "branch_name": "BeanStack Arts District Los Angeles",
+    "start_date": "2016-08-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0529",
+    "name": "Kristy Bryan",
+    "email": "kristy.bryan@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-092",
+    "branch_name": "BeanStack Arts District Los Angeles",
+    "start_date": "2022-05-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0530",
+    "name": "Angel May",
+    "email": "angel.may@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-092",
+    "branch_name": "BeanStack Arts District Los Angeles",
+    "start_date": "2018-09-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0531",
+    "name": "Marilyn Wang",
+    "email": "marilyn.wang@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-092",
+    "branch_name": "BeanStack Arts District Los Angeles",
+    "start_date": "2017-07-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0532",
+    "name": "Mark Jimenez",
+    "email": "mark.jimenez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-092",
+    "branch_name": "BeanStack Arts District Los Angeles",
+    "start_date": "2019-04-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0533",
+    "name": "Donna Frye",
+    "email": "donna.frye@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-093",
+    "branch_name": "BeanStack Christina Los Angeles",
+    "start_date": "2019-07-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0534",
+    "name": "Dr. Michael Evans",
+    "email": "dr..evans@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-093",
+    "branch_name": "BeanStack Christina Los Angeles",
+    "start_date": "2022-02-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0535",
+    "name": "Anthony Gonzales",
+    "email": "anthony.gonzales@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-093",
+    "branch_name": "BeanStack Christina Los Angeles",
+    "start_date": "2024-10-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0536",
+    "name": "Mr. Lawrence Edwards",
+    "email": "mr..edwards@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-093",
+    "branch_name": "BeanStack Christina Los Angeles",
+    "start_date": "2024-12-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0537",
+    "name": "Morgan Valencia",
+    "email": "morgan.valencia@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-093",
+    "branch_name": "BeanStack Christina Los Angeles",
+    "start_date": "2024-06-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0538",
+    "name": "Bianca Wood",
+    "email": "bianca.wood@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-094",
+    "branch_name": "BeanStack Uptown San Francisco",
+    "start_date": "2022-09-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0539",
+    "name": "Emma Owens",
+    "email": "emma.owens@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-094",
+    "branch_name": "BeanStack Uptown San Francisco",
+    "start_date": "2022-10-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0540",
+    "name": "David Davis",
+    "email": "david.davis@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-094",
+    "branch_name": "BeanStack Uptown San Francisco",
+    "start_date": "2024-12-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0541",
+    "name": "James Gilbert",
+    "email": "james.gilbert@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-094",
+    "branch_name": "BeanStack Uptown San Francisco",
+    "start_date": "2024-01-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0542",
+    "name": "Sean Moore",
+    "email": "sean.moore@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-094",
+    "branch_name": "BeanStack Uptown San Francisco",
+    "start_date": "2024-05-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0543",
+    "name": "Kenneth Edwards",
+    "email": "kenneth.edwards@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-094",
+    "branch_name": "BeanStack Uptown San Francisco",
+    "start_date": "2025-12-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0544",
+    "name": "Kathleen Robertson",
+    "email": "kathleen.robertson@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-095",
+    "branch_name": "BeanStack Mall San Francisco",
+    "start_date": "2016-12-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0545",
+    "name": "Mr. Alexander Landry MD",
+    "email": "mr..md@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-095",
+    "branch_name": "BeanStack Mall San Francisco",
+    "start_date": "2017-04-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0546",
+    "name": "Cindy Gomez",
+    "email": "cindy.gomez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-095",
+    "branch_name": "BeanStack Mall San Francisco",
+    "start_date": "2020-08-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0547",
+    "name": "Johnny Khan",
+    "email": "johnny.khan@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-095",
+    "branch_name": "BeanStack Mall San Francisco",
+    "start_date": "2020-11-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0548",
+    "name": "Julie Herrera",
+    "email": "julie.herrera@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-095",
+    "branch_name": "BeanStack Mall San Francisco",
+    "start_date": "2024-10-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0549",
+    "name": "Jessica Khan",
+    "email": "jessica.khan@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-095",
+    "branch_name": "BeanStack Mall San Francisco",
+    "start_date": "2021-12-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0550",
+    "name": "Pamela Diaz",
+    "email": "pamela.diaz@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-096",
+    "branch_name": "BeanStack William San Francisco",
+    "start_date": "2019-06-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0551",
+    "name": "Kelly Lee",
+    "email": "kelly.lee@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-096",
+    "branch_name": "BeanStack William San Francisco",
+    "start_date": "2019-07-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0552",
+    "name": "Angel Gordon",
+    "email": "angel.gordon@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-096",
+    "branch_name": "BeanStack William San Francisco",
+    "start_date": "2021-08-08",
+    "status": "active"
+  },
+  {
+    "id": "staff-0553",
+    "name": "Diana Hays",
+    "email": "diana.hays@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-096",
+    "branch_name": "BeanStack William San Francisco",
+    "start_date": "2022-12-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0554",
+    "name": "Barbara Hester",
+    "email": "barbara.hester@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-096",
+    "branch_name": "BeanStack William San Francisco",
+    "start_date": "2020-10-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0555",
+    "name": "Robert Morgan",
+    "email": "robert.morgan@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-096",
+    "branch_name": "BeanStack William San Francisco",
+    "start_date": "2025-06-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0556",
+    "name": "Nicole Gonzalez",
+    "email": "nicole.gonzalez@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-097",
+    "branch_name": "BeanStack Davis San Francisco",
+    "start_date": "2024-03-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0557",
+    "name": "Kathryn Williams",
+    "email": "kathryn.williams@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-097",
+    "branch_name": "BeanStack Davis San Francisco",
+    "start_date": "2024-05-02",
+    "status": "active"
+  },
+  {
+    "id": "staff-0558",
+    "name": "Gary Wells",
+    "email": "gary.wells@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-097",
+    "branch_name": "BeanStack Davis San Francisco",
+    "start_date": "2025-07-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0559",
+    "name": "Larry Robertson",
+    "email": "larry.robertson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-097",
+    "branch_name": "BeanStack Davis San Francisco",
+    "start_date": "2024-12-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0560",
+    "name": "Louis Martin",
+    "email": "louis.martin@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-097",
+    "branch_name": "BeanStack Davis San Francisco",
+    "start_date": "2025-11-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0561",
+    "name": "Nancy Evans MD",
+    "email": "nancy.md@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-098",
+    "branch_name": "BeanStack Station San Francisco",
+    "start_date": "2023-04-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0562",
+    "name": "Kim Erickson",
+    "email": "kim.erickson@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-098",
+    "branch_name": "BeanStack Station San Francisco",
+    "start_date": "2023-05-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0563",
+    "name": "Robert Richardson",
+    "email": "robert.richardson@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-098",
+    "branch_name": "BeanStack Station San Francisco",
+    "start_date": "2023-09-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0564",
+    "name": "Veronica Silva",
+    "email": "veronica.silva@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-098",
+    "branch_name": "BeanStack Station San Francisco",
+    "start_date": "2024-04-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0565",
+    "name": "Molly Watts",
+    "email": "molly.watts@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-098",
+    "branch_name": "BeanStack Station San Francisco",
+    "start_date": "2024-10-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0566",
+    "name": "John Coffey",
+    "email": "john.coffey@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-098",
+    "branch_name": "BeanStack Station San Francisco",
+    "start_date": "2024-06-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0567",
+    "name": "Paula Lane",
+    "email": "paula.lane@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-098",
+    "branch_name": "BeanStack Station San Francisco",
+    "start_date": "2025-03-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0568",
+    "name": "Lauren Jackson",
+    "email": "lauren.jackson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-098",
+    "branch_name": "BeanStack Station San Francisco",
+    "start_date": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0569",
+    "name": "Lisa Randall",
+    "email": "lisa.randall@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-099",
+    "branch_name": "BeanStack Main Street San Francisco",
+    "start_date": "2019-04-18",
+    "status": "active"
+  },
+  {
+    "id": "staff-0570",
+    "name": "Michael Johnson",
+    "email": "michael.johnson@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-099",
+    "branch_name": "BeanStack Main Street San Francisco",
+    "start_date": "2019-04-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0571",
+    "name": "Ashley Smith",
+    "email": "ashley.smith@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-099",
+    "branch_name": "BeanStack Main Street San Francisco",
+    "start_date": "2019-11-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0572",
+    "name": "Christian Vaughn",
+    "email": "christian.vaughn@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-099",
+    "branch_name": "BeanStack Main Street San Francisco",
+    "start_date": "2025-06-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0573",
+    "name": "Reginald Knapp",
+    "email": "reginald.knapp@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-099",
+    "branch_name": "BeanStack Main Street San Francisco",
+    "start_date": "2022-07-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0574",
+    "name": "Nancy Brown",
+    "email": "nancy.brown@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-100",
+    "branch_name": "BeanStack Jennifer Seattle",
+    "start_date": "2021-06-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0575",
+    "name": "Daniel Nguyen",
+    "email": "daniel.nguyen@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-100",
+    "branch_name": "BeanStack Jennifer Seattle",
+    "start_date": "2025-07-20",
+    "status": "active"
+  },
+  {
+    "id": "staff-0576",
+    "name": "Kelly Edwards",
+    "email": "kelly.edwards@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-100",
+    "branch_name": "BeanStack Jennifer Seattle",
+    "start_date": "2024-01-31",
+    "status": "active"
+  },
+  {
+    "id": "staff-0577",
+    "name": "Thomas Peterson",
+    "email": "thomas.peterson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-100",
+    "branch_name": "BeanStack Jennifer Seattle",
+    "start_date": "2021-11-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0578",
+    "name": "Raymond Le",
+    "email": "raymond.le@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-101",
+    "branch_name": "BeanStack Midtown Seattle",
+    "start_date": "2018-11-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0579",
+    "name": "Melissa Bishop",
+    "email": "melissa.bishop@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-101",
+    "branch_name": "BeanStack Midtown Seattle",
+    "start_date": "2019-02-25",
+    "status": "active"
+  },
+  {
+    "id": "staff-0580",
+    "name": "David Grant",
+    "email": "david.grant@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-101",
+    "branch_name": "BeanStack Midtown Seattle",
+    "start_date": "2023-10-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0581",
+    "name": "William Evans",
+    "email": "william.evans@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-101",
+    "branch_name": "BeanStack Midtown Seattle",
+    "start_date": "2022-08-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0582",
+    "name": "Daniel Bush",
+    "email": "daniel.bush@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-101",
+    "branch_name": "BeanStack Midtown Seattle",
+    "start_date": "2020-11-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0583",
+    "name": "Gregory Peck",
+    "email": "gregory.peck@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-101",
+    "branch_name": "BeanStack Midtown Seattle",
+    "start_date": "2019-05-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0584",
+    "name": "Denise Martinez",
+    "email": "denise.martinez@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-102",
+    "branch_name": "BeanStack Airport Seattle",
+    "start_date": "2015-05-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0585",
+    "name": "Jamie Baird",
+    "email": "jamie.baird@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-102",
+    "branch_name": "BeanStack Airport Seattle",
+    "start_date": "2015-06-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0586",
+    "name": "Tina Ballard",
+    "email": "tina.ballard@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-102",
+    "branch_name": "BeanStack Airport Seattle",
+    "start_date": "2019-11-22",
+    "status": "active"
+  },
+  {
+    "id": "staff-0587",
+    "name": "Dwayne Klein",
+    "email": "dwayne.klein@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-102",
+    "branch_name": "BeanStack Airport Seattle",
+    "start_date": "2020-11-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0588",
+    "name": "Jeremy Scott",
+    "email": "jeremy.scott@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-102",
+    "branch_name": "BeanStack Airport Seattle",
+    "start_date": "2016-03-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0589",
+    "name": "Dale Ryan",
+    "email": "dale.ryan@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-102",
+    "branch_name": "BeanStack Airport Seattle",
+    "start_date": "2021-11-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0590",
+    "name": "Melissa Taylor",
+    "email": "melissa.taylor@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-103",
+    "branch_name": "BeanStack Main Street Seattle",
+    "start_date": "2017-09-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0591",
+    "name": "Laurie Sanchez",
+    "email": "laurie.sanchez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-103",
+    "branch_name": "BeanStack Main Street Seattle",
+    "start_date": "2019-05-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0592",
+    "name": "Kiara Little",
+    "email": "kiara.little@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-103",
+    "branch_name": "BeanStack Main Street Seattle",
+    "start_date": "2024-01-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0593",
+    "name": "Jason Love",
+    "email": "jason.love@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-103",
+    "branch_name": "BeanStack Main Street Seattle",
+    "start_date": "2021-02-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0594",
+    "name": "Randy Smith",
+    "email": "randy.smith@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-103",
+    "branch_name": "BeanStack Main Street Seattle",
+    "start_date": "2023-12-15",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0595",
+    "name": "Tanya Russell",
+    "email": "tanya.russell@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-104",
+    "branch_name": "BeanStack Station Seattle",
+    "start_date": "2020-02-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0596",
+    "name": "Sherry Woods",
+    "email": "sherry.woods@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-104",
+    "branch_name": "BeanStack Station Seattle",
+    "start_date": "2020-05-28",
+    "status": "active"
+  },
+  {
+    "id": "staff-0597",
+    "name": "Victor Morris",
+    "email": "victor.morris@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-104",
+    "branch_name": "BeanStack Station Seattle",
+    "start_date": "2022-07-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0598",
+    "name": "Susan Davis",
+    "email": "susan.davis@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-104",
+    "branch_name": "BeanStack Station Seattle",
+    "start_date": "2025-11-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0599",
+    "name": "Kimberly Sharp",
+    "email": "kimberly.sharp@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-104",
+    "branch_name": "BeanStack Station Seattle",
+    "start_date": "2024-04-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0600",
+    "name": "Susan Thompson",
+    "email": "susan.thompson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-104",
+    "branch_name": "BeanStack Station Seattle",
+    "start_date": "2025-01-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0601",
+    "name": "Casey Gillespie",
+    "email": "casey.gillespie@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-104",
+    "branch_name": "BeanStack Station Seattle",
+    "start_date": "2024-12-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0602",
+    "name": "Jennifer Simpson DVM",
+    "email": "jennifer.dvm@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-105",
+    "branch_name": "BeanStack Financial District Seattle",
+    "start_date": "2021-10-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0603",
+    "name": "Tammy Mcdowell",
+    "email": "tammy.mcdowell@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-105",
+    "branch_name": "BeanStack Financial District Seattle",
+    "start_date": "2021-11-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0604",
+    "name": "Keith Rodriguez",
+    "email": "keith.rodriguez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-105",
+    "branch_name": "BeanStack Financial District Seattle",
+    "start_date": "2024-11-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0605",
+    "name": "Mrs. Virginia Daniels",
+    "email": "mrs..daniels@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-105",
+    "branch_name": "BeanStack Financial District Seattle",
+    "start_date": "2025-03-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0606",
+    "name": "Todd Rosales MD",
+    "email": "todd.md@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-105",
+    "branch_name": "BeanStack Financial District Seattle",
+    "start_date": "2022-01-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0607",
+    "name": "Brian Martin",
+    "email": "brian.martin@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-105",
+    "branch_name": "BeanStack Financial District Seattle",
+    "start_date": "2025-02-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0608",
+    "name": "David Lopez",
+    "email": "david.lopez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-105",
+    "branch_name": "BeanStack Financial District Seattle",
+    "start_date": "2025-11-05",
+    "status": "active"
+  },
+  {
+    "id": "staff-0609",
+    "name": "Rachel Bradley",
+    "email": "rachel.bradley@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-105",
+    "branch_name": "BeanStack Financial District Seattle",
+    "start_date": "2022-04-03",
+    "status": "active"
+  },
+  {
+    "id": "staff-0610",
+    "name": "Casey Chase",
+    "email": "casey.chase@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-106",
+    "branch_name": "BeanStack Rivas San Diego",
+    "start_date": "2020-04-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0611",
+    "name": "Samantha Robertson",
+    "email": "samantha.robertson@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-106",
+    "branch_name": "BeanStack Rivas San Diego",
+    "start_date": "2020-04-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0612",
+    "name": "Michael Lopez",
+    "email": "michael.lopez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-106",
+    "branch_name": "BeanStack Rivas San Diego",
+    "start_date": "2023-02-09",
+    "status": "active"
+  },
+  {
+    "id": "staff-0613",
+    "name": "Franklin Wright",
+    "email": "franklin.wright@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-106",
+    "branch_name": "BeanStack Rivas San Diego",
+    "start_date": "2021-01-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0614",
+    "name": "David Molina",
+    "email": "david.molina@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-106",
+    "branch_name": "BeanStack Rivas San Diego",
+    "start_date": "2021-11-26",
+    "status": "active"
+  },
+  {
+    "id": "staff-0615",
+    "name": "Elizabeth Sharp",
+    "email": "elizabeth.sharp@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-107",
+    "branch_name": "BeanStack Downtown San Diego",
+    "start_date": "2016-11-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0616",
+    "name": "Matthew Schwartz",
+    "email": "matthew.schwartz@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-107",
+    "branch_name": "BeanStack Downtown San Diego",
+    "start_date": "2016-12-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0617",
+    "name": "Bryan Parker",
+    "email": "bryan.parker@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-107",
+    "branch_name": "BeanStack Downtown San Diego",
+    "start_date": "2021-06-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0618",
+    "name": "Jonathan Jacobson",
+    "email": "jonathan.jacobson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-107",
+    "branch_name": "BeanStack Downtown San Diego",
+    "start_date": "2021-12-16",
+    "status": "active"
+  },
+  {
+    "id": "staff-0619",
+    "name": "Emily Wilson",
+    "email": "emily.wilson@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-108",
+    "branch_name": "BeanStack Harbor San Diego",
+    "start_date": "2022-02-11",
+    "status": "active"
+  },
+  {
+    "id": "staff-0620",
+    "name": "Elizabeth Mendez",
+    "email": "elizabeth.mendez@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-108",
+    "branch_name": "BeanStack Harbor San Diego",
+    "start_date": "2022-02-12",
+    "status": "active"
+  },
+  {
+    "id": "staff-0621",
+    "name": "Casey Hernandez",
+    "email": "casey.hernandez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-108",
+    "branch_name": "BeanStack Harbor San Diego",
+    "start_date": "2023-05-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0622",
+    "name": "Lisa Perry",
+    "email": "lisa.perry@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-108",
+    "branch_name": "BeanStack Harbor San Diego",
+    "start_date": "2023-09-17",
+    "status": "active"
+  },
+  {
+    "id": "staff-0623",
+    "name": "Kaitlin Medina",
+    "email": "kaitlin.medina@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-108",
+    "branch_name": "BeanStack Harbor San Diego",
+    "start_date": "2023-09-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0624",
+    "name": "Colleen Wright",
+    "email": "colleen.wright@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-108",
+    "branch_name": "BeanStack Harbor San Diego",
+    "start_date": "2024-08-21",
+    "status": "active"
+  },
+  {
+    "id": "staff-0625",
+    "name": "Shelley Miller",
+    "email": "shelley.miller@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-108",
+    "branch_name": "BeanStack Harbor San Diego",
+    "start_date": "2025-08-07",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0626",
+    "name": "Michael Miller",
+    "email": "michael.miller@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-109",
+    "branch_name": "BeanStack Arts District San Diego",
+    "start_date": "2017-08-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0627",
+    "name": "Amy Kelley",
+    "email": "amy.kelley@beanstack.com",
+    "role": "Assistant Manager",
+    "branch_id": "branch-109",
+    "branch_name": "BeanStack Arts District San Diego",
+    "start_date": "2017-08-19",
+    "status": "active"
+  },
+  {
+    "id": "staff-0628",
+    "name": "Laura Hernandez",
+    "email": "laura.hernandez@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-109",
+    "branch_name": "BeanStack Arts District San Diego",
+    "start_date": "2023-08-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0629",
+    "name": "Joseph Wilson",
+    "email": "joseph.wilson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-109",
+    "branch_name": "BeanStack Arts District San Diego",
+    "start_date": "2020-01-27",
+    "status": "active"
+  },
+  {
+    "id": "staff-0630",
+    "name": "Kevin Davis",
+    "email": "kevin.davis@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-109",
+    "branch_name": "BeanStack Arts District San Diego",
+    "start_date": "2024-10-24",
+    "status": "active"
+  },
+  {
+    "id": "staff-0631",
+    "name": "Rhonda Chavez",
+    "email": "rhonda.chavez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-109",
+    "branch_name": "BeanStack Arts District San Diego",
+    "start_date": "2018-05-09",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0632",
+    "name": "Joyce Brown",
+    "email": "joyce.brown@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-109",
+    "branch_name": "BeanStack Arts District San Diego",
+    "start_date": "2019-05-31",
+    "status": "inactive"
+  },
+  {
+    "id": "staff-0633",
+    "name": "Robert Cummings",
+    "email": "robert.cummings@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-110",
+    "branch_name": "BeanStack Waterfront Portland",
+    "start_date": "2022-06-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0634",
+    "name": "Robert Reese",
+    "email": "robert.reese@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-110",
+    "branch_name": "BeanStack Waterfront Portland",
+    "start_date": "2025-07-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0635",
+    "name": "Amber Cooper",
+    "email": "amber.cooper@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-110",
+    "branch_name": "BeanStack Waterfront Portland",
+    "start_date": "2023-12-10",
+    "status": "active"
+  },
+  {
+    "id": "staff-0636",
+    "name": "Zachary Michael",
+    "email": "zachary.michael@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-110",
+    "branch_name": "BeanStack Waterfront Portland",
+    "start_date": "2024-10-13",
+    "status": "active"
+  },
+  {
+    "id": "staff-0637",
+    "name": "Timothy Johnson",
+    "email": "timothy.johnson@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-110",
+    "branch_name": "BeanStack Waterfront Portland",
+    "start_date": "2023-01-07",
+    "status": "active"
+  },
+  {
+    "id": "staff-0638",
+    "name": "Randy Cannon",
+    "email": "randy.cannon@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-111",
+    "branch_name": "BeanStack Main Street Portland",
+    "start_date": "2016-10-01",
+    "status": "active"
+  },
+  {
+    "id": "staff-0639",
+    "name": "Maria Fisher",
+    "email": "maria.fisher@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-111",
+    "branch_name": "BeanStack Main Street Portland",
+    "start_date": "2021-02-06",
+    "status": "active"
+  },
+  {
+    "id": "staff-0640",
+    "name": "Janet Kane DVM",
+    "email": "janet.dvm@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-111",
+    "branch_name": "BeanStack Main Street Portland",
+    "start_date": "2019-08-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0641",
+    "name": "Michael Stanley",
+    "email": "michael.stanley@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-111",
+    "branch_name": "BeanStack Main Street Portland",
+    "start_date": "2022-03-14",
+    "status": "active"
+  },
+  {
+    "id": "staff-0642",
+    "name": "Martha Bailey",
+    "email": "martha.bailey@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-111",
+    "branch_name": "BeanStack Main Street Portland",
+    "start_date": "2022-08-23",
+    "status": "active"
+  },
+  {
+    "id": "staff-0643",
+    "name": "Joshua Rice",
+    "email": "joshua.rice@beanstack.com",
+    "role": "Manager",
+    "branch_id": "branch-112",
+    "branch_name": "BeanStack Jasmine Portland",
+    "start_date": "2023-06-04",
+    "status": "active"
+  },
+  {
+    "id": "staff-0644",
+    "name": "Courtney Smith",
+    "email": "courtney.smith@beanstack.com",
+    "role": "Shift Lead",
+    "branch_id": "branch-112",
+    "branch_name": "BeanStack Jasmine Portland",
+    "start_date": "2023-05-29",
+    "status": "active"
+  },
+  {
+    "id": "staff-0645",
+    "name": "Edwin Nunez",
+    "email": "edwin.nunez@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-112",
+    "branch_name": "BeanStack Jasmine Portland",
+    "start_date": "2025-10-15",
+    "status": "active"
+  },
+  {
+    "id": "staff-0646",
+    "name": "Kim Morrow",
+    "email": "kim.morrow@beanstack.com",
+    "role": "Barista",
+    "branch_id": "branch-112",
+    "branch_name": "BeanStack Jasmine Portland",
+    "start_date": "2024-07-04",
+    "status": "active"
+  }
+]

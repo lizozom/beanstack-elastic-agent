@@ -1,0 +1,11 @@
+[project]
+name = "beanstack"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.78.0",
+    "faker>=40.1.2",
+    "python-dotenv>=1.2.1",
+]
