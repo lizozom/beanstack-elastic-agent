@@ -40,8 +40,7 @@ steps:
     with:
       index: beanstack-reports
       size: 3
-      sort:
-        - date: desc
+      sort: "date:desc"
       query:
         term:
           branch_id: "{{ inputs.branch_id }}"
@@ -52,8 +51,7 @@ steps:
     with:
       index: beanstack-financial-reports
       size: 1
-      sort:
-        - start_date: desc
+      sort: "start_date:desc"
       query:
         term:
           branch_id: "{{ inputs.branch_id }}"
@@ -95,10 +93,14 @@ steps:
         - "{{ inputs.branch_id }}"
         - "{{ inputs.severity }}"
       severity: "{{ inputs.severity }}"
+      owner: "cases"
+      settings:
+        syncAlerts: false
       connector:
         id: "none"
         name: "none"
         type: ".none"
+        fields: null
 
   # Step 6: Log confirmation
   - name: log_case_created

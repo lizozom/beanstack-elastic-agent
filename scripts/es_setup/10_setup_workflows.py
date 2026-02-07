@@ -21,6 +21,10 @@ KIBANA_URL = os.getenv("KIBANA_ENDPOINT")
 API_KEY = os.getenv("ELASTICSEARCH_API_KEY")
 
 WORKFLOWS_DIR = Path(__file__).parent / "workflows"
+WORKFLOW_IDS_FILE = Path(__file__).parent / "workflow_ids.json"
+
+# Workflows that should be created but not enabled (e.g. invalid/WIP)
+DISABLED_WORKFLOWS = set()
 
 
 def get_kibana_base_url() -> str:
@@ -50,6 +54,26 @@ def load_workflow_files() -> list[tuple[str, str]]:
     return workflows
 
 
+def delete_old_workflows(base_url: str, headers: dict):
+    """Delete previously deployed workflows using the saved ID mapping."""
+    if not WORKFLOW_IDS_FILE.exists():
+        print("  No previous workflow_ids.json found, skipping cleanup.")
+        return
+    old_mapping = json.loads(WORKFLOW_IDS_FILE.read_text())
+    if not old_mapping:
+        print("  No previous workflows to delete.")
+        return
+    for name, wf_id in old_mapping.items():
+        url = f"{base_url}/api/workflows/{wf_id}"
+        resp = requests.delete(url, headers=headers)
+        if resp.status_code in (200, 204):
+            print(f"    ✓ Deleted old workflow '{name}' ({wf_id})")
+        elif resp.status_code == 404:
+            print(f"    - Workflow '{name}' ({wf_id}) already gone")
+        else:
+            print(f"    ⚠ Failed to delete '{name}': {resp.status_code}")
+
+
 def deploy_workflow(base_url: str, headers: dict, filename: str, raw_yaml: str):
     """Deploy a single workflow via Kibana API.
 
@@ -73,10 +97,11 @@ def deploy_workflow(base_url: str, headers: dict, filename: str, raw_yaml: str):
     wf_id = resp.json().get("id", "unknown")
 
     # Step 2: Set name, description, and enable via PUT
+    enable = name not in DISABLED_WORKFLOWS
     put_resp = requests.put(
         f"{api_url}/{wf_id}",
         headers=headers,
-        json={"name": name, "description": description, "enabled": True},
+        json={"name": name, "description": description, "enabled": enable},
     )
     if put_resp.status_code == 200:
         data = put_resp.json()
@@ -121,11 +146,14 @@ def main():
     else:
         print(f"  ⚠ Could not enable workflows: {settings_resp.status_code} - {settings_resp.text}")
 
-    print("\nStep 2: Loading workflow definitions...")
+    print("\nStep 2: Deleting old workflows...")
+    delete_old_workflows(base_url, headers)
+
+    print("\nStep 3: Loading workflow definitions...")
     workflows = load_workflow_files()
     print(f"  Found {len(workflows)} workflow YAML files.")
 
-    print("\nStep 3: Deploying workflows...")
+    print("\nStep 4: Deploying workflows...")
     results = {}
     for filename, raw_yaml in workflows:
         parsed = yaml.safe_load(raw_yaml)
@@ -141,9 +169,8 @@ def main():
 
     # Save name → ID mapping for use by 11_setup_agent.py
     successful = {n: wid for n, wid in results.items() if wid}
-    mapping_file = Path(__file__).parent / "workflow_ids.json"
-    mapping_file.write_text(json.dumps(successful, indent=2))
-    print(f"\n  Saved workflow ID mapping to {mapping_file}")
+    WORKFLOW_IDS_FILE.write_text(json.dumps(successful, indent=2))
+    print(f"\n  Saved workflow ID mapping to {WORKFLOW_IDS_FILE}")
 
     failed = [n for n, wid in results.items() if wid is None]
     if failed:
