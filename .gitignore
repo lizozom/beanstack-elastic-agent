@@ -8,8 +8,13 @@ wheels/
 
 # Virtual environments
 .venv
-data/generated/reports/
 .python-version
 pyproject.toml
 .env
 .vscode/mcp.json
+scripts/es_setup/02_ingest_data.py
+
+#data
+
+data/generated/financial-reports/
+data/generated/reports/
