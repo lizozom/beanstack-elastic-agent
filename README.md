@@ -1,90 +1,171 @@
-<p align="center">
-  <img src="beanstack.jpg" alt="BeanStack Logo" width="300">
-</p>
+# BeanStack: Coffee Chain Operational Intelligence Agent
 
-<h1 align="center">BeanStack: Coffee Chain Operational Intelligence</h1>
+![BeanStack Logo](data/logo.png)
 
-<p align="center">
-  An AI-powered agent for managing a 100+ branch coffee chain, built with Elasticsearch and Claude.
-</p>
+> Built for the [Elastic Agent Builder Hackathon](https://elasticsearch.devpost.com/)
 
-<p align="center">
-  <a href="https://elasticsearch.devpost.com/">Built for the Elastic Search AI Hackathon</a>
-</p>
+BeanStack is an AI-powered operational intelligence agent for a fictional 100+ branch coffee chain in the United States. It uses **Elastic Agent Builder** to help headquarters staff monitor operations, analyze branch reports, track financial performance, and communicate with branch managers -- all through natural language conversation.
 
----
+## What It Does
 
-## What is BeanStack?
-
-BeanStack is an operational intelligence agent that helps coffee chain executives:
-
-- Get **daily briefs** summarizing what happened across all branches
-- Analyze **weekly manager reports** (unstructured emails about staffing, equipment, sales)
-- Query by **time** ("staffing issues last month") or **location** ("compare east vs west coast revenue")
-- Find **staff information** and send messages to branch managers
-- Identify **gaps** (branches that haven't reported recently)
+- **Daily Briefs** -- Summarize the last 24 hours across all branches
+- **Weekly Report Analysis** -- Search and analyze unstructured manager reports using hybrid search (Cohere embeddings + BM25 via RRF)
+- **Financial Analytics** -- Compare revenue, labor costs, customer satisfaction, and turnover across branches and regions
+- **Geo-Spatial Queries** -- "Compare east coast vs west coast performance" using geo-distance and bounding box filters
+- **Time-Aware Search** -- "What staffing problems happened last month?" with automatic date filtering and Gaussian decay
+- **Staff Lookup** -- "Who works at the NYC 5th Ave branch?"
+- **Gap Detection** -- Identify branches with missing or overdue reports
+- **Manager Messaging** -- Send emails to branch managers directly from the agent via Kibana Workflows
+- **Escalation Workflows** -- Automated escalation for critical issues
 
 ## Tech Stack
 
 | Component | Technology |
-|-----------|------------|
+|-----------|-----------|
 | Search & Storage | Elasticsearch 9.x |
-| Embeddings | Cohere Embed 4 |
-| Search Strategy | Hybrid (RRF: vectors + BM25) |
-| Agent Orchestration | Elastic Agent Builder + Claude |
-| UI | Gradio |
+| Embeddings | Cohere Embed v4 (`embed-v4.0`) |
+| Hybrid Search | RRF (Reciprocal Rank Fusion) |
+| Agent Orchestration | Elastic Agent Builder (Claude Sonnet 4.5) |
+| Automation | Kibana Workflows |
+| Data Generation | Claude Haiku 4.5, Faker |
+| Package Manager | uv |
+
+## Architecture
+
+The agent is built entirely on the Elastic platform:
+
+- **4 Elasticsearch indices** (`beanstack-branches`, `beanstack-staff`, `beanstack-reports`, `beanstack-financial-reports`) store all operational data
+- **14 custom tools** registered in Agent Builder handle search, analytics, and workflow triggers
+- **4 Kibana Workflows** automate daily briefs, manager messaging, missing report reminders, and escalations
+- **Semantic search** on reports and financial narratives via a Cohere inference endpoint with `semantic_text` fields
+
+## Prerequisites
+
+You will need accounts for the following services:
+
+1. **Elastic Cloud** -- Elasticsearch 9.x + Kibana with Agent Builder enabled
+2. **Cohere** -- API key for Embed v4 text embeddings
+3. **Anthropic** -- API key for synthetic data generation (Claude Haiku 4.5)
+4. **SMTP provider** -- For the email connector (e.g., Gmail app password, SendGrid, etc.)
 
 ## Setup
 
-### Prerequisites
-
-1. **Elasticsearch Cloud account** - [Sign up](https://cloud.elastic.co/)
-2. **Cohere API key** - [Get one](https://cohere.com/)
-3. **Anthropic API key** - [Get one](https://console.anthropic.com/)
-4. **Python 3.11+** with `uv` package manager
-
-### Installation
+### 1. Clone and install dependencies
 
 ```bash
-# Clone the repo
-git clone https://github.com/your-repo/beanstack.git
-cd beanstack
-
-# Install dependencies
+git clone <repo-url>
+cd elastic-agent-hackathon
 uv sync
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your API keys
 ```
 
-### Generate Sample Data
+### 2. Configure environment variables
+
+Create a `.env` file in the project root:
+
+```env
+# Elasticsearch
+ELASTICSEARCH_ENDPOINT=https://your-cluster.es.cloud.es.io:443
+ELASTICSEARCH_API_KEY=your-api-key
+
+# Kibana
+KIBANA_ENDPOINT=https://your-cluster.kb.cloud.es.io:443
+
+# Cohere (for embeddings)
+COHERE_API_KEY=your-cohere-api-key
+
+# Anthropic (for data generation only)
+ANTHROPIC_API_KEY=your-anthropic-api-key
+
+# SMTP (for email workflows)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_FROM=beanstack-hq@yourcompany.com
+SMTP_USER=your-smtp-user
+SMTP_PASSWORD=your-smtp-password
+```
+
+### 3. Generate synthetic data
+
+Generate branches, staff, weekly reports, and financial reports:
 
 ```bash
-# Generate branches and staff
 uv run python scripts/data_generation/branches.py
 uv run python scripts/data_generation/staff.py
-uv run python scripts/data_generation/branch_narratives.py
-
-# Generate weekly reports (uses Claude Haiku)
 uv run python scripts/data_generation/weekly_reports.py
+uv run python scripts/data_generation/quarterly_reports.py
+```
+
+This creates ~100 branches, ~600 staff members, ~2,600 weekly reports (LLM-generated), and quarterly/yearly financial reports under `data/generated/`.
+
+### 4. Set up Elasticsearch
+
+Run the setup scripts in order:
+
+```bash
+# Enable Agent Builder, Workflows, and configure the email connector in Kibana
+uv run python scripts/es_setup/00_init_es.py
+
+# Create indices and Cohere inference endpoint
+uv run python scripts/es_setup/01_setup_indices.py
+
+# Ingest branches and staff
+uv run python scripts/es_setup/02_ingest_data.py
+
+# Ingest weekly reports (with semantic embeddings)
+uv run python scripts/es_setup/03_ingest_reports.py
+
+# Ingest financial reports
+uv run python scripts/es_setup/04_ingest_financial.py
+```
+
+### 5. Deploy workflows and agent
+
+```bash
+# Deploy Kibana Workflows (daily brief, messaging, reminders, escalation)
+uv run python scripts/es_setup/10_setup_workflows.py
+
+# Create the BeanStack agent with all tools
+uv run python scripts/es_setup/11_setup_agent.py
 ```
 
 ## Usage
 
-### Via Elastic UI
+Once setup is complete, open the Agent Builder chat in Kibana:
 
-1. Navigate to your Elasticsearch deployment
-2. Open the **Agent Builder** interface
-3. Select the BeanStack agent
-4. Start asking questions:
-   - "Give me a brief of yesterday's reports"
-   - "Which branches had equipment issues last week?"
-   - "Compare sales between NYC and LA branches"
-   - "Who manages the Seattle downtown location?"
+```
+https://your-cluster.kb.cloud.es.io/app/agent_builder/chat/beanstack-research
+```
 
----
+### Example Queries
 
-<p align="center">
-  Made with coffee and AI
-</p>
+- "Give me a daily brief"
+- "What equipment issues were reported in the Northeast last month?"
+- "Compare revenue between the West and Midwest regions for Q4 2025"
+- "Which branches haven't submitted reports this week?"
+- "Who is the manager at the Chicago Downtown branch?"
+- "Send a message to the manager of branch-042 asking about their espresso machine repair"
+- "Which branches are underperforming on customer satisfaction?"
+
+## Project Structure
+
+```
+scripts/
+  data_generation/       # Synthetic data generators (branches, staff, reports)
+  es_setup/
+    00_init_es.py        # Enable features & email connector
+    01_setup_indices.py  # Create indices & inference endpoint
+    02_ingest_data.py    # Ingest branches & staff
+    03_ingest_reports.py # Ingest weekly reports
+    04_ingest_financial.py # Ingest financial reports
+    10_setup_workflows.py  # Deploy Kibana Workflows
+    11_setup_agent.py    # Create the agent with tools
+    mappings/            # Elasticsearch index mappings
+    tools/               # Custom tool definitions for Agent Builder
+    workflows/           # Workflow YAML definitions
+data/
+  generated/             # Generated synthetic data (not committed)
+```
+
+## License
+
+This project was built for the [Elastic Agent Builder Hackathon](https://elasticsearch.devpost.com/).
