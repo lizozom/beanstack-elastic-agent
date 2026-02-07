@@ -424,17 +424,14 @@ def generate_quarterly_reports(branch_ids: list[str] | None = None):
                 "labor_hours": labor_hours,
                 "labor_cost_pct": labor_cost_pct,
                 "labor_manager_narrative": narr.get("labor_manager_narrative", ""),
-                "labor_manager_narrative_embedding": narr.get("labor_manager_narrative", ""),
                 "inventory_waste_pct": waste_pct,
                 "top_selling_items": top_items,
                 "inventory_manager_narrative": narr.get("inventory_manager_narrative", ""),
-                "inventory_manager_narrative_embedding": narr.get("inventory_manager_narrative", ""),
                 "customer_satisfaction": satisfaction,
                 "employee_count": employee_count,
                 "turnover_count": turnover_count,
                 "equipment_issues": equipment_issues,
                 "notes": narr.get("notes", ""),
-                "notes_embedding": narr.get("notes", ""),
             }
             branch_reports.append(report)
             save_report_to_file(report, submitted_at)
