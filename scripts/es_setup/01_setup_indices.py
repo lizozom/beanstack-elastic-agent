@@ -1,6 +1,6 @@
 """
 Set up Elasticsearch indices for BeanStack coffee chain data.
-Creates indices for branches, staff, and weekly reports.
+Creates indices for branches, staff, weekly reports, and financial reports.
 Reports index includes a semantic_text field for Cohere embed-english-v4 embeddings.
 """
 
@@ -8,34 +8,23 @@ import json
 import os
 import sys
 from pathlib import Path
-from dotenv import load_dotenv
+
 from elasticsearch import Elasticsearch
 
-load_dotenv()
+from es_client import (
+    INFERENCE_ID,
+    INDEX_BRANCHES,
+    INDEX_FINANCIAL,
+    INDEX_REPORTS,
+    INDEX_STAFF,
+    get_es_client,
+    print_connection_info,
+)
 
-ES_URL = os.getenv("ELASTICSEARCH_ENDPOINT")
-ES_API_KEY = os.getenv("ELASTICSEARCH_API_KEY")
-COHERE_API_KEY = os.getenv("COHERE_API_KEY")
-
-INDEX_BRANCHES = "beanstack-branches"
-INDEX_STAFF = "beanstack-staff"
-INDEX_REPORTS = "beanstack-reports"
-INDEX_FINANCIAL = "beanstack-financial-reports"
-
-INFERENCE_ID = "cohere-embed"
 MAPPINGS_DIR = Path(__file__).parent / "mappings"
 
 
-def get_es_client() -> Elasticsearch:
-    """Create an Elasticsearch client from env vars."""
-    if not ES_URL:
-        raise ValueError("ELASTICSEARCH_ENDPOINT is required")
-    if not ES_API_KEY:
-        raise ValueError("ELASTICSEARCH_API_KEY is required")
-    return Elasticsearch(ES_URL, api_key=ES_API_KEY)
-
-
-def create_inference_endpoint(es: Elasticsearch):
+def create_inference_endpoint(es: Elasticsearch) -> None:
     """Create the Cohere embedding inference endpoint if it doesn't exist."""
     try:
         es.inference.get(inference_id=INFERENCE_ID)
@@ -44,7 +33,8 @@ def create_inference_endpoint(es: Elasticsearch):
     except Exception:
         pass
 
-    if not COHERE_API_KEY:
+    cohere_api_key = os.getenv("COHERE_API_KEY")
+    if not cohere_api_key:
         print("  WARNING: COHERE_API_KEY not set. Skipping inference endpoint creation.")
         print("  You'll need to create it manually before indexing reports.")
         return
@@ -56,15 +46,13 @@ def create_inference_endpoint(es: Elasticsearch):
         body={
             "service": "cohere",
             "service_settings": {
-                "api_key": COHERE_API_KEY,
+                "api_key": cohere_api_key,
                 "model_id": "embed-v4.0",
                 "embedding_type": "float",
             },
         },
     )
-    print(f"  ✓ Inference endpoint '{INFERENCE_ID}' created.")
-
-
+    print(f"  Done: Inference endpoint '{INFERENCE_ID}' created.")
 
 
 def load_mapping(filename: str) -> dict:
@@ -74,7 +62,7 @@ def load_mapping(filename: str) -> dict:
     return json.loads(raw)
 
 
-def create_index(es: Elasticsearch, name: str, mappings: dict, force: bool = False):
+def create_index(es: Elasticsearch, name: str, mappings: dict, force: bool = False) -> None:
     """Create an index. Skips if it already exists unless force=True."""
     if es.indices.exists(index=name):
         if force:
@@ -86,7 +74,7 @@ def create_index(es: Elasticsearch, name: str, mappings: dict, force: bool = Fal
 
     print(f"  Creating index '{name}'...")
     es.indices.create(index=name, mappings=mappings)
-    print(f"  ✓ Index '{name}' created.")
+    print(f"  Done: Index '{name}' created.")
 
 
 ALL_INDICES = {
@@ -100,7 +88,6 @@ ALL_INDICES = {
 def main():
     delete_only = "--delete" in sys.argv
     force = "--force" in sys.argv
-    # Optional: specify which indices to operate on (e.g. "financial", "reports")
     requested = [a for a in sys.argv[1:] if not a.startswith("--")]
     if requested:
         indices = {k: v for k, v in ALL_INDICES.items() if k in requested}
@@ -113,15 +100,15 @@ def main():
 
     print("Connecting to Elasticsearch...")
     es = get_es_client()
-    info = es.info()
-    print(f"  Connected to cluster: {info['cluster_name']} (v{info['version']['number']})\n")
+    print_connection_info(es)
+    print()
 
     if delete_only:
         print("Deleting indices...")
         for name, (idx, _) in indices.items():
             if es.indices.exists(index=idx):
                 es.indices.delete(index=idx)
-                print(f"  ✓ Deleted '{idx}'")
+                print(f"  Done: Deleted '{idx}'")
             else:
                 print(f"  '{idx}' does not exist, skipping.")
         return

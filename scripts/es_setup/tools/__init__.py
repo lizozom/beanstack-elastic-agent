@@ -17,7 +17,6 @@ from .turnover_by_branch import TOOL as turnover_by_branch
 from .equipment_issues_by_branch import TOOL as equipment_issues_by_branch
 from .branch_financial_summary import TOOL as branch_financial_summary
 from .wf_send_manager_message import TOOL as wf_send_manager_message
-from .wf_daily_brief import TOOL as wf_daily_brief
 from .wf_missing_reports_reminder import TOOL as wf_missing_reports_reminder
 from .wf_escalation import TOOL as wf_escalation
 

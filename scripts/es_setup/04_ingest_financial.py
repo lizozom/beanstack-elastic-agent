@@ -11,33 +11,22 @@ Usage:
 """
 
 import json
-import os
 import sys
-from pathlib import Path
 
-from dotenv import load_dotenv
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import bulk
 
-load_dotenv()
+from es_client import (
+    DATA_DIR,
+    INDEX_FINANCIAL,
+    PROJECT_ROOT,
+    get_es_client,
+    print_connection_info,
+)
 
-ES_URL = os.getenv("ELASTICSEARCH_ENDPOINT")
-ES_API_KEY = os.getenv("ELASTICSEARCH_API_KEY")
-
-INDEX_FINANCIAL = "beanstack-financial-reports"
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-DATA_DIR = PROJECT_ROOT / "data" / "generated"
 INDEX_FILE = DATA_DIR / "financial-reports" / "index.json"
 
 DEFAULT_BATCH_SIZE = 50
-
-
-def get_es_client() -> Elasticsearch:
-    if not ES_URL:
-        raise ValueError("ELASTICSEARCH_ENDPOINT is required")
-    if not ES_API_KEY:
-        raise ValueError("ELASTICSEARCH_API_KEY is required")
-    return Elasticsearch(ES_URL, api_key=ES_API_KEY)
 
 
 def load_index() -> list[dict]:
@@ -45,7 +34,7 @@ def load_index() -> list[dict]:
         return json.load(f)
 
 
-def ingest_financial(es: Elasticsearch, batch_size: int):
+def ingest_financial(es: Elasticsearch, batch_size: int) -> tuple[int, int]:
     """Bulk-index financial reports in batches."""
     index_entries = load_index()
     total = len(index_entries)
@@ -107,8 +96,8 @@ def main():
 
     print("Connecting to Elasticsearch...")
     es = get_es_client()
-    info = es.info()
-    print(f"  Connected to cluster: {info['cluster_name']} (v{info['version']['number']})\n")
+    print_connection_info(es)
+    print()
 
     print(f"Ingesting financial reports (batch size: {batch_size})...")
     success, errors = ingest_financial(es, batch_size)

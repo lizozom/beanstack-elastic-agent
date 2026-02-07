@@ -1,7 +1,7 @@
 [project]
 name = "beanstack"
 version = "0.1.0"
-description = "Add your description here"
+description = "BeanStack: AI-powered operational intelligence agent for a 100+ branch coffee chain"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

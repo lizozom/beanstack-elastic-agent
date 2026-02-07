@@ -11,34 +11,24 @@ Usage:
 """
 
 import json
-import os
 import re
 import sys
 from pathlib import Path
 
-from dotenv import load_dotenv
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import bulk
 
-load_dotenv()
+from es_client import (
+    DATA_DIR,
+    INDEX_REPORTS,
+    PROJECT_ROOT,
+    get_es_client,
+    print_connection_info,
+)
 
-ES_URL = os.getenv("ELASTICSEARCH_ENDPOINT")
-ES_API_KEY = os.getenv("ELASTICSEARCH_API_KEY")
-
-INDEX_REPORTS = "beanstack-reports"
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-DATA_DIR = PROJECT_ROOT / "data" / "generated"
 INDEX_FILE = DATA_DIR / "reports" / "index.json"
 
 DEFAULT_BATCH_SIZE = 50
-
-
-def get_es_client() -> Elasticsearch:
-    if not ES_URL:
-        raise ValueError("ELASTICSEARCH_ENDPOINT is required")
-    if not ES_API_KEY:
-        raise ValueError("ELASTICSEARCH_API_KEY is required")
-    return Elasticsearch(ES_URL, api_key=ES_API_KEY)
 
 
 def parse_report_file(file_path: Path) -> dict:
@@ -77,7 +67,7 @@ def load_index() -> list[dict]:
         return json.load(f)
 
 
-def ingest_reports(es: Elasticsearch, batch_size: int):
+def ingest_reports(es: Elasticsearch, batch_size: int) -> tuple[int, int]:
     """Bulk-index reports in batches to avoid overwhelming the inference endpoint."""
     index_entries = load_index()
     total = len(index_entries)
@@ -146,8 +136,8 @@ def main():
 
     print("Connecting to Elasticsearch...")
     es = get_es_client()
-    info = es.info()
-    print(f"  Connected to cluster: {info['cluster_name']} (v{info['version']['number']})\n")
+    print_connection_info(es)
+    print()
 
     print(f"Ingesting reports (batch size: {batch_size})...")
     success, errors = ingest_reports(es, batch_size)

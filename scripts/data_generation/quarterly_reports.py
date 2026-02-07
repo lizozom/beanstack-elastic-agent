@@ -26,7 +26,8 @@ import calendar
 import hashlib
 import json
 import random
-import os
+import sys
+from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -466,8 +467,6 @@ def save_report_to_file(report: dict, submitted_at: datetime) -> str:
 
 
 def main():
-    import sys
-
     branch_ids = [a for a in sys.argv[1:] if not a.startswith("--")] or None
     print("Generating quarterly reports (with LLM narratives)...")
 
@@ -499,7 +498,6 @@ def main():
     print(f"  Index saved to {index_path}")
 
     # Stats
-    from collections import Counter
     periods = Counter(r["period"] for r in reports)
     print("\nReports by quarter:")
     for period, count in sorted(periods.items()):

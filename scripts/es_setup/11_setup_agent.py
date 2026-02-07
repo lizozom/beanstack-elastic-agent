@@ -6,20 +6,13 @@ Deletes existing resources first for a clean slate.
 
 import copy
 import json
-import os
 from pathlib import Path
-from urllib.parse import urlparse, urlunparse
 
 import requests
-from dotenv import load_dotenv
 
+from kibana_client import get_headers, get_kibana_base_url
 from system_prompt import SYSTEM_PROMPT
 from tools import ALL_TOOLS
-
-load_dotenv()
-
-KIBANA_URL = os.getenv("KIBANA_ENDPOINT")
-API_KEY = os.getenv("ELASTICSEARCH_API_KEY")
 
 AGENT_ID = "beanstack-research"
 
@@ -32,26 +25,7 @@ BUILTIN_TOOL_IDS = [
 ]
 
 
-def get_kibana_base_url() -> str:
-    """Extract the base Kibana URL (scheme + host) from the configured endpoint."""
-    if not KIBANA_URL:
-        raise ValueError("KIBANA_ENDPOINT is required")
-    parsed = urlparse(KIBANA_URL)
-    return urlunparse((parsed.scheme, parsed.netloc, "", "", "", ""))
-
-
-def get_headers() -> dict:
-    """Return common headers for Kibana API requests."""
-    if not API_KEY:
-        raise ValueError("ELASTICSEARCH_API_KEY is required")
-    return {
-        "Authorization": f"ApiKey {API_KEY}",
-        "Content-Type": "application/json",
-        "kbn-xsrf": "true",
-    }
-
-
-def delete_agent_if_exists(base_url: str, headers: dict):
+def delete_agent_if_exists(base_url: str, headers: dict) -> None:
     """Delete the agent if it already exists."""
     url = f"{base_url}/api/agent_builder/agents/{AGENT_ID}"
     resp = requests.get(url, headers=headers)
@@ -60,18 +34,18 @@ def delete_agent_if_exists(base_url: str, headers: dict):
         print(f"  Agent '{AGENT_ID}' exists, deleting...")
         del_resp = requests.delete(url, headers=headers)
         if del_resp.status_code in (200, 204):
-            print(f"  ✓ Agent '{AGENT_ID}' deleted.")
+            print(f"  Deleted agent '{AGENT_ID}'.")
         else:
-            print(f"  ✗ Failed to delete agent: {del_resp.status_code} - {del_resp.text}")
+            print(f"  FAILED to delete agent: {del_resp.status_code} - {del_resp.text}")
             raise SystemExit(1)
     elif resp.status_code == 404:
         print(f"  Agent '{AGENT_ID}' does not exist, skipping delete.")
     else:
-        print(f"  ✗ Error checking agent: {resp.status_code} - {resp.text}")
+        print(f"  Error checking agent: {resp.status_code} - {resp.text}")
         raise SystemExit(1)
 
 
-def delete_tool_if_exists(base_url: str, headers: dict, tool_id: str):
+def delete_tool_if_exists(base_url: str, headers: dict, tool_id: str) -> None:
     """Delete a custom tool if it already exists."""
     url = f"{base_url}/api/agent_builder/tools/{tool_id}"
     resp = requests.get(url, headers=headers)
@@ -79,9 +53,12 @@ def delete_tool_if_exists(base_url: str, headers: dict, tool_id: str):
     if resp.status_code == 200:
         del_resp = requests.delete(url, headers=headers)
         if del_resp.status_code in (200, 204):
-            print(f"    ✓ Deleted existing tool '{tool_id}'")
+            print(f"    Deleted existing tool '{tool_id}'")
         else:
-            print(f"    ✗ Failed to delete tool '{tool_id}': {del_resp.status_code} - {del_resp.text}")
+            print(
+                f"    FAILED to delete tool '{tool_id}': "
+                f"{del_resp.status_code} - {del_resp.text}"
+            )
             raise SystemExit(1)
 
 
@@ -89,7 +66,7 @@ def load_workflow_id_mapping() -> dict:
     """Load the workflow name-to-ID mapping saved by 10_setup_workflows.py."""
     mapping_file = Path(__file__).parent / "workflow_ids.json"
     if not mapping_file.exists():
-        print(f"  ⚠ {mapping_file} not found. Run 10_setup_workflows.py first.")
+        print(f"  WARNING: {mapping_file} not found. Run 10_setup_workflows.py first.")
         return {}
     return json.loads(mapping_file.read_text())
 
@@ -103,14 +80,16 @@ def resolve_workflow_ids(tools: list[dict], wf_mapping: dict) -> list[dict]:
             wf_name = tool["configuration"]["workflow_id"]
             if wf_name in wf_mapping:
                 tool["configuration"]["workflow_id"] = wf_mapping[wf_name]
-                print(f"    Resolved '{wf_name}' → {wf_mapping[wf_name]}")
+                print(f"    Resolved '{wf_name}' -> {wf_mapping[wf_name]}")
             else:
-                print(f"    ⚠ Workflow '{wf_name}' not found in Kibana")
+                print(
+                    f"    WARNING: Workflow '{wf_name}' not found in Kibana"
+                )
         resolved.append(tool)
     return resolved
 
 
-def create_tool(base_url: str, headers: dict, tool: dict):
+def create_tool(base_url: str, headers: dict, tool: dict) -> None:
     """Create a custom tool via the Agent Builder API."""
     tool_id = tool["id"]
     delete_tool_if_exists(base_url, headers, tool_id)
@@ -119,13 +98,16 @@ def create_tool(base_url: str, headers: dict, tool: dict):
     resp = requests.post(url, headers=headers, json=tool)
 
     if resp.status_code in (200, 201):
-        print(f"    ✓ Created tool '{tool_id}' ({tool['type']})")
+        print(f"    Created tool '{tool_id}' ({tool['type']})")
     else:
-        print(f"    ✗ Failed to create tool '{tool_id}': {resp.status_code} - {resp.text}")
+        print(
+            f"    FAILED to create tool '{tool_id}': "
+            f"{resp.status_code} - {resp.text}"
+        )
         raise SystemExit(1)
 
 
-def create_agent(base_url: str, headers: dict):
+def create_agent(base_url: str, headers: dict) -> None:
     """Create the BeanStack Research Agent with all tools assigned."""
     url = f"{base_url}/api/agent_builder/agents"
 
@@ -156,9 +138,9 @@ def create_agent(base_url: str, headers: dict):
     resp = requests.post(url, headers=headers, json=payload)
 
     if resp.status_code in (200, 201):
-        print(f"  ✓ Agent '{AGENT_ID}' created with {len(all_tool_ids)} tools.")
+        print(f"  Agent '{AGENT_ID}' created with {len(all_tool_ids)} tools.")
     else:
-        print(f"  ✗ Failed to create agent: {resp.status_code} - {resp.text}")
+        print(f"  FAILED to create agent: {resp.status_code} - {resp.text}")
         raise SystemExit(1)
 
 

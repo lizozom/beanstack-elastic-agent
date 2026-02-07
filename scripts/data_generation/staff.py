@@ -5,15 +5,15 @@ Generate staff data for BeanStack coffee chain.
 
 import json
 import random
+from collections import Counter
 from dataclasses import dataclass, asdict
 from datetime import datetime, timedelta
+
 from faker import Faker
 
 fake = Faker()
 Faker.seed(42)
 random.seed(42)
-
-ROLES = ["Barista", "Shift Lead", "Assistant Manager", "Manager"]
 
 # Staff count ranges by branch size
 STAFF_BY_SIZE = {
@@ -69,49 +69,40 @@ def generate_start_date(branch_opened: str, role: str) -> str:
     return start.strftime("%Y-%m-%d")
 
 
-def generate_staff_for_branch(branch: dict, staff_id_start: int) -> list[dict]:
+def generate_staff_for_branch(branch: dict, staff_id_start: int) -> tuple[list[dict], int]:
     """Generate all staff for a single branch."""
     staff_list = []
     size = branch["size"]
     min_staff, max_staff = STAFF_BY_SIZE[size]
     staff_count = random.randint(min_staff, max_staff)
 
-    # If branch is closed, all staff are inactive
     branch_closed = branch.get("status") == "closed"
     default_status = "inactive" if branch_closed else "active"
 
     staff_id = staff_id_start
 
+    def add_staff_member(role: str, status: str = default_status) -> None:
+        nonlocal staff_id
+        name = fake.name()
+        member = Staff(
+            id=f"staff-{staff_id:04d}",
+            name=name,
+            email=generate_email(name),
+            role=role,
+            branch_id=branch["id"],
+            branch_name=branch["name"],
+            start_date=generate_start_date(branch["opened_date"], role),
+            status=status,
+        )
+        staff_list.append(asdict(member))
+        staff_id += 1
+
     # Always have exactly one manager
-    manager_name = fake.name()
-    manager = Staff(
-        id=f"staff-{staff_id:04d}",
-        name=manager_name,
-        email=generate_email(manager_name),
-        role="Manager",
-        branch_id=branch["id"],
-        branch_name=branch["name"],
-        start_date=generate_start_date(branch["opened_date"], "Manager"),
-        status=default_status
-    )
-    staff_list.append(asdict(manager))
-    staff_id += 1
+    add_staff_member("Manager")
 
     # One assistant manager for medium/large branches
     if size in ["medium", "large"]:
-        asst_name = fake.name()
-        asst_manager = Staff(
-            id=f"staff-{staff_id:04d}",
-            name=asst_name,
-            email=generate_email(asst_name),
-            role="Assistant Manager",
-            branch_id=branch["id"],
-            branch_name=branch["name"],
-            start_date=generate_start_date(branch["opened_date"], "Assistant Manager"),
-            status=default_status
-        )
-        staff_list.append(asdict(asst_manager))
-        staff_id += 1
+        add_staff_member("Assistant Manager")
         remaining = staff_count - 2
     else:
         remaining = staff_count - 1
@@ -119,55 +110,19 @@ def generate_staff_for_branch(branch: dict, staff_id_start: int) -> list[dict]:
     # Add shift leads (1-2)
     shift_lead_count = min(2, remaining // 2)
     for _ in range(shift_lead_count):
-        name = fake.name()
-        shift_lead = Staff(
-            id=f"staff-{staff_id:04d}",
-            name=name,
-            email=generate_email(name),
-            role="Shift Lead",
-            branch_id=branch["id"],
-            branch_name=branch["name"],
-            start_date=generate_start_date(branch["opened_date"], "Shift Lead"),
-            status=default_status
-        )
-        staff_list.append(asdict(shift_lead))
-        staff_id += 1
+        add_staff_member("Shift Lead")
         remaining -= 1
 
     # Fill rest with baristas
     for _ in range(remaining):
-        name = fake.name()
-        barista = Staff(
-            id=f"staff-{staff_id:04d}",
-            name=name,
-            email=generate_email(name),
-            role="Barista",
-            branch_id=branch["id"],
-            branch_name=branch["name"],
-            start_date=generate_start_date(branch["opened_date"], "Barista"),
-            status=default_status
-        )
-        staff_list.append(asdict(barista))
-        staff_id += 1
+        add_staff_member("Barista")
 
-    # Add some inactive staff (people who quit) - ~20% chance per branch (only for open branches)
+    # ~20% chance of inactive staff (people who quit), only for open branches
     if not branch_closed and random.random() < 0.2:
         inactive_count = random.randint(1, 2)
         for _ in range(inactive_count):
-            name = fake.name()
             role = random.choice(["Barista", "Shift Lead"])
-            inactive = Staff(
-                id=f"staff-{staff_id:04d}",
-                name=name,
-                email=generate_email(name),
-                role=role,
-                branch_id=branch["id"],
-                branch_name=branch["name"],
-                start_date=generate_start_date(branch["opened_date"], role),
-                status="inactive"
-            )
-            staff_list.append(asdict(inactive))
-            staff_id += 1
+            add_staff_member(role, status="inactive")
 
     return staff_list, staff_id
 
@@ -211,7 +166,6 @@ def main():
     print("Updated branches with manager emails")
 
     # Summary
-    from collections import Counter
     roles = Counter(s["role"] for s in all_staff if s["status"] == "active")
     print("\nActive staff by role:")
     for role, count in sorted(roles.items()):

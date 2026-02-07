@@ -5,7 +5,10 @@ Generate branch data for BeanStack coffee chain.
 
 import json
 import random
+from collections import Counter
 from dataclasses import dataclass, asdict
+from datetime import datetime, timedelta
+
 from faker import Faker
 
 fake = Faker()
@@ -124,7 +127,6 @@ def generate_opened_date() -> str:
 
 def generate_closed_date(opened_date: str) -> str:
     """Generate a closed date after the opened date but before Jan 2026."""
-    from datetime import datetime, timedelta
     opened = datetime.strptime(opened_date, "%Y-%m-%d")
     # Closed at least 6 months after opening, but before Jan 2026
     min_close = opened + timedelta(days=180)
@@ -203,7 +205,6 @@ def main():
     print(f"Saved to {output_path}")
 
     # Summary by region
-    from collections import Counter
     regions = Counter(b["region"] for b in branches)
     print("\nBy region:")
     for region, count in sorted(regions.items()):

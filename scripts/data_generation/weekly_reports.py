@@ -6,14 +6,14 @@ Generate weekly reports for BeanStack coffee chain using Claude Haiku.
 import json
 import random
 import hashlib
-import os
+import sys
+from collections import Counter
 from pathlib import Path
 from datetime import datetime, timedelta
-from typing import Optional
-from dotenv import load_dotenv
-import anthropic
 
-# Load .env file
+import anthropic
+from dotenv import load_dotenv
+
 load_dotenv()
 
 random.seed(42)
@@ -84,15 +84,13 @@ def build_prompt(
 """
     narrative_section += "</narrative>"
 
-    print(narrative)
-    message_length = narrative.get("message_length", "medium")  # Default to medium if not specified
-    print(f"  Narrative message length: {message_length}")
+    message_length = narrative.get("message_length", "medium")
     if message_length == "short":
         message_length_words = "60-80 words"
-    elif message_length == "medium":
-        message_length_words = "80-160 words"
     elif message_length == "long":
         message_length_words = "160-200 words"
+    else:
+        message_length_words = "80-160 words"
 
     style_section = f"""
 <style>
@@ -102,9 +100,6 @@ def build_prompt(
 </message_length>
 </style>
 """
-    print(f"  Narrative included: {include_narrative}")
-    print(narrative_section)
-
     prompt = f"""Write a weekly report email from a coffee shop branch manager.
 
 <context>
@@ -181,8 +176,6 @@ From: {manager["email"]}
 </output>"""
 
     return prompt
-
-
 
 
 
@@ -396,8 +389,6 @@ Branch: {report["branch_name"]}
 
 
 def main():
-    import sys
-
     # Load data
     with open("data/generated/branches.json", "r") as f:
         branches = json.load(f)
@@ -445,7 +436,6 @@ def main():
     print(f"Index saved to {index_path}")
 
     # Stats
-    from collections import Counter
     months = Counter(r["date"][:7] for r in reports)
     print("\nReports by month:")
     for month, count in sorted(months.items()):
