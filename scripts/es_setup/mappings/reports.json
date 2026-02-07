@@ -1,0 +1,16 @@
+{
+  "properties": {
+    "id": { "type": "keyword" },
+    "branch_id": { "type": "keyword" },
+    "branch_name": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+    "sender_email": { "type": "keyword" },
+    "subject": { "type": "text" },
+    "text": { "type": "text" },
+    "text_embedding": {
+      "type": "semantic_text",
+      "inference_id": "$INFERENCE_ID"
+    },
+    "date": { "type": "date", "format": "yyyy-MM-dd" },
+    "timestamp": { "type": "date" }
+  }
+}

@@ -4,8 +4,10 @@ Creates indices for branches, staff, and weekly reports.
 Reports index includes a semantic_text field for Cohere embed-english-v4 embeddings.
 """
 
+import json
 import os
 import sys
+from pathlib import Path
 from dotenv import load_dotenv
 from elasticsearch import Elasticsearch
 
@@ -18,8 +20,10 @@ COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 INDEX_BRANCHES = "beanstack-branches"
 INDEX_STAFF = "beanstack-staff"
 INDEX_REPORTS = "beanstack-reports"
+INDEX_FINANCIAL = "beanstack-financial-reports"
 
 INFERENCE_ID = "cohere-embed"
+MAPPINGS_DIR = Path(__file__).parent / "mappings"
 
 
 def get_es_client() -> Elasticsearch:
@@ -61,68 +65,51 @@ def create_inference_endpoint(es: Elasticsearch):
     print(f"  ✓ Inference endpoint '{INFERENCE_ID}' created.")
 
 
-BRANCHES_MAPPINGS = {
-    "properties": {
-        "id": {"type": "keyword"},
-        "name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
-        "address": {"type": "text"},
-        "city": {"type": "keyword"},
-        "state": {"type": "keyword"},
-        "zip": {"type": "keyword"},
-        "region": {"type": "keyword"},
-        "location": {"type": "geo_point"},
-        "size": {"type": "keyword"},
-        "opened_date": {"type": "date", "format": "yyyy-MM-dd"},
-        "closed_date": {"type": "date", "format": "yyyy-MM-dd"},
-        "status": {"type": "keyword"},
-        "manager_email": {"type": "keyword"},
-    }
-}
-
-STAFF_MAPPINGS = {
-    "properties": {
-        "id": {"type": "keyword"},
-        "name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
-        "email": {"type": "keyword"},
-        "role": {"type": "keyword"},
-        "branch_id": {"type": "keyword"},
-        "branch_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
-        "start_date": {"type": "date", "format": "yyyy-MM-dd"},
-        "status": {"type": "keyword"},
-    }
-}
-
-REPORTS_MAPPINGS = {
-    "properties": {
-        "id": {"type": "keyword"},
-        "branch_id": {"type": "keyword"},
-        "branch_name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
-        "sender_email": {"type": "keyword"},
-        "subject": {"type": "text"},
-        "text": {"type": "text"},
-        "text_embedding": {
-            "type": "semantic_text",
-            "inference_id": INFERENCE_ID,
-        },
-        "date": {"type": "date", "format": "yyyy-MM-dd"},
-        "timestamp": {"type": "date"},
-    }
-}
 
 
-def create_index(es: Elasticsearch, name: str, mappings: dict):
-    """Create an index, deleting it first if it already exists."""
+def load_mapping(filename: str) -> dict:
+    """Load a mapping JSON file, substituting $INFERENCE_ID with the actual value."""
+    raw = (MAPPINGS_DIR / filename).read_text()
+    raw = raw.replace("$INFERENCE_ID", INFERENCE_ID)
+    return json.loads(raw)
+
+
+def create_index(es: Elasticsearch, name: str, mappings: dict, force: bool = False):
+    """Create an index. Skips if it already exists unless force=True."""
     if es.indices.exists(index=name):
-        print(f"  Index '{name}' exists, deleting...")
-        es.indices.delete(index=name)
+        if force:
+            print(f"  Index '{name}' exists, deleting (--force)...")
+            es.indices.delete(index=name)
+        else:
+            print(f"  Index '{name}' already exists, skipping. Use --force to recreate.")
+            return
 
     print(f"  Creating index '{name}'...")
     es.indices.create(index=name, mappings=mappings)
     print(f"  ✓ Index '{name}' created.")
 
 
+ALL_INDICES = {
+    "branches": (INDEX_BRANCHES, "branches.json"),
+    "staff": (INDEX_STAFF, "staff.json"),
+    "reports": (INDEX_REPORTS, "reports.json"),
+    "financial": (INDEX_FINANCIAL, "financial.json"),
+}
+
+
 def main():
     delete_only = "--delete" in sys.argv
+    force = "--force" in sys.argv
+    # Optional: specify which indices to operate on (e.g. "financial", "reports")
+    requested = [a for a in sys.argv[1:] if not a.startswith("--")]
+    if requested:
+        indices = {k: v for k, v in ALL_INDICES.items() if k in requested}
+        if not indices:
+            print(f"Unknown index name(s): {requested}")
+            print(f"Available: {', '.join(ALL_INDICES.keys())}")
+            return
+    else:
+        indices = ALL_INDICES
 
     print("Connecting to Elasticsearch...")
     es = get_es_client()
@@ -131,7 +118,7 @@ def main():
 
     if delete_only:
         print("Deleting indices...")
-        for idx in [INDEX_BRANCHES, INDEX_STAFF, INDEX_REPORTS]:
+        for name, (idx, _) in indices.items():
             if es.indices.exists(index=idx):
                 es.indices.delete(index=idx)
                 print(f"  ✓ Deleted '{idx}'")
@@ -139,18 +126,19 @@ def main():
                 print(f"  '{idx}' does not exist, skipping.")
         return
 
-    print("Step 1: Setting up Cohere inference endpoint...")
-    create_inference_endpoint(es)
+    if not requested:
+        print("Step 1: Setting up Cohere inference endpoint...")
+        create_inference_endpoint(es)
+        print()
 
-    print("\nStep 2: Creating indices...")
-    create_index(es, INDEX_BRANCHES, BRANCHES_MAPPINGS)
-    create_index(es, INDEX_STAFF, STAFF_MAPPINGS)
-    create_index(es, INDEX_REPORTS, REPORTS_MAPPINGS)
+    print("Creating indices...")
+    for name, (idx, mapping_file) in indices.items():
+        mappings = load_mapping(mapping_file)
+        create_index(es, idx, mappings, force=force)
 
     print("\nDone! Indices ready:")
-    print(f"  - {INDEX_BRANCHES}")
-    print(f"  - {INDEX_STAFF}")
-    print(f"  - {INDEX_REPORTS} (with semantic_text via '{INFERENCE_ID}')")
+    for name, (idx, _) in indices.items():
+        print(f"  - {idx}")
 
 
 if __name__ == "__main__":

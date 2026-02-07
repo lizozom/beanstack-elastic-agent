@@ -1,0 +1,17 @@
+{
+  "properties": {
+    "id": { "type": "keyword" },
+    "name": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+    "address": { "type": "text" },
+    "city": { "type": "keyword" },
+    "state": { "type": "keyword" },
+    "zip": { "type": "keyword" },
+    "region": { "type": "keyword" },
+    "location": { "type": "geo_point" },
+    "size": { "type": "keyword" },
+    "opened_date": { "type": "date", "format": "yyyy-MM-dd" },
+    "closed_date": { "type": "date", "format": "yyyy-MM-dd" },
+    "status": { "type": "keyword" },
+    "manager_email": { "type": "keyword" }
+  }
+}

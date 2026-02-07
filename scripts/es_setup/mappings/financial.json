@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "id": { "type": "keyword" },
+    "report_type": { "type": "keyword" },
+    "branch_id": { "type": "keyword" },
+    "branch_name": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+    "period": { "type": "keyword" },
+    "start_date": { "type": "date", "format": "yyyy-MM-dd" },
+    "end_date": { "type": "date", "format": "yyyy-MM-dd" },
+    "submitted_by": { "type": "keyword" },
+    "submitted_at": { "type": "date" },
+    "revenue": { "type": "float" },
+    "transactions": { "type": "integer" },
+    "avg_ticket": { "type": "float" },
+    "labor_hours": { "type": "integer" },
+    "labor_cost_pct": { "type": "float" },
+    "labor_manager_narrative": { "type": "text" },
+    "labor_manager_narrative_embedding": {
+      "type": "semantic_text",
+      "inference_id": "$INFERENCE_ID"
+    },
+    "inventory_waste_pct": { "type": "float" },
+    "top_selling_items": { "type": "keyword" },
+    "inventory_manager_narrative": { "type": "text" },
+    "inventory_manager_narrative_embedding": {
+      "type": "semantic_text",
+      "inference_id": "$INFERENCE_ID"
+    },
+    "customer_satisfaction": { "type": "float" },
+    "employee_count": { "type": "integer" },
+    "turnover_count": { "type": "integer" },
+    "equipment_issues": { "type": "integer" },
+    "notes": { "type": "text" },
+    "notes_embedding": {
+      "type": "semantic_text",
+      "inference_id": "$INFERENCE_ID"
+    }
+  }
+}

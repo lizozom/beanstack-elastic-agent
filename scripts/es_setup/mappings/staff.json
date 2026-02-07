@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "id": { "type": "keyword" },
+    "name": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+    "email": { "type": "keyword" },
+    "role": { "type": "keyword" },
+    "branch_id": { "type": "keyword" },
+    "branch_name": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+    "start_date": { "type": "date", "format": "yyyy-MM-dd" },
+    "end_date": { "type": "date", "format": "yyyy-MM-dd" },
+    "status": { "type": "keyword" }
+  }
+}

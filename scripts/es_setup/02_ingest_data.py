@@ -81,25 +81,39 @@ def ingest_staff(es: Elasticsearch):
             print(f"    {e}")
 
 
+ALL_INGESTORS = {
+    "branches": (INDEX_BRANCHES, ingest_branches),
+    "staff": (INDEX_STAFF, ingest_staff),
+}
+
+
 def main():
+    requested = [a for a in sys.argv[1:] if not a.startswith("--")]
+    if requested:
+        ingestors = {k: v for k, v in ALL_INGESTORS.items() if k in requested}
+        if not ingestors:
+            print(f"Unknown index name(s): {requested}")
+            print(f"Available: {', '.join(ALL_INGESTORS.keys())}")
+            return
+    else:
+        ingestors = ALL_INGESTORS
+
     print("Connecting to Elasticsearch...")
     es = get_es_client()
     info = es.info()
     print(f"  Connected to cluster: {info['cluster_name']} (v{info['version']['number']})\n")
 
-    print("Ingesting branches...")
-    ingest_branches(es)
-
-    print("Ingesting staff...")
-    ingest_staff(es)
+    for name, (index_name, ingest_fn) in ingestors.items():
+        print(f"Ingesting {name}...")
+        ingest_fn(es)
 
     # Quick verification
-    es.indices.refresh(index=f"{INDEX_BRANCHES},{INDEX_STAFF}")
-    branch_count = es.count(index=INDEX_BRANCHES)["count"]
-    staff_count = es.count(index=INDEX_STAFF)["count"]
+    indices = ",".join(idx for idx, _ in ingestors.values())
+    es.indices.refresh(index=indices)
     print(f"\nDone! Index counts:")
-    print(f"  {INDEX_BRANCHES}: {branch_count}")
-    print(f"  {INDEX_STAFF}: {staff_count}")
+    for name, (index_name, _) in ingestors.items():
+        count = es.count(index=index_name)["count"]
+        print(f"  {index_name}: {count}")
 
 
 if __name__ == "__main__":
