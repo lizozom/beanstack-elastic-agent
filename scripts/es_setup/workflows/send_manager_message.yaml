@@ -1,0 +1,97 @@
+name: beanstack-send-manager-message
+description: >
+  Looks up a branch manager's contact info and sends them an email.
+  Used by the BeanStack agent to communicate with branch managers.
+enabled: true
+tags: ["beanstack", "messaging", "email"]
+
+triggers:
+  - type: manual
+
+inputs:
+  - name: branch_id
+    type: string
+    required: true
+    description: "The branch ID (e.g. branch-042)"
+  - name: message
+    type: string
+    required: true
+    description: "The message body to send to the branch manager"
+  - name: subject
+    type: string
+    required: false
+    default: "Message from BeanStack HQ"
+    description: "Email subject line"
+
+steps:
+  # Step 1: Look up the branch to get manager email
+  - name: lookup_branch
+    type: elasticsearch.search
+    with:
+      index: beanstack-branches
+      query:
+        term:
+          id: "{{ inputs.branch_id }}"
+      size: 1
+
+  # Step 2: Check if branch was found
+  - name: check_branch_found
+    type: if
+    condition: "steps.lookup_branch.output.hits.total.value > 0"
+    steps:
+      # Step 3: Look up staff to get manager name
+      - name: lookup_manager
+        type: elasticsearch.search
+        with:
+          index: beanstack-staff
+          query:
+            bool:
+              filter:
+                - term:
+                    branch_id: "{{ inputs.branch_id }}"
+                - term:
+                    role: "Manager"
+          size: 1
+
+      # Step 4: Send email via connector
+      - name: send_email
+        type: email
+        connector-id: 478761f2-04b4-5905-a3bb-3315ace3d780
+        with:
+          to:
+            - "{{ steps.lookup_branch.output.hits.hits[0]._source.manager_email }}"
+          subject: "{{ inputs.subject }}"
+          message: |
+            Hi {{ steps.lookup_manager.output.hits.hits[0]._source.name }},
+
+            {{ inputs.message }}
+
+            — BeanStack HQ
+
+      # Step 5: Index the sent message for audit trail
+      - name: index_message
+        type: elasticsearch.request
+        with:
+          method: POST
+          path: /beanstack-messages/_doc
+          body:
+            branch_id: "{{ inputs.branch_id }}"
+            branch_name: "{{ steps.lookup_branch.output.hits.hits[0]._source.name }}"
+            manager_email: "{{ steps.lookup_branch.output.hits.hits[0]._source.manager_email }}"
+            manager_name: "{{ steps.lookup_manager.output.hits.hits[0]._source.name }}"
+            subject: "{{ inputs.subject }}"
+            message: "{{ inputs.message }}"
+            sent_at: "{{ execution.startedAt }}"
+            status: "sent"
+
+      # Step 6: Log confirmation
+      - name: log_sent
+        type: console
+        with:
+          message: |
+            Email sent to {{ steps.lookup_branch.output.hits.hits[0]._source.manager_email }} ({{ steps.lookup_branch.output.hits.hits[0]._source.name }})
+    else:
+      - name: branch_not_found
+        type: console
+        with:
+          message: "ERROR: Branch '{{ inputs.branch_id }}' not found."

@@ -1,0 +1,111 @@
+name: beanstack-escalation
+description: >
+  Creates a Kibana case for a branch issue that needs escalation.
+  Gathers branch context, recent reports, and financial data, then opens a trackable case.
+enabled: true
+tags: ["beanstack", "escalation", "cases"]
+
+triggers:
+  - type: manual
+
+inputs:
+  - name: branch_id
+    type: string
+    required: true
+    description: "The branch ID with the issue (e.g. branch-042)"
+  - name: issue_summary
+    type: string
+    required: true
+    description: "Brief summary of the issue to escalate"
+  - name: severity
+    type: string
+    required: false
+    default: "medium"
+    description: "Severity level: low, medium, high, critical"
+
+steps:
+  # Step 1: Look up branch details
+  - name: lookup_branch
+    type: elasticsearch.search
+    with:
+      index: beanstack-branches
+      query:
+        term:
+          id: "{{ inputs.branch_id }}"
+      size: 1
+
+  # Step 2: Get recent weekly reports for context
+  - name: get_recent_reports
+    type: elasticsearch.search
+    with:
+      index: beanstack-reports
+      size: 3
+      sort:
+        - date: desc
+      query:
+        term:
+          branch_id: "{{ inputs.branch_id }}"
+
+  # Step 3: Get latest financial report for context
+  - name: get_latest_financial
+    type: elasticsearch.search
+    with:
+      index: beanstack-financial-reports
+      size: 1
+      sort:
+        - start_date: desc
+      query:
+        term:
+          branch_id: "{{ inputs.branch_id }}"
+
+  # Step 4: Use AI to compose a detailed case description
+  - name: compose_description
+    type: ai.prompt
+    with:
+      prompt: |
+        Compose a concise case description for an escalated issue at a BeanStack branch.
+
+        Branch info:
+        {{ steps.lookup_branch.output.hits.hits[0]._source }}
+
+        Issue summary: {{ inputs.issue_summary }}
+        Severity: {{ inputs.severity }}
+
+        Recent weekly reports from this branch:
+        {{ steps.get_recent_reports.output.hits.hits }}
+
+        Latest financial report:
+        {{ steps.get_latest_financial.output.hits.hits }}
+
+        Write a structured case description with:
+        1. Branch details (name, location, manager)
+        2. Issue description
+        3. Relevant context from recent weekly reports
+        4. Financial context (revenue, satisfaction, turnover, equipment issues)
+        5. Recommended actions
+
+  # Step 5: Create a Kibana case
+  - name: create_case
+    type: kibana.createCaseDefaultSpace
+    with:
+      title: "[BeanStack] {{ inputs.severity | upcase }}: {{ inputs.issue_summary }}"
+      description: "{{ steps.compose_description.output }}"
+      tags:
+        - "beanstack"
+        - "{{ inputs.branch_id }}"
+        - "{{ inputs.severity }}"
+      severity: "{{ inputs.severity }}"
+      connector:
+        id: "none"
+        name: "none"
+        type: ".none"
+
+  # Step 6: Log confirmation
+  - name: log_case_created
+    type: console
+    with:
+      message: |
+        Case created: {{ steps.create_case.output.id }}
+        Branch: {{ steps.lookup_branch.output.hits.hits[0]._source.name }}
+        Severity: {{ inputs.severity }}
+        Summary: {{ inputs.issue_summary }}

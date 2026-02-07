@@ -1,0 +1,85 @@
+name: beanstack-missing-reports-reminder
+description: >
+  Identifies branches that have not submitted a weekly report since the given date
+  and sends reminder emails to their managers.
+enabled: true
+tags: ["beanstack", "reports", "reminders", "email"]
+
+triggers:
+  - type: manual
+
+inputs:
+  - name: since_date
+    type: string
+    required: true
+    description: "Check for reports since this date (yyyy-MM-dd format)"
+  - name: reminder_message
+    type: string
+    required: false
+    default: "This is a friendly reminder that your weekly report is overdue. Please submit it at your earliest convenience."
+    description: "Custom reminder message to send"
+
+steps:
+  # Step 1: Get branch IDs that HAVE reported since the date
+  - name: get_reported_branches
+    type: elasticsearch.search
+    with:
+      index: beanstack-reports
+      size: 0
+      query:
+        range:
+          date:
+            gte: "{{ inputs.since_date }}"
+      aggs:
+        reported_branches:
+          terms:
+            field: branch_id
+            size: 200
+
+  # Step 2: Get active branches that are NOT in the reported list
+  - name: get_missing_branches
+    type: elasticsearch.search
+    with:
+      index: beanstack-branches
+      size: 200
+      _source:
+        - id
+        - name
+        - manager_email
+        - region
+      query:
+        bool:
+          filter:
+            - term:
+                status: "active"
+          must_not:
+            - terms:
+                id: "{{ steps.get_reported_branches.output.aggregations.reported_branches.buckets | map: 'key' }}"
+
+  # Step 3: Send reminder emails to missing branch managers
+  - name: send_reminders
+    type: email
+    connector-id: 478761f2-04b4-5905-a3bb-3315ace3d780
+    with:
+      to: "{{ steps.get_missing_branches.output.hits.hits | map: '_source' | map: 'manager_email' }}"
+      subject: "Reminder: Weekly Report Overdue (since {{ inputs.since_date }})"
+      message: |
+        Hello,
+
+        {{ inputs.reminder_message }}
+
+        Reports have been expected since {{ inputs.since_date }}. Please submit your weekly report as soon as possible.
+
+        Thank you,
+        BeanStack HQ
+
+  # Step 4: Log results
+  - name: log_results
+    type: console
+    with:
+      message: |
+        === Missing Reports Reminder ===
+        Period: since {{ inputs.since_date }}
+        Branches with reports: {{ steps.get_reported_branches.output.aggregations.reported_branches.buckets | size }}
+        Branches missing reports: {{ steps.get_missing_branches.output.hits.total.value }}
+        ================================

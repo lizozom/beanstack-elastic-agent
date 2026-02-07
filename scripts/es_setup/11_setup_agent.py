@@ -4,7 +4,10 @@ Creates custom tools, then creates the agent with those tools assigned.
 Deletes existing resources first for a clean slate.
 """
 
+import copy
+import json
 import os
+from pathlib import Path
 from urllib.parse import urlparse, urlunparse
 
 import requests
@@ -82,6 +85,31 @@ def delete_tool_if_exists(base_url: str, headers: dict, tool_id: str):
             raise SystemExit(1)
 
 
+def load_workflow_id_mapping() -> dict:
+    """Load the workflow name-to-ID mapping saved by 10_setup_workflows.py."""
+    mapping_file = Path(__file__).parent / "workflow_ids.json"
+    if not mapping_file.exists():
+        print(f"  ⚠ {mapping_file} not found. Run 10_setup_workflows.py first.")
+        return {}
+    return json.loads(mapping_file.read_text())
+
+
+def resolve_workflow_ids(tools: list[dict], wf_mapping: dict) -> list[dict]:
+    """Replace workflow name references with actual Kibana workflow IDs."""
+    resolved = []
+    for tool in tools:
+        if tool.get("type") == "workflow":
+            tool = copy.deepcopy(tool)
+            wf_name = tool["configuration"]["workflow_id"]
+            if wf_name in wf_mapping:
+                tool["configuration"]["workflow_id"] = wf_mapping[wf_name]
+                print(f"    Resolved '{wf_name}' → {wf_mapping[wf_name]}")
+            else:
+                print(f"    ⚠ Workflow '{wf_name}' not found in Kibana")
+        resolved.append(tool)
+    return resolved
+
+
 def create_tool(base_url: str, headers: dict, tool: dict):
     """Create a custom tool via the Agent Builder API."""
     tool_id = tool["id"]
@@ -143,11 +171,16 @@ def main():
     print("Step 1: Checking for existing agent...")
     delete_agent_if_exists(base_url, headers)
 
-    print("\nStep 2: Creating custom tools...")
-    for tool in ALL_TOOLS:
+    print("\nStep 2: Resolving workflow IDs...")
+    wf_mapping = load_workflow_id_mapping()
+    print(f"  Found {len(wf_mapping)} workflow ID mappings.")
+    tools = resolve_workflow_ids(ALL_TOOLS, wf_mapping)
+
+    print("\nStep 3: Creating custom tools...")
+    for tool in tools:
         create_tool(base_url, headers, tool)
 
-    print(f"\nStep 3: Creating agent...")
+    print("\nStep 4: Creating agent...")
     create_agent(base_url, headers)
 
     print(f"\nDone! Agent '{AGENT_ID}' is ready.")

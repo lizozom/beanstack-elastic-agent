@@ -18,3 +18,5 @@ scripts/es_setup/02_ingest_data.py
 
 data/generated/financial-reports/
 data/generated/reports/
+scripts/es_setup/workflow_ids.json
+data/generated/quarterly_reports.json

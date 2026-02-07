@@ -40,8 +40,7 @@ ALL_TOOLS = [
     equipment_issues_by_branch,
     branch_financial_summary,
     # Workflow tools (deterministic automations)
-    # wf_send_manager_message,
-    # wf_daily_brief,
-    # wf_missing_reports_reminder,
-    # wf_escalation,
+    wf_send_manager_message,
+    wf_missing_reports_reminder,
+    wf_escalation,
 ]

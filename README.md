@@ -39,7 +39,7 @@ It combines **Elasticsearch hybrid search** (Cohere embeddings + BM25 via RRF), 
 ### 1. Install
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/lizozom/beanstack-elastic-agent
 cd elastic-agent-hackathon
 uv sync
 ```
