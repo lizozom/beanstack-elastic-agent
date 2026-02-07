@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="beanstack-transp.png" alt="BeanStack Logo" width="200">
+  <img src="beanstack.jpg" alt="BeanStack Logo" width="200">
 </p>
 
-<h1 align="center">BeanStack</h1>
+<h1 align="center">BeanStack Elastic Agent</h1>
 
 <p align="center">
   AI-powered operational intelligence for a 100+ branch coffee chain.<br>
