@@ -11,6 +11,7 @@ from elasticsearch.helpers import bulk
 
 from es_client import (
     DATA_DIR,
+    ENRICH_BRANCH_REGION,
     INDEX_BRANCHES,
     INDEX_STAFF,
     get_es_client,
@@ -94,10 +95,31 @@ def main():
 
     indices = ",".join(idx for idx, _ in ingestors.values())
     es.indices.refresh(index=indices)
-    print(f"\nDone! Index counts:")
+    print(f"\nIndex counts:")
     for name, (index_name, _) in ingestors.items():
         count = es.count(index=index_name)["count"]
         print(f"  {index_name}: {count}")
+
+    # Create enrich policy for branch region lookups (used by ES|QL tools)
+    if "branches" in ingestors:
+        print(f"\nSetting up enrich policy '{ENRICH_BRANCH_REGION}'...")
+        try:
+            es.enrich.delete_policy(name=ENRICH_BRANCH_REGION)
+            print(f"  Deleted existing policy.")
+        except Exception:
+            pass
+        es.enrich.put_policy(
+            name=ENRICH_BRANCH_REGION,
+            match={
+                "indices": INDEX_BRANCHES,
+                "match_field": "id",
+                "enrich_fields": ["region", "city", "state"],
+            },
+        )
+        es.enrich.execute_policy(name=ENRICH_BRANCH_REGION)
+        print(f"  Enrich policy '{ENRICH_BRANCH_REGION}' created and executed.")
+
+    print("\nDone!")
 
 
 if __name__ == "__main__":

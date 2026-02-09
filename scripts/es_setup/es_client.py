@@ -23,6 +23,9 @@ DATA_DIR = PROJECT_ROOT / "data" / "generated"
 # Inference
 INFERENCE_ID = "cohere-embed"
 
+# Enrich policies
+ENRICH_BRANCH_REGION = "beanstack-branch-region"
+
 
 def get_es_client() -> Elasticsearch:
     """Create an Elasticsearch client from environment variables."""

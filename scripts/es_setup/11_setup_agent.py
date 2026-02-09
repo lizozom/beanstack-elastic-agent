@@ -1,7 +1,6 @@
 """
 Set up the BeanStack Research Agent via the Kibana Agent Builder API.
-Creates custom tools, then creates the agent with those tools assigned.
-Deletes existing resources first for a clean slate.
+Upserts custom tools and the agent — does NOT delete the agent.
 """
 
 import copy
@@ -23,43 +22,6 @@ BUILTIN_TOOL_IDS = [
     "platform.core.get_index_mapping",
     "platform.core.get_document_by_id",
 ]
-
-
-def delete_agent_if_exists(base_url: str, headers: dict) -> None:
-    """Delete the agent if it already exists."""
-    url = f"{base_url}/api/agent_builder/agents/{AGENT_ID}"
-    resp = requests.get(url, headers=headers)
-
-    if resp.status_code == 200:
-        print(f"  Agent '{AGENT_ID}' exists, deleting...")
-        del_resp = requests.delete(url, headers=headers)
-        if del_resp.status_code in (200, 204):
-            print(f"  Deleted agent '{AGENT_ID}'.")
-        else:
-            print(f"  FAILED to delete agent: {del_resp.status_code} - {del_resp.text}")
-            raise SystemExit(1)
-    elif resp.status_code == 404:
-        print(f"  Agent '{AGENT_ID}' does not exist, skipping delete.")
-    else:
-        print(f"  Error checking agent: {resp.status_code} - {resp.text}")
-        raise SystemExit(1)
-
-
-def delete_tool_if_exists(base_url: str, headers: dict, tool_id: str) -> None:
-    """Delete a custom tool if it already exists."""
-    url = f"{base_url}/api/agent_builder/tools/{tool_id}"
-    resp = requests.get(url, headers=headers)
-
-    if resp.status_code == 200:
-        del_resp = requests.delete(url, headers=headers)
-        if del_resp.status_code in (200, 204):
-            print(f"    Deleted existing tool '{tool_id}'")
-        else:
-            print(
-                f"    FAILED to delete tool '{tool_id}': "
-                f"{del_resp.status_code} - {del_resp.text}"
-            )
-            raise SystemExit(1)
 
 
 def load_workflow_id_mapping() -> dict:
@@ -89,28 +51,38 @@ def resolve_workflow_ids(tools: list[dict], wf_mapping: dict) -> list[dict]:
     return resolved
 
 
-def create_tool(base_url: str, headers: dict, tool: dict) -> None:
-    """Create a custom tool via the Agent Builder API."""
+def upsert_tool(base_url: str, headers: dict, tool: dict) -> None:
+    """Create or update a custom tool via the Agent Builder API."""
     tool_id = tool["id"]
-    delete_tool_if_exists(base_url, headers, tool_id)
+    url = f"{base_url}/api/agent_builder/tools/{tool_id}"
 
-    url = f"{base_url}/api/agent_builder/tools"
-    resp = requests.post(url, headers=headers, json=tool)
+    # PUT body: strip immutable fields (id/type are in the URL path or fixed at creation)
+    put_body = {k: v for k, v in tool.items() if k not in ("id", "type")}
+
+    # Try PUT to update existing tool
+    resp = requests.put(url, headers=headers, json=put_body)
 
     if resp.status_code in (200, 201):
-        print(f"    Created tool '{tool_id}' ({tool['type']})")
-    else:
-        print(
-            f"    FAILED to create tool '{tool_id}': "
-            f"{resp.status_code} - {resp.text}"
-        )
-        raise SystemExit(1)
+        print(f"    Updated tool '{tool_id}' ({tool['type']})")
+        return
+
+    if resp.status_code == 404:
+        # Tool doesn't exist — create it (POST needs the id)
+        create_url = f"{base_url}/api/agent_builder/tools"
+        resp = requests.post(create_url, headers=headers, json=tool)
+        if resp.status_code in (200, 201):
+            print(f"    Created tool '{tool_id}' ({tool['type']})")
+            return
+
+    print(
+        f"    FAILED to upsert tool '{tool_id}': "
+        f"{resp.status_code} - {resp.text}"
+    )
+    raise SystemExit(1)
 
 
-def create_agent(base_url: str, headers: dict) -> None:
-    """Create the BeanStack Research Agent with all tools assigned."""
-    url = f"{base_url}/api/agent_builder/agents"
-
+def upsert_agent(base_url: str, headers: dict) -> None:
+    """Create or update the BeanStack Research Agent with all tools assigned."""
     custom_tool_ids = [t["id"] for t in ALL_TOOLS]
     all_tool_ids = BUILTIN_TOOL_IDS + custom_tool_ids
 
@@ -135,13 +107,28 @@ def create_agent(base_url: str, headers: dict) -> None:
         },
     }
 
-    resp = requests.post(url, headers=headers, json=payload)
+    url = f"{base_url}/api/agent_builder/agents/{AGENT_ID}"
+
+    # PUT body must not include 'id' (it's in the URL path)
+    put_body = {k: v for k, v in payload.items() if k != "id"}
+
+    # Try PUT to update existing agent
+    resp = requests.put(url, headers=headers, json=put_body)
 
     if resp.status_code in (200, 201):
-        print(f"  Agent '{AGENT_ID}' created with {len(all_tool_ids)} tools.")
-    else:
-        print(f"  FAILED to create agent: {resp.status_code} - {resp.text}")
-        raise SystemExit(1)
+        print(f"  Agent '{AGENT_ID}' updated with {len(all_tool_ids)} tools.")
+        return
+
+    if resp.status_code == 404:
+        # Agent doesn't exist — create it
+        create_url = f"{base_url}/api/agent_builder/agents"
+        resp = requests.post(create_url, headers=headers, json=payload)
+        if resp.status_code in (200, 201):
+            print(f"  Agent '{AGENT_ID}' created with {len(all_tool_ids)} tools.")
+            return
+
+    print(f"  FAILED to upsert agent: {resp.status_code} - {resp.text}")
+    raise SystemExit(1)
 
 
 def main():
@@ -150,20 +137,17 @@ def main():
     base_url = get_kibana_base_url()
     headers = get_headers()
 
-    print("Step 1: Checking for existing agent...")
-    delete_agent_if_exists(base_url, headers)
-
-    print("\nStep 2: Resolving workflow IDs...")
+    print("Step 1: Resolving workflow IDs...")
     wf_mapping = load_workflow_id_mapping()
     print(f"  Found {len(wf_mapping)} workflow ID mappings.")
     tools = resolve_workflow_ids(ALL_TOOLS, wf_mapping)
 
-    print("\nStep 3: Creating custom tools...")
+    print("\nStep 2: Upserting custom tools...")
     for tool in tools:
-        create_tool(base_url, headers, tool)
+        upsert_tool(base_url, headers, tool)
 
-    print("\nStep 4: Creating agent...")
-    create_agent(base_url, headers)
+    print("\nStep 3: Upserting agent...")
+    upsert_agent(base_url, headers)
 
     print(f"\nDone! Agent '{AGENT_ID}' is ready.")
     print(f"  Tools: {len(BUILTIN_TOOL_IDS)} built-in + {len(ALL_TOOLS)} custom")
