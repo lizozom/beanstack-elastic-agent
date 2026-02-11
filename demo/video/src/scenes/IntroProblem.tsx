@@ -72,14 +72,21 @@ export const IntroProblem: React.FC = () => {
           <AbsoluteFill
             style={{ justifyContent: 'center', alignItems: 'center' }}
           >
-            {/* Concentric circles */}
+            {/* Concentric pulsating circles */}
             {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => {
               const relFrame = Math.max(0, frame);
-              const size = 40 + relFrame * 3 + i * 50;
+              const pulse = Math.sin(relFrame * 0.06 + i * 0.8) * 15;
+              const size = 80 + relFrame * 4 + i * 80 + pulse;
               const opacity = interpolate(
                 size,
-                [40, 500],
+                [80, 900],
                 [0.4, 0],
+                { extrapolateRight: 'clamp' },
+              );
+              const borderWidth = interpolate(
+                size,
+                [80, 900],
+                [3, 1],
                 { extrapolateRight: 'clamp' },
               );
               return (
@@ -90,7 +97,8 @@ export const IntroProblem: React.FC = () => {
                     width: size,
                     height: size,
                     borderRadius: '50%',
-                    border: `1px solid ${COFFEE.warmGold}`,
+                    border: `${borderWidth}px solid ${COFFEE.warmGold}`,
+                    boxShadow: `0 0 12px ${COFFEE.warmGold}40, inset 0 0 12px ${COFFEE.warmGold}20`,
                     opacity,
                   }}
                 />
@@ -120,7 +128,7 @@ export const IntroProblem: React.FC = () => {
             }}
           />
           {/* Steam overlay */}
-          <SteamParticles count={50} />
+          <SteamParticles count={70} />
         </AbsoluteFill>
       </Sequence>
 
@@ -133,53 +141,95 @@ export const IntroProblem: React.FC = () => {
         </AbsoluteFill>
       </Sequence>
 
-      {/* Shot 4: Scrolling emails (425-605) */}
+      {/* Shot 4: Scrolling emails — Mac-style (425-605) */}
       <Sequence from={425} durationInFrames={180}>
         <AbsoluteFill style={{ opacity: shotOpacity(425, 180) }}>
           <AbsoluteFill style={{ backgroundColor: UI.background }}>
-            <div
-              style={{
-                position: 'absolute',
-                inset: 0,
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 4,
-                padding: '40px 200px',
-                transform: `translateY(${-(frame - 425) * 3}px)`,
-              }}
-            >
-              {emailSubjects.concat(emailSubjects).map((subject, i) => {
-                const blur = Math.min((frame - 425) / 60, 3);
-                return (
+            {(() => {
+              const rel = frame - 425;
+              // Two separate trackpad flick gestures
+              // Gesture 1: frames 0-80, ease-in then momentum ease-out
+              // Pause: frames 80-100
+              // Gesture 2: frames 100-170, ease-in then momentum ease-out
+              const flick = (t: number) => {
+                // Accelerate then decelerate (like a real flick)
+                if (t < 0.3) return 0.5 * Math.pow(t / 0.3, 2); // ease-in
+                return 0.5 + 0.5 * (1 - Math.pow(1 - (t - 0.3) / 0.7, 2.5)); // momentum ease-out
+              };
+
+              let scrollY = 0;
+              if (rel < 80) {
+                const t1 = Math.max(0, rel) / 80;
+                scrollY = flick(t1) * 350;
+              } else if (rel < 100) {
+                // Pause between flicks
+                scrollY = 350;
+              } else {
+                scrollY = 350;
+                const t2 = Math.min(1, (rel - 100) / 70);
+                scrollY += flick(t2) * 300;
+              }
+              return (
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    overflow: 'hidden',
+                  }}
+                >
                   <div
-                    key={i}
                     style={{
-                      padding: '12px 20px',
-                      backgroundColor: UI.surface,
-                      borderRadius: 6,
-                      border: `1px solid ${UI.border}`,
-                      fontFamily: FONTS.primary,
-                      fontSize: 18,
-                      color: UI.textSecondary,
-                      filter: `blur(${blur}px)`,
-                      opacity: 0.7,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: 6,
+                      padding: '60px 200px',
+                      transform: `translateY(${-scrollY}px)`,
                     }}
                   >
-                    <span style={{ color: UI.text, fontWeight: 500 }}>
-                      📧 Branch Manager:{' '}
-                    </span>
-                    {subject}
+                    {emailSubjects.concat(emailSubjects).map((subject, i) => (
+                      <div
+                        key={i}
+                        style={{
+                          padding: '14px 20px',
+                          backgroundColor: UI.surface,
+                          borderRadius: 8,
+                          border: `1px solid ${UI.border}`,
+                          fontFamily: FONTS.primary,
+                          fontSize: 18,
+                          color: UI.textSecondary,
+                        }}
+                      >
+                        <span style={{ color: UI.text, fontWeight: 500 }}>
+                          📧 Branch Manager:{' '}
+                        </span>
+                        {subject}
+                      </div>
+                    ))}
                   </div>
-                );
-              })}
-            </div>
-            {/* Vignette overlay */}
+                </div>
+              );
+            })()}
+            {/* Mac-style top + bottom fade masks */}
             <div
               style={{
                 position: 'absolute',
-                inset: 0,
-                background:
-                  'linear-gradient(to bottom, transparent 30%, rgba(15,15,16,0.9) 90%)',
+                top: 0,
+                left: 0,
+                right: 0,
+                height: 120,
+                background: `linear-gradient(to bottom, ${UI.background} 0%, transparent 100%)`,
+                pointerEvents: 'none',
+              }}
+            />
+            <div
+              style={{
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                right: 0,
+                height: 200,
+                background: `linear-gradient(to top, ${UI.background} 0%, transparent 100%)`,
+                pointerEvents: 'none',
               }}
             />
           </AbsoluteFill>

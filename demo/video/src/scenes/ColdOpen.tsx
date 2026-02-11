@@ -8,7 +8,7 @@ import {
   staticFile,
 } from 'remotion';
 import { FONTS, TEXT } from '../theme/typography';
-import { CLOSING } from '../theme/colors';
+import { CLOSING, COFFEE } from '../theme/colors';
 
 const lines = [
   '100 branches.',
@@ -78,7 +78,7 @@ export const ColdOpen: React.FC = () => {
               style={{
                 fontFamily: FONTS.primary,
                 ...TEXT.h1,
-                color: CLOSING.text,
+                color: i === lines.length - 1 ? COFFEE.amber : CLOSING.text,
                 opacity: s,
                 transform: `translateY(${(1 - s) * 15}px)`,
                 fontStyle: 'italic',

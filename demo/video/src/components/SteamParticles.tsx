@@ -21,7 +21,7 @@ export const SteamParticles: React.FC<SteamParticlesProps> = ({
     const speed = 0.8 + seededRandom(i * 19 + 5) * 1.2;
     const wobbleFreq = 0.02 + seededRandom(i * 23 + 7) * 0.03;
     const wobbleAmp = 20 + seededRandom(i * 29 + 11) * 40;
-    const size = 3 + seededRandom(i * 31 + 13) * 8;
+    const size = 7 + seededRandom(i * 31 + 13) * 8;
     const baseOpacity = 0.05 + seededRandom(i * 37 + 17) * 0.12;
     const phase = seededRandom(i * 41 + 19) * Math.PI * 2;
 

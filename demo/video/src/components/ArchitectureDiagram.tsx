@@ -27,7 +27,7 @@ const nodes: NodeDef[] = [
     id: 'user',
     label: 'User',
     icon: '💬',
-    x: 100,
+    x: 210,
     y: 400,
     width: 200,
     color: UI.accent,
@@ -38,7 +38,7 @@ const nodes: NodeDef[] = [
     label: 'Elastic Agent Builder',
     sublabel: 'Claude 4.5',
     icon: '🤖',
-    x: 480,
+    x: 590,
     y: 400,
     width: 260,
     color: COFFEE.amber,
@@ -47,7 +47,7 @@ const nodes: NodeDef[] = [
     id: 'tools',
     label: 'Tools',
     icon: '🛠️',
-    x: 900,
+    x: 1010,
     y: 400,
     width: 280,
     color: UI.accentGreen,
@@ -57,7 +57,7 @@ const nodes: NodeDef[] = [
     id: 'es',
     label: 'Elasticsearch + Kibana',
     icon: '🔎',
-    x: 1340,
+    x: 1450,
     y: 400,
     width: 260,
     color: '#00BFB3',
@@ -65,9 +65,9 @@ const nodes: NodeDef[] = [
 ];
 
 const edges: EdgeDef[] = [
-  { fromX: 300, fromY: 440, toX: 480, toY: 440 },
-  { fromX: 740, fromY: 440, toX: 900, toY: 440 },
-  { fromX: 1180, fromY: 440, toX: 1340, toY: 440 },
+  { fromX: 410, fromY: 440, toX: 590, toY: 440 },
+  { fromX: 850, fromY: 440, toX: 1010, toY: 440 },
+  { fromX: 1290, fromY: 440, toX: 1450, toY: 440 },
 ];
 
 const NODE_STAGGER = 45;
