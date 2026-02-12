@@ -1,0 +1,10 @@
+.venv/
+.env
+.git/
+demo/
+data/
+setup/
+__pycache__/
+*.pyc
+node_modules/
+.claude/

@@ -1,0 +1,17 @@
+# fly.toml app configuration file generated for beanstack-bot on 2026-02-12T11:57:13+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'beanstack-bot'
+primary_region = 'iad'
+
+[build]
+
+[processes]
+  bot = 'uv run python slack_bot/bot.py'
+
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '256mb'
+  processes = ['bot']
