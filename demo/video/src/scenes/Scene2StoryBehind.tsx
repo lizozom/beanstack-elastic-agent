@@ -23,7 +23,7 @@ export const Scene2StoryBehind: React.FC = () => {
     <div style={{ opacity: fade }}>
       <ChatInterface fadeIn={false}>
         {/* Narrator hint */}
-        <Sequence from={0} durationInFrames={50}>
+        <Sequence from={0} durationInFrames={50} layout="none">
           <div
             style={{
               fontFamily: FONTS.primary,
@@ -50,12 +50,12 @@ export const Scene2StoryBehind: React.FC = () => {
         </ChatMessage>
 
         {/* Tool indicator */}
-        <Sequence from={120}>
+        <Sequence from={120} layout="none">
           <ToolIndicator tools={conv.tools} startFrame={0} />
         </Sequence>
 
         {/* Searching animation */}
-        <Sequence from={140} durationInFrames={40}>
+        <Sequence from={140} durationInFrames={40} layout="none">
           <div
             style={{
               marginLeft: 42,
@@ -112,7 +112,7 @@ export const Scene2StoryBehind: React.FC = () => {
       </ChatInterface>
 
       <LowerThird
-        text="Cohere Embed v4 + RRF hybrid retrieval → semantic search"
+        text="Cohere Embed v4 + Hybrid Search"
         startFrame={500}
         durationInFrames={350}
       />

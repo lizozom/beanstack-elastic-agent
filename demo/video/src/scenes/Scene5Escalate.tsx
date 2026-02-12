@@ -32,12 +32,12 @@ export const Scene5Escalate: React.FC = () => {
         </ChatMessage>
 
         {/* Tool indicator */}
-        <Sequence from={110}>
+        <Sequence from={110} layout="none">
           <ToolIndicator tools={conv.tools} startFrame={0} />
         </Sequence>
 
         {/* Escalation workflow */}
-        <Sequence from={140}>
+        <Sequence from={140} layout="none">
           <WorkflowChain
             steps={workflowSteps.escalation}
             startFrame={0}

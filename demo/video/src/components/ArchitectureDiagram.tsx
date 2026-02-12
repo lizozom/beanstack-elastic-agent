@@ -152,11 +152,11 @@ export const ArchitectureDiagram: React.FC<{ startFrame?: number }> = ({
                 boxShadow: `0 0 20px ${node.color}15`,
               }}
             >
-              <div style={{ fontSize: 28, marginBottom: 8 }}>{node.icon}</div>
+              <div style={{ fontSize: 36, marginBottom: 8 }}>{node.icon}</div>
               <div
                 style={{
                   fontFamily: FONTS.primary,
-                  fontSize: 16,
+                  fontSize: 21,
                   fontWeight: 600,
                   color: UI.text,
                 }}
@@ -167,7 +167,7 @@ export const ArchitectureDiagram: React.FC<{ startFrame?: number }> = ({
                 <div
                   style={{
                     fontFamily: FONTS.primary,
-                    fontSize: 13,
+                    fontSize: 17,
                     color: node.color,
                     marginTop: 4,
                   }}
@@ -206,7 +206,7 @@ export const ArchitectureDiagram: React.FC<{ startFrame?: number }> = ({
                         backgroundColor: `${node.color}15`,
                         border: `1px solid ${node.color}25`,
                         fontFamily: FONTS.primary,
-                        fontSize: 13,
+                        fontSize: 17,
                         color: UI.textSecondary,
                         textAlign: 'center',
                       }}

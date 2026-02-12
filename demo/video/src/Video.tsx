@@ -27,39 +27,39 @@ import { Closing } from './scenes/Closing';
 export const BeanStackVideo: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
-      <Sequence from={0} durationInFrames={170}>
+      <Sequence from={0} durationInFrames={200}>
         <ColdOpen />
       </Sequence>
 
-      <Sequence from={130} durationInFrames={940}>
+      <Sequence from={175} durationInFrames={940}>
         <IntroProblem />
       </Sequence>
 
-      <Sequence from={1030} durationInFrames={940}>
+      <Sequence from={1045} durationInFrames={940}>
         <SolutionArchitecture />
       </Sequence>
 
-      <Sequence from={1930} durationInFrames={790}>
+      <Sequence from={1945} durationInFrames={790}>
         <Scene1BigPicture />
       </Sequence>
 
-      <Sequence from={2680} durationInFrames={940}>
+      <Sequence from={2695} durationInFrames={940}>
         <Scene2StoryBehind />
       </Sequence>
 
-      <Sequence from={3580} durationInFrames={640}>
+      <Sequence from={3595} durationInFrames={640}>
         <Scene3ActOnIt />
       </Sequence>
 
-      <Sequence from={4180} durationInFrames={940}>
+      <Sequence from={4195} durationInFrames={940}>
         <Scene4FindBroken />
       </Sequence>
 
-      <Sequence from={5080} durationInFrames={790}>
+      <Sequence from={5095} durationInFrames={790}>
         <Scene5Escalate />
       </Sequence>
 
-      <Sequence from={5830} durationInFrames={470}>
+      <Sequence from={5845} durationInFrames={470}>
         <Closing />
       </Sequence>
     </AbsoluteFill>

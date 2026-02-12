@@ -32,12 +32,12 @@ export const Scene3ActOnIt: React.FC = () => {
         </ChatMessage>
 
         {/* Tool indicator */}
-        <Sequence from={90}>
+        <Sequence from={90} layout="none">
           <ToolIndicator tools={conv.tools} startFrame={0} />
         </Sequence>
 
         {/* Workflow animation */}
-        <Sequence from={120}>
+        <Sequence from={120} layout="none">
           <WorkflowChain
             steps={workflowSteps.sendEmail}
             startFrame={0}
@@ -57,7 +57,7 @@ export const Scene3ActOnIt: React.FC = () => {
         </ChatMessage>
 
         {/* Notification chime visual */}
-        <Sequence from={350} durationInFrames={30}>
+        <Sequence from={350} durationInFrames={30} layout="none">
           <div
             style={{
               position: 'absolute',

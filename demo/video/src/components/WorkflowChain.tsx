@@ -67,15 +67,15 @@ export const WorkflowChain: React.FC<WorkflowChainProps> = ({
             >
               <div
                 style={{
-                  width: 20,
-                  height: 20,
+                  width: 26,
+                  height: 26,
                   borderRadius: '50%',
                   backgroundColor: isComplete ? UI.accentGreen : UI.surfaceLight,
                   border: `2px solid ${isComplete ? UI.accentGreen : UI.accent}`,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: 10,
+                  fontSize: 13,
                   color: isComplete ? '#fff' : UI.accent,
                   transform: `scale(${appear})`,
                 }}
@@ -110,11 +110,11 @@ export const WorkflowChain: React.FC<WorkflowChainProps> = ({
                   gap: 8,
                 }}
               >
-                <span style={{ fontSize: 14 }}>{step.icon}</span>
+                <span style={{ fontSize: 18 }}>{step.icon}</span>
                 <span
                   style={{
                     fontFamily: FONTS.primary,
-                    fontSize: 14,
+                    fontSize: 18,
                     color: isComplete ? UI.accentGreen : UI.text,
                     fontWeight: isComplete && isLast ? 600 : 400,
                   }}
@@ -124,8 +124,8 @@ export const WorkflowChain: React.FC<WorkflowChainProps> = ({
                 {!isComplete && (
                   <div
                     style={{
-                      width: 12,
-                      height: 12,
+                      width: 16,
+                      height: 16,
                       border: `2px solid ${UI.accent}`,
                       borderTopColor: 'transparent',
                       borderRadius: '50%',

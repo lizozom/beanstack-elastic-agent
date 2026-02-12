@@ -39,7 +39,7 @@ export const Scene4FindBroken: React.FC = () => {
     <div style={{ opacity: fade }}>
       <ChatInterface fadeIn={false}>
         {/* Narrator hint */}
-        <Sequence from={0} durationInFrames={50}>
+        <Sequence from={0} durationInFrames={50} layout="none">
           <div
             style={{
               fontFamily: FONTS.primary,
@@ -65,7 +65,7 @@ export const Scene4FindBroken: React.FC = () => {
         </ChatMessage>
 
         {/* Tool indicators - showing chain */}
-        <Sequence from={110}>
+        <Sequence from={110} layout="none">
           <ToolIndicator tools={conv.tools} startFrame={0} staggerFrames={30} />
         </Sequence>
 
@@ -82,7 +82,7 @@ export const Scene4FindBroken: React.FC = () => {
               }}
             />
 
-            <Sequence from={180}>
+            <Sequence from={180} layout="none">
               <DataTable
                 headers={tableHeaders}
                 rows={tableRows}
@@ -104,7 +104,7 @@ export const Scene4FindBroken: React.FC = () => {
         />
 
         {/* Summary */}
-        <Sequence from={600}>
+        <Sequence from={600} layout="none">
           <ChatMessage type="agent" startFrame={600}>
             <TypewriterText
               text="Structured data flags the problem. Unstructured reports explain the cause. The agent connects both."

@@ -8,16 +8,16 @@ export const FONTS = {
 } as const;
 
 export const TEXT = {
-  hero: { fontSize: 72, fontWeight: 700 as const, lineHeight: 1.1 },
-  h1: { fontSize: 56, fontWeight: 700 as const, lineHeight: 1.2 },
-  h2: { fontSize: 42, fontWeight: 600 as const, lineHeight: 1.3 },
-  h3: { fontSize: 32, fontWeight: 600 as const, lineHeight: 1.4 },
-  body: { fontSize: 24, fontWeight: 400 as const, lineHeight: 1.6 },
-  bodyLarge: { fontSize: 28, fontWeight: 400 as const, lineHeight: 1.5 },
-  caption: { fontSize: 18, fontWeight: 400 as const, lineHeight: 1.4 },
-  mono: { fontSize: 20, fontWeight: 400 as const, lineHeight: 1.5 },
-  lowerThird: { fontSize: 22, fontWeight: 500 as const, lineHeight: 1.3 },
-  chatPrompt: { fontSize: 22, fontWeight: 400 as const, lineHeight: 1.5 },
-  chatResponse: { fontSize: 20, fontWeight: 400 as const, lineHeight: 1.6 },
-  toolBadge: { fontSize: 14, fontWeight: 600 as const, lineHeight: 1 },
+  hero: { fontSize: 94, fontWeight: 700 as const, lineHeight: 1.1 },
+  h1: { fontSize: 73, fontWeight: 700 as const, lineHeight: 1.2 },
+  h2: { fontSize: 55, fontWeight: 600 as const, lineHeight: 1.3 },
+  h3: { fontSize: 42, fontWeight: 600 as const, lineHeight: 1.4 },
+  body: { fontSize: 31, fontWeight: 400 as const, lineHeight: 1.6 },
+  bodyLarge: { fontSize: 36, fontWeight: 400 as const, lineHeight: 1.5 },
+  caption: { fontSize: 23, fontWeight: 400 as const, lineHeight: 1.4 },
+  mono: { fontSize: 26, fontWeight: 400 as const, lineHeight: 1.5 },
+  lowerThird: { fontSize: 29, fontWeight: 500 as const, lineHeight: 1.3 },
+  chatPrompt: { fontSize: 29, fontWeight: 400 as const, lineHeight: 1.5 },
+  chatResponse: { fontSize: 26, fontWeight: 400 as const, lineHeight: 1.6 },
+  toolBadge: { fontSize: 18, fontWeight: 600 as const, lineHeight: 1 },
 } as const;

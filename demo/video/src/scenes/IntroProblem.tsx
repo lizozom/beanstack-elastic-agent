@@ -236,50 +236,72 @@ export const IntroProblem: React.FC = () => {
         </AbsoluteFill>
       </Sequence>
 
-      {/* Shot 5: Abstract stress (595-735) */}
+      {/* Shot 5: Frustrated manager — business woman clip (595-735) */}
       <Sequence from={595} durationInFrames={140}>
         <AbsoluteFill style={{ opacity: shotOpacity(595, 140) }}>
-          <AbsoluteFill style={{ backgroundColor: COFFEE.espresso }}>
-            <AbsoluteFill
-              style={{ justifyContent: 'center', alignItems: 'center' }}
-            >
-              {/* Text fragments orbiting */}
-              {[
-                'equipment failure',
-                'revenue down',
-                'staffing',
-                'supply chain',
-                'complaints',
-                'inspection',
-                'turnover',
-                'costs',
-              ].map((text, i) => {
-                const angle =
-                  (i / 8) * Math.PI * 2 + (frame - 595) * 0.008;
-                const radius = 180 + Math.sin(frame * 0.02 + i) * 30;
-                const x = Math.cos(angle) * radius;
-                const y = Math.sin(angle) * radius;
-                return (
-                  <div
-                    key={i}
-                    style={{
-                      position: 'absolute',
-                      left: `calc(50% + ${x}px)`,
-                      top: `calc(50% + ${y}px)`,
-                      fontFamily: FONTS.primary,
-                      fontSize: 16,
-                      color: COFFEE.cream,
-                      opacity: 0.4,
-                      transform: 'translate(-50%, -50%)',
-                    }}
-                  >
-                    {text}
-                  </div>
-                );
-              })}
-              {/* Center icon */}
-              <div style={{ fontSize: 60, opacity: 0.7 }}>😰</div>
-            </AbsoluteFill>
+          <OffthreadVideo
+            src={staticFile('business woman.mov')}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              filter: 'saturate(1.1) sepia(0.15) brightness(1.05)',
+            }}
+          />
+          {/* Warm tint overlay */}
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              backgroundColor: 'rgba(139, 90, 43, 0.15)',
+              mixBlendMode: 'multiply',
+            }}
+          />
+          {/* Dark overlay */}
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              backgroundColor: 'rgba(0,0,0,0.35)',
+            }}
+          />
+          {/* Orbiting stress text fragments */}
+          <AbsoluteFill
+            style={{ justifyContent: 'center', alignItems: 'center' }}
+          >
+            {[
+              'equipment failure',
+              'revenue down',
+              'staffing',
+              'supply chain',
+              'complaints',
+              'inspection',
+              'turnover',
+              'costs',
+            ].map((text, i) => {
+              const angle =
+                (i / 8) * Math.PI * 2 + (frame - 595) * 0.008;
+              const radius = 200 + Math.sin(frame * 0.02 + i) * 35;
+              const x = Math.cos(angle) * radius;
+              const y = Math.sin(angle) * radius;
+              return (
+                <div
+                  key={i}
+                  style={{
+                    position: 'absolute',
+                    left: `calc(50% + ${x}px)`,
+                    top: `calc(35% + ${y}px)`,
+                    fontFamily: FONTS.primary,
+                    fontSize: 22,
+                    color: COFFEE.cream,
+                    opacity: 0.5,
+                    transform: 'translate(-50%, -50%)',
+                  }}
+                >
+                  {text}
+                </div>
+              );
+            })}
           </AbsoluteFill>
         </AbsoluteFill>
       </Sequence>
@@ -341,8 +363,13 @@ export const IntroProblem: React.FC = () => {
       {/* Lower third */}
       <LowerThird
         text="BeanStack — 106 branches across the US"
-        startFrame={335}
-        durationInFrames={200}
+        startFrame={250}
+        durationInFrames={155}
+      />
+      <LowerThird
+        text="Hundreds of weekly operational updates"
+        startFrame={450}
+        durationInFrames={150}
       />
     </AbsoluteFill>
   );

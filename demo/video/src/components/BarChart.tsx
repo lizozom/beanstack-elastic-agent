@@ -16,6 +16,8 @@ interface BarChartProps {
   formatValue?: (v: number) => string;
 }
 
+const BAR_MAX_HEIGHT = 200;
+
 export const BarChart: React.FC<BarChartProps> = ({
   data,
   startFrame = 0,
@@ -27,7 +29,16 @@ export const BarChart: React.FC<BarChartProps> = ({
   const maxValue = Math.max(...data.map((d) => d.value));
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 10, width: '100%' }}>
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'flex-end',
+        justifyContent: 'center',
+        gap: 40,
+        width: '100%',
+        paddingTop: 20,
+      }}
+    >
       {data.map((item, i) => {
         const s = spring({
           frame: frame - startFrame - i * staggerFrames,
@@ -35,7 +46,7 @@ export const BarChart: React.FC<BarChartProps> = ({
           config: { damping: 20, stiffness: 100, mass: 0.8 },
         });
 
-        const barWidth = (item.value / maxValue) * 100 * s;
+        const barHeight = (item.value / maxValue) * BAR_MAX_HEIGHT * s;
         const isHighlight = item.highlight;
 
         return (
@@ -43,59 +54,63 @@ export const BarChart: React.FC<BarChartProps> = ({
             key={i}
             style={{
               display: 'flex',
+              flexDirection: 'column',
               alignItems: 'center',
-              gap: 12,
+              gap: 8,
               opacity: Math.min(s * 2, 1),
             }}
           >
+            {/* Value label above bar */}
             <div
               style={{
-                width: 110,
-                fontFamily: FONTS.primary,
-                fontSize: 14,
-                color: isHighlight ? COFFEE.amber : UI.textSecondary,
-                textAlign: 'right',
-                fontWeight: isHighlight ? 600 : 400,
-                flexShrink: 0,
+                fontFamily: FONTS.mono,
+                fontSize: 18,
+                color: isHighlight ? COFFEE.amber : UI.text,
+                fontWeight: isHighlight ? 700 : 500,
               }}
             >
-              {item.label}
+              {s > 0.1 ? formatValue(item.value) : ''}
             </div>
+
+            {/* Bar */}
             <div
               style={{
-                flex: 1,
-                height: 28,
+                width: 100,
+                height: BAR_MAX_HEIGHT,
                 backgroundColor: UI.surfaceLight,
-                borderRadius: 4,
+                borderRadius: 6,
                 overflow: 'hidden',
+                display: 'flex',
+                alignItems: 'flex-end',
                 position: 'relative',
               }}
             >
               <div
                 style={{
-                  width: `${barWidth}%`,
-                  height: '100%',
+                  width: '100%',
+                  height: barHeight,
                   background: isHighlight
-                    ? `linear-gradient(90deg, ${COFFEE.amber}, ${COFFEE.warmGold})`
-                    : `linear-gradient(90deg, ${UI.accent}80, ${UI.accent}40)`,
-                  borderRadius: 4,
+                    ? `linear-gradient(to top, ${COFFEE.amber}, ${COFFEE.warmGold})`
+                    : `linear-gradient(to top, ${UI.accent}80, ${UI.accent}40)`,
+                  borderRadius: 6,
                   boxShadow: isHighlight
-                    ? `0 0 12px ${COFFEE.amber}40`
+                    ? `0 0 16px ${COFFEE.amber}40`
                     : 'none',
                 }}
               />
             </div>
+
+            {/* Label below bar */}
             <div
               style={{
-                width: 70,
-                fontFamily: FONTS.mono,
-                fontSize: 14,
-                color: isHighlight ? COFFEE.amber : UI.text,
+                fontFamily: FONTS.primary,
+                fontSize: 16,
+                color: isHighlight ? COFFEE.amber : UI.textSecondary,
                 fontWeight: isHighlight ? 600 : 400,
-                flexShrink: 0,
+                textAlign: 'center',
               }}
             >
-              {s > 0.1 ? formatValue(item.value) : ''}
+              {item.label}
             </div>
           </div>
         );

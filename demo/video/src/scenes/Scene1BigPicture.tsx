@@ -23,7 +23,7 @@ export const Scene1BigPicture: React.FC = () => {
     <div style={{ opacity: fade }}>
       <ChatInterface fadeIn={false}>
         {/* Narrator hint */}
-        <Sequence from={0} durationInFrames={50}>
+        <Sequence from={0} durationInFrames={50} layout="none">
           <div
             style={{
               fontFamily: FONTS.primary,
@@ -50,7 +50,7 @@ export const Scene1BigPicture: React.FC = () => {
         </ChatMessage>
 
         {/* Tool indicator */}
-        <Sequence from={110}>
+        <Sequence from={110} layout="none">
           <ToolIndicator tools={conv.tools} startFrame={0} />
         </Sequence>
 
@@ -68,7 +68,7 @@ export const Scene1BigPicture: React.FC = () => {
               }}
             />
 
-            <Sequence from={160}>
+            <Sequence from={160} layout="none">
               <BarChart
                 data={regionRevenue}
                 startFrame={0}
@@ -76,7 +76,7 @@ export const Scene1BigPicture: React.FC = () => {
               />
             </Sequence>
 
-            <Sequence from={250}>
+            <Sequence from={250} layout="none">
               <FadeInText
                 text="BeanStack Uptown New York stands out — $960K in Q3 alone, far above the regional average."
                 delay={0}
