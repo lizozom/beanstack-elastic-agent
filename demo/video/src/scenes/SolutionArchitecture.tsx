@@ -113,25 +113,40 @@ export const SolutionArchitecture: React.FC = () => {
               { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
             );
 
+            // Highlight each tool category once, starting at frame 420 (second 14)
+            const highlightIndex = Math.floor((frame - 420) / 150);
+            const isHighlighted = highlightIndex === i && i < toolCategories.length - 1;
+            const highlightGlow = isHighlighted
+              ? interpolate(
+                  (frame - 420) % 40,
+                  [0, 10, 30, 40],
+                  [0, 1, 1, 0],
+                  { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
+                )
+              : 0;
+
             return (
               <div
                 key={i}
                 style={{
                   opacity,
-                  transform: `translateY(${slideY}px)`,
+                  transform: `translateY(${slideY}px) scale(${1 + highlightGlow * 0.05})`,
                   textAlign: 'center',
                   padding: '14px 24px',
                   borderRadius: 10,
-                  backgroundColor: `${cat.color}10`,
-                  border: `1px solid ${cat.color}25`,
+                  backgroundColor: isHighlighted ? `${cat.color}30` : `${cat.color}10`,
+                  border: `1px solid ${isHighlighted ? cat.color : `${cat.color}25`}`,
+                  boxShadow: isHighlighted
+                    ? `0 0 ${12 + highlightGlow * 8}px ${cat.color}40`
+                    : 'none',
                   minWidth: 180,
                 }}
               >
-                <div style={{ fontSize: 24, marginBottom: 6 }}>{cat.icon}</div>
+                <div style={{ fontSize: 31, marginBottom: 6 }}>{cat.icon}</div>
                 <div
                   style={{
                     fontFamily: FONTS.primary,
-                    fontSize: 28,
+                    fontSize: 36,
                     fontWeight: 700,
                     color: cat.color,
                   }}
@@ -141,9 +156,11 @@ export const SolutionArchitecture: React.FC = () => {
                 <div
                   style={{
                     fontFamily: FONTS.primary,
-                    fontSize: 14,
-                    color: UI.textSecondary,
+                    fontSize: 30,
+                    color: isHighlighted ? UI.text : UI.textSecondary,
+                    fontWeight: isHighlighted ? 600 : 400,
                     marginTop: 4,
+                    width: 220,
                   }}
                 >
                   {cat.label}
@@ -151,29 +168,6 @@ export const SolutionArchitecture: React.FC = () => {
               </div>
             );
           })}
-        </div>
-      </Sequence>
-
-      {/* Total tools callout */}
-      <Sequence from={500}>
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 40,
-            left: 0,
-            right: 0,
-            textAlign: 'center',
-          }}
-        >
-          <FadeInText
-            text="21 specialized tools — the agent picks the right one automatically"
-            delay={0}
-            style={{
-              ...TEXT.body,
-              color: UI.textSecondary,
-              fontStyle: 'italic',
-            }}
-          />
         </div>
       </Sequence>
     </AbsoluteFill>

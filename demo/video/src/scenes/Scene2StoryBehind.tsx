@@ -22,23 +22,6 @@ export const Scene2StoryBehind: React.FC = () => {
   return (
     <div style={{ opacity: fade }}>
       <ChatInterface fadeIn={false}>
-        {/* Narrator hint */}
-        <Sequence from={0} durationInFrames={50} layout="none">
-          <div
-            style={{
-              fontFamily: FONTS.primary,
-              ...TEXT.caption,
-              color: UI.textSecondary,
-              fontStyle: 'italic',
-              textAlign: 'center',
-              paddingBottom: 8,
-            }}
-          >
-            Numbers tell you what happened. But the why is buried in
-            unstructured reports...
-          </div>
-        </Sequence>
-
         {/* User prompt */}
         <ChatMessage type="user" startFrame={40}>
           <TypewriterText

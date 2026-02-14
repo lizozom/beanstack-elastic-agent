@@ -22,23 +22,6 @@ export const Scene1BigPicture: React.FC = () => {
   return (
     <div style={{ opacity: fade }}>
       <ChatInterface fadeIn={false}>
-        {/* Narrator hint */}
-        <Sequence from={0} durationInFrames={50} layout="none">
-          <div
-            style={{
-              fontFamily: FONTS.primary,
-              ...TEXT.caption,
-              color: UI.textSecondary,
-              fontStyle: 'italic',
-              textAlign: 'center',
-              paddingBottom: 8,
-            }}
-          >
-            The operations lead wants to compare how their biggest markets are
-            performing...
-          </div>
-        </Sequence>
-
         {/* User prompt */}
         <ChatMessage type="user" startFrame={40}>
           <TypewriterText

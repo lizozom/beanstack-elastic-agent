@@ -34,9 +34,12 @@
 **Music:** Fades in — soft, rhythmic, builds energy.
 
 **Narrator:**
-> BeanStack runs 106 coffee branches across the United States. Every week, branch managers write reports — equipment failures, staffing shortages, supply chain issues, local events. That's over 2,600 reports in six months. On top of that, quarterly financial reports: revenue, labor costs, waste, customer satisfaction.
->
-> At headquarters, a small operations team is supposed to read all of it. Spot the problems. Act on them. But nobody has time to read a hundred reports a week. The problems are in there — buried.
+
+BeanStack is a popular coffee chain that runs 106 bustling branches across the United States. Every week, branch managers submit a total of *over 200* reports ranging from revenue to maintenance issues!
+
+At headquarters, a small ops team is supposed to read ALL of it. Take care of the problems. But nobody has time to read hundreds of reports a week... Instead, the problems stay buried...
+
+That's why we built BeanStack Agent. An operations intelligence agent that connects the dots and takes action.
 
 **Lower third (0:28):** `BeanStack — 106 branches across the US`
 
@@ -51,11 +54,12 @@
 **Visual:** Architecture diagram (animated or static), then transition to agent config screen.
 
 **Narrator:**
-> We built BeanStack Agent — a domain-specific operations intelligence agent, purpose-built for one thing: making sense of a 100-branch coffee chain.
->
-> It's built on Elastic Agent Builder, powered by Claude, with Elasticsearch as the search and analytics engine. The agent has access to over 20 tools across three categories: Index Search tools that search across reports, branches, staff, and financial data. ES|QL analytics tools — pre-built, precise queries for things like revenue by region, underperforming branches, staff turnover, and equipment issues. And to add actionability, Kibana Workflow tools that take real action — sending emails, creating cases and triggering reminders.
 
-The Agent is available in Slack, WhatsApp, or any client you choose. It's designed to meet the team where they already work.
+BeanStack's Agent is available in Slack and WhatsApp. It can be easily integrated into any platform. 
+
+It is built on Elastic Agent Builder and has access to over 20 tools across three categories:  * Index Search tools that search across reports, staff, and financial data. 
+* Analytics tools — pre-built queries for things like revenue by region and underperforming branches. 
+* And Workflow tools that take real action — sending emails and creating cases
 
 **Screen:** Show the tools panel in Agent Builder briefly, then the agent config with system prompt.
 
@@ -74,7 +78,7 @@ The Agent is available in Slack, WhatsApp, or any client you choose. It's design
 **Screen:** Agent responds. It selects the revenue_by_region ES|QL tool, then the search_financial_reports index search tool. Data streams in — revenue figures, customer satisfaction, transaction counts. BeanStack Uptown New York stands out.
 
 **Narrator:**
-> The agent uses the revenue tool for precise aggregation, then searches the financial index for context. No prompt engineering needed — it picks the right tools automatically. Uptown New York is pulling far ahead. Something's different there.
+The agent uses the revenue tool for precise aggregation, then searches the financial index for context. No prompt engineering needed — it picks the right tools automatically. Uptown New York is pulling far ahead. Something's different there.
 
 ---
 
@@ -89,7 +93,9 @@ The Agent is available in Slack, WhatsApp, or any client you choose. It's design
 **Screen:** Agent switches to the search_reports tool — semantic search with Cohere embeddings. Text fragments appear — weekly manager emails from months ago. The TikTok story surfaces.
 
 **Narrator:**
-> The agent switches to semantic search — Cohere Embed v4 with RRF hybrid retrieval. It finds a weekly report from months ago mentioning a barista who went viral on TikTok. Tourists started lining up. A normal branch became a destination. That story wasn't in any spreadsheet — it was in an unstructured email that nobody at headquarters had time to read.
+Numbers tell you what happened. But the *why* is buried in unstructured weekly reports.
+
+The agent switches to semantic search. It finds a weekly report from months ago mentioning a barista who went viral on TikTok... Tourists started lining up. A normal branch became a destination! That story *wasn't* in any spreadsheet — it was in an unstructured email that nobody had time to read.
 
 ---
 

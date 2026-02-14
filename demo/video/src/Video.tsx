@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Sequence } from 'remotion';
+import { AbsoluteFill, Audio, Sequence, staticFile } from 'remotion';
 import { ColdOpen } from './scenes/ColdOpen';
 import { IntroProblem } from './scenes/IntroProblem';
 import { SolutionArchitecture } from './scenes/SolutionArchitecture';
@@ -31,27 +31,39 @@ export const BeanStackVideo: React.FC = () => {
         <ColdOpen />
       </Sequence>
 
-      <Sequence from={175} durationInFrames={940}>
+      <Sequence from={175} durationInFrames={955}>
         <IntroProblem />
+        <Audio src={staticFile('01 - INTRO THE PROBLEM.mp3')} playbackRate={1.1} />
       </Sequence>
 
-      <Sequence from={1045} durationInFrames={940}>
+      <Sequence from={1130} durationInFrames={940}>
         <SolutionArchitecture />
+        <Sequence from={15}>
+          <Audio src={staticFile('02 - ARCHITECTURE.mp3')} playbackRate={1.1} />
+        </Sequence>
       </Sequence>
 
-      <Sequence from={1945} durationInFrames={790}>
+      <Sequence from={2070} durationInFrames={640}>
         <Scene1BigPicture />
+        <Sequence from={0}>
+          <Audio src={staticFile('03 - big pic 1.mp3')} playbackRate={1.1} />
+        </Sequence>
+        <Sequence from={190}>
+          <Audio src={staticFile('04 - big pic 2.mp3')} playbackRate={1.1} />
+        </Sequence>
       </Sequence>
 
-      <Sequence from={2695} durationInFrames={940}>
+      <Sequence from={2710} durationInFrames={700}>
         <Scene2StoryBehind />
+        <Audio src={staticFile('05 - semantic.mp3')} playbackRate={1.1} />
       </Sequence>
 
-      <Sequence from={3595} durationInFrames={640}>
+      <Sequence from={3410} durationInFrames={640}>
         <Scene3ActOnIt />
+        <Audio src={staticFile('06 - action.mp3')} playbackRate={1.1} />
       </Sequence>
 
-      <Sequence from={4195} durationInFrames={940}>
+      <Sequence from={4050} durationInFrames={940}>
         <Scene4FindBroken />
       </Sequence>
 

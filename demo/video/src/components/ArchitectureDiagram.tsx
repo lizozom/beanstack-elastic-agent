@@ -13,6 +13,7 @@ interface NodeDef {
   width: number;
   color: string;
   subItems?: string[];
+  delay?: number;
 }
 
 interface EdgeDef {
@@ -32,6 +33,7 @@ const nodes: NodeDef[] = [
     width: 200,
     color: UI.accent,
     subItems: ['Slack', 'WhatsApp', 'Chat'],
+    delay: 0,
   },
   {
     id: 'agent',
@@ -42,6 +44,7 @@ const nodes: NodeDef[] = [
     y: 400,
     width: 260,
     color: COFFEE.amber,
+    delay: 150,
   },
   {
     id: 'tools',
@@ -52,6 +55,7 @@ const nodes: NodeDef[] = [
     width: 280,
     color: UI.accentGreen,
     subItems: ['Index Search (4)', 'ES|QL (10)', 'Workflows (3)'],
+    delay: 195,
   },
   {
     id: 'es',
@@ -61,6 +65,7 @@ const nodes: NodeDef[] = [
     y: 400,
     width: 260,
     color: '#00BFB3',
+    delay: 240,
   },
 ];
 
@@ -88,7 +93,8 @@ export const ArchitectureDiagram: React.FC<{ startFrame?: number }> = ({
         style={{ position: 'absolute', top: 0, left: 0 }}
       >
         {edges.map((edge, i) => {
-          const edgeStart = startFrame + (i + 1) * NODE_STAGGER - 10;
+          const targetNodeDelay = nodes[i + 1].delay ?? (i + 1) * NODE_STAGGER;
+          const edgeStart = startFrame + targetNodeDelay - 10;
           const length = edge.toX - edge.fromX;
           const progress = interpolate(
             frame,
@@ -123,8 +129,9 @@ export const ArchitectureDiagram: React.FC<{ startFrame?: number }> = ({
 
       {/* Nodes */}
       {nodes.map((node, i) => {
+        const nodeDelay = node.delay ?? i * NODE_STAGGER;
         const s = spring({
-          frame: frame - startFrame - i * NODE_STAGGER,
+          frame: frame - startFrame - nodeDelay,
           fps,
           config: { damping: 15, stiffness: 150, mass: 0.6 },
         });
@@ -152,11 +159,11 @@ export const ArchitectureDiagram: React.FC<{ startFrame?: number }> = ({
                 boxShadow: `0 0 20px ${node.color}15`,
               }}
             >
-              <div style={{ fontSize: 36, marginBottom: 8 }}>{node.icon}</div>
+              <div style={{ fontSize: 47, marginBottom: 8 }}>{node.icon}</div>
               <div
                 style={{
                   fontFamily: FONTS.primary,
-                  fontSize: 21,
+                  fontSize: 27,
                   fontWeight: 600,
                   color: UI.text,
                 }}
@@ -167,7 +174,7 @@ export const ArchitectureDiagram: React.FC<{ startFrame?: number }> = ({
                 <div
                   style={{
                     fontFamily: FONTS.primary,
-                    fontSize: 17,
+                    fontSize: 22,
                     color: node.color,
                     marginTop: 4,
                   }}
@@ -190,25 +197,49 @@ export const ArchitectureDiagram: React.FC<{ startFrame?: number }> = ({
                 {node.subItems.map((sub, si) => {
                   const subS = spring({
                     frame:
-                      frame - startFrame - i * NODE_STAGGER - 15 - si * 8,
+                      frame - startFrame - nodeDelay - 15 - si * 8,
                     fps,
                     config: { damping: 20, stiffness: 200, mass: 0.5 },
                   });
+
+                  // For the User node, cycle highlight through sub-items
+                  const isUserNode = node.id === 'user';
+                  const highlightCycle = isUserNode
+                    ? Math.floor(
+                        (frame - startFrame - nodeDelay - 30) / 40,
+                      )
+                    : -1;
+                  const isHighlighted = isUserNode && highlightCycle === si;
+                  const highlightGlow = isHighlighted
+                    ? interpolate(
+                        (frame - startFrame - nodeDelay - 30) % 40,
+                        [0, 10, 30, 40],
+                        [0, 1, 1, 0],
+                        { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
+                      )
+                    : 0;
 
                   return (
                     <div
                       key={si}
                       style={{
                         opacity: subS,
-                        transform: `translateY(${(1 - subS) * 8}px)`,
+                        transform: `translateY(${(1 - subS) * 8}px) scale(${1 + highlightGlow * 0.05})`,
                         padding: '6px 12px',
                         borderRadius: 6,
-                        backgroundColor: `${node.color}15`,
-                        border: `1px solid ${node.color}25`,
+                        backgroundColor: isHighlighted
+                          ? `${node.color}30`
+                          : `${node.color}15`,
+                        border: `1px solid ${isHighlighted ? node.color : `${node.color}25`}`,
+                        boxShadow: isHighlighted
+                          ? `0 0 ${12 + highlightGlow * 8}px ${node.color}40`
+                          : 'none',
                         fontFamily: FONTS.primary,
-                        fontSize: 17,
-                        color: UI.textSecondary,
+                        fontSize: 28,
+                        color: isHighlighted ? UI.text : UI.textSecondary,
+                        fontWeight: isHighlighted ? 600 : 400,
                         textAlign: 'center',
+                        transition: 'none',
                       }}
                     >
                       {sub}

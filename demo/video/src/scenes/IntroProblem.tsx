@@ -307,7 +307,7 @@ export const IntroProblem: React.FC = () => {
       </Sequence>
 
       {/* Chat interface reveal (725-900) */}
-      <Sequence from={725} durationInFrames={175}>
+      <Sequence from={725} durationInFrames={200}>
         <ChatInterface title="BeanStack Agent" fadeIn>
           <div
             style={{
@@ -337,7 +337,7 @@ export const IntroProblem: React.FC = () => {
         </ChatInterface>
 
         {/* Text overlay */}
-        <Sequence from={50} durationInFrames={125}>
+        <Sequence from={50} durationInFrames={150}>
           <div
             style={{
               position: 'absolute',
