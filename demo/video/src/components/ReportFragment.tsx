@@ -61,7 +61,7 @@ export const ReportFragment: React.FC<ReportFragmentProps> = ({
         border: `1px solid ${UI.border}`,
         borderRadius: 8,
         padding: '12px 16px',
-        marginLeft: 42,
+        marginLeft: 62,
         maxWidth: '70%',
       }}
     >
@@ -76,7 +76,7 @@ export const ReportFragment: React.FC<ReportFragmentProps> = ({
         <span
           style={{
             fontFamily: FONTS.mono,
-            fontSize: 12,
+            fontSize: 18,
             color: UI.textSecondary,
           }}
         >
@@ -86,7 +86,7 @@ export const ReportFragment: React.FC<ReportFragmentProps> = ({
       <div
         style={{
           fontFamily: FONTS.primary,
-          fontSize: 14,
+          fontSize: 22,
           fontWeight: 600,
           color: UI.text,
           marginBottom: 8,
@@ -98,7 +98,7 @@ export const ReportFragment: React.FC<ReportFragmentProps> = ({
       <div
         style={{
           fontFamily: FONTS.primary,
-          fontSize: 14,
+          fontSize: 20,
           color: UI.textSecondary,
           lineHeight: 1.5,
         }}

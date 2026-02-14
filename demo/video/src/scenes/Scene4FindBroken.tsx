@@ -4,56 +4,43 @@ import { ChatInterface } from '../components/ChatInterface';
 import { ChatMessage } from '../components/ChatMessage';
 import { TypewriterText } from '../components/TypewriterText';
 import { ToolIndicator } from '../components/ToolIndicator';
-import { DataTable } from '../components/DataTable';
-import { ReportFragment } from '../components/ReportFragment';
 import { FadeInText } from '../components/FadeInText';
 import { LowerThird } from '../components/LowerThird';
 import { conversations } from '../data/chatConversations';
-import { underperformingBranches, reportFragments } from '../data/branchData';
 import { UI } from '../theme/colors';
 import { FONTS, TEXT } from '../theme/typography';
 import { sceneFade } from '../utils/frameUtils';
 
 const conv = conversations.scene4;
 
+const findings = [
+  {
+    branch: 'BeanStack Davis Philadelphia',
+    revenue: '$280K',
+    issue: '3 equipment fires this year — branch closed twice',
+    color: UI.accentRed,
+  },
+  {
+    branch: 'BeanStack Angel New York',
+    revenue: '$310K',
+    issue: 'Staff walkout after AC failure — skeleton crew for 2 weeks',
+    color: UI.accentAmber,
+  },
+  {
+    branch: 'BeanStack Downtown Charlotte',
+    revenue: '$295K',
+    issue: 'Chronic maintenance issues — 8 equipment failures in 6 months',
+    color: UI.accentAmber,
+  },
+];
+
 export const Scene4FindBroken: React.FC = () => {
   const frame = useCurrentFrame();
   const fade = sceneFade(frame, 930, 20, 20);
 
-  const tableHeaders = [
-    'Branch',
-    'Revenue',
-    'Satisfaction',
-    'Equipment Issues',
-    'Key Issue',
-  ];
-  const tableRows = underperformingBranches.map((b) => [
-    b.name,
-    b.revenue,
-    b.satisfaction,
-    b.equipmentIssues,
-    b.keyIssue,
-  ]);
-
   return (
     <div style={{ opacity: fade }}>
       <ChatInterface fadeIn={false}>
-        {/* Narrator hint */}
-        <Sequence from={0} durationInFrames={50} layout="none">
-          <div
-            style={{
-              fontFamily: FONTS.primary,
-              ...TEXT.caption,
-              color: UI.textSecondary,
-              fontStyle: 'italic',
-              textAlign: 'center',
-              paddingBottom: 8,
-            }}
-          >
-            Finding the branches that need help before it's too late...
-          </div>
-        </Sequence>
-
         {/* User prompt */}
         <ChatMessage type="user" startFrame={40}>
           <TypewriterText
@@ -69,46 +56,72 @@ export const Scene4FindBroken: React.FC = () => {
           <ToolIndicator tools={conv.tools} startFrame={0} staggerFrames={30} />
         </Sequence>
 
-        {/* Agent response with data table */}
+        {/* Agent response with findings */}
         <ChatMessage type="agent" startFrame={170}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <FadeInText
-              text="Branches with Consistently Low Performance"
+              text="Found 3 consistently underperforming branches:"
               delay={0}
               style={{
-                fontSize: 16,
+                ...TEXT.chatResponse,
                 fontWeight: 600,
                 color: UI.text,
               }}
             />
 
-            <Sequence from={180} layout="none">
-              <DataTable
-                headers={tableHeaders}
-                rows={tableRows}
-                startFrame={0}
-                highlightRows={[0]}
-              />
-            </Sequence>
+            {findings.map((f, i) => (
+              <Sequence key={i} from={220 + i * 60} layout="none">
+                <div
+                  style={{
+                    borderLeft: `4px solid ${f.color}`,
+                    paddingLeft: 16,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 4,
+                  }}
+                >
+                  <div
+                    style={{
+                      fontFamily: FONTS.primary,
+                      fontSize: 28,
+                      fontWeight: 600,
+                      color: UI.text,
+                    }}
+                  >
+                    {f.branch}
+                    <span
+                      style={{
+                        fontFamily: FONTS.mono,
+                        fontSize: 24,
+                        fontWeight: 400,
+                        color: f.color,
+                        marginLeft: 12,
+                      }}
+                    >
+                      {f.revenue}
+                    </span>
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: FONTS.primary,
+                      fontSize: 24,
+                      color: UI.textSecondary,
+                    }}
+                  >
+                    {f.issue}
+                  </div>
+                </div>
+              </Sequence>
+            ))}
           </div>
         </ChatMessage>
 
-        {/* Report fragments for root causes */}
-        <ReportFragment
-          {...reportFragments.fire}
-          startFrame={420}
-        />
-        <ReportFragment
-          {...reportFragments.walkout}
-          startFrame={500}
-        />
-
         {/* Summary */}
-        <Sequence from={600} layout="none">
-          <ChatMessage type="agent" startFrame={600}>
+        <Sequence from={500} layout="none">
+          <ChatMessage type="agent" startFrame={500}>
             <TypewriterText
               text="Structured data flags the problem. Unstructured reports explain the cause. The agent connects both."
-              startFrame={605}
+              startFrame={505}
               charsPerFrame={1.5}
               cursorVisible={false}
               style={{ ...TEXT.chatResponse, color: UI.textSecondary, fontStyle: 'italic' }}

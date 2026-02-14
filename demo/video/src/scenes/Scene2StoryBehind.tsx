@@ -41,7 +41,7 @@ export const Scene2StoryBehind: React.FC = () => {
         <Sequence from={140} durationInFrames={40} layout="none">
           <div
             style={{
-              marginLeft: 42,
+              marginLeft: 62,
               display: 'flex',
               alignItems: 'center',
               gap: 8,
@@ -50,7 +50,7 @@ export const Scene2StoryBehind: React.FC = () => {
             <div
               style={{
                 fontFamily: FONTS.primary,
-                fontSize: 14,
+                fontSize: 22,
                 color: UI.textSecondary,
               }}
             >
@@ -60,8 +60,8 @@ export const Scene2StoryBehind: React.FC = () => {
               <div
                 key={i}
                 style={{
-                  width: 6,
-                  height: 6,
+                  width: 8,
+                  height: 8,
                   borderRadius: '50%',
                   backgroundColor: UI.accent,
                   opacity:

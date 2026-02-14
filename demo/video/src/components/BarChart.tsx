@@ -64,7 +64,7 @@ export const BarChart: React.FC<BarChartProps> = ({
             <div
               style={{
                 fontFamily: FONTS.mono,
-                fontSize: 18,
+                fontSize: 24,
                 color: isHighlight ? COFFEE.amber : UI.text,
                 fontWeight: isHighlight ? 700 : 500,
               }}
@@ -104,7 +104,7 @@ export const BarChart: React.FC<BarChartProps> = ({
             <div
               style={{
                 fontFamily: FONTS.primary,
-                fontSize: 16,
+                fontSize: 22,
                 color: isHighlight ? COFFEE.amber : UI.textSecondary,
                 fontWeight: isHighlight ? 600 : 400,
                 textAlign: 'center',

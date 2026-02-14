@@ -257,14 +257,6 @@ export const IntroProblem: React.FC = () => {
               mixBlendMode: 'multiply',
             }}
           />
-          {/* Dark overlay */}
-          <div
-            style={{
-              position: 'absolute',
-              inset: 0,
-              backgroundColor: 'rgba(0,0,0,0.35)',
-            }}
-          />
           {/* Orbiting stress text fragments */}
           <AbsoluteFill
             style={{ justifyContent: 'center', alignItems: 'center' }}
@@ -289,10 +281,10 @@ export const IntroProblem: React.FC = () => {
                   key={i}
                   style={{
                     position: 'absolute',
-                    left: `calc(50% + ${x}px)`,
-                    top: `calc(35% + ${y}px)`,
+                    left: `calc(40% + ${x}px)`,
+                    top: `calc(25% + ${y}px)`,
                     fontFamily: FONTS.primary,
-                    fontSize: 22,
+                    fontSize: 30,
                     color: COFFEE.cream,
                     opacity: 0.5,
                     transform: 'translate(-50%, -50%)',

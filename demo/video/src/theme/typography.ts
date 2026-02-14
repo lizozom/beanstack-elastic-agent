@@ -18,6 +18,6 @@ export const TEXT = {
   mono: { fontSize: 26, fontWeight: 400 as const, lineHeight: 1.5 },
   lowerThird: { fontSize: 29, fontWeight: 500 as const, lineHeight: 1.3 },
   chatPrompt: { fontSize: 29, fontWeight: 400 as const, lineHeight: 1.5 },
-  chatResponse: { fontSize: 26, fontWeight: 400 as const, lineHeight: 1.6 },
-  toolBadge: { fontSize: 18, fontWeight: 600 as const, lineHeight: 1 },
+  chatResponse: { fontSize: 34, fontWeight: 400 as const, lineHeight: 1.6 },
+  toolBadge: { fontSize: 26, fontWeight: 600 as const, lineHeight: 1 },
 } as const;

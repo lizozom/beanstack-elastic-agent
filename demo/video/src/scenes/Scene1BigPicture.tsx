@@ -45,7 +45,7 @@ export const Scene1BigPicture: React.FC = () => {
               delay={0}
               style={{
                 ...TEXT.h3,
-                fontSize: 18,
+                fontSize: 28,
                 fontWeight: 600,
                 color: UI.text,
               }}

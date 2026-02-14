@@ -72,10 +72,10 @@ export const Scene3ActOnIt: React.FC = () => {
               border: `1px solid ${UI.accentGreen}40`,
             }}
           >
-            <span style={{ fontSize: 16 }}>🔔</span>
+            <span style={{ fontSize: 22 }}>🔔</span>
             <span
               style={{
-                fontSize: 13,
+                fontSize: 20,
                 color: UI.accentGreen,
                 fontWeight: 600,
               }}

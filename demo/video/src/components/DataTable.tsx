@@ -52,7 +52,7 @@ export const DataTable: React.FC<DataTableProps> = ({
             style={{
               flex: i === 0 ? 2 : 1,
               fontFamily: FONTS.primary,
-              fontSize: 13,
+              fontSize: 18,
               fontWeight: 600,
               color: UI.textSecondary,
               textTransform: 'uppercase',
@@ -98,7 +98,7 @@ export const DataTable: React.FC<DataTableProps> = ({
                 style={{
                   flex: ci === 0 ? 2 : 1,
                   fontFamily: FONTS.primary,
-                  fontSize: 14,
+                  fontSize: 20,
                   color: isHighlight && ci === 0 ? COFFEE.amber : UI.text,
                   fontWeight: isHighlight && ci === 0 ? 600 : 400,
                 }}

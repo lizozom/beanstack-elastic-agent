@@ -43,15 +43,15 @@ export const ToolIndicator: React.FC<ToolIndicatorProps> = ({
       style={{
         display: 'flex',
         alignItems: 'center',
-        gap: 8,
-        paddingLeft: 42,
+        gap: 10,
+        paddingLeft: 62,
         flexWrap: 'wrap',
       }}
     >
       <span
         style={{
           fontFamily: FONTS.primary,
-          fontSize: 13,
+          fontSize: 24,
           color: UI.textSecondary,
         }}
       >
@@ -74,14 +74,14 @@ export const ToolIndicator: React.FC<ToolIndicatorProps> = ({
               transform: `scale(${s}) translateX(${(1 - s) * 20}px)`,
               display: 'flex',
               alignItems: 'center',
-              gap: 5,
-              padding: '4px 10px',
-              borderRadius: 12,
+              gap: 6,
+              padding: '6px 14px',
+              borderRadius: 14,
               backgroundColor: color + '20',
               border: `1px solid ${color}50`,
             }}
           >
-            <span style={{ fontSize: 12 }}>{typeIcons[tool.type]}</span>
+            <span style={{ fontSize: 22 }}>{typeIcons[tool.type]}</span>
             <span
               style={{
                 fontFamily: FONTS.mono,
@@ -95,7 +95,7 @@ export const ToolIndicator: React.FC<ToolIndicatorProps> = ({
               <span
                 style={{
                   fontFamily: FONTS.primary,
-                  fontSize: 11,
+                  fontSize: 20,
                   color: UI.textSecondary,
                 }}
               >

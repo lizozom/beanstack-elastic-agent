@@ -107,7 +107,7 @@ The agent switches to semantic search. It finds a weekly report from months ago 
 **Screen:** Agent uses the staff_by_branch tool to look up the manager, then triggers the send_manager_message workflow. The workflow does the rest: looks up the branch, finds the manager, sends the email, logs it to Elasticsearch. Confirmation appears in chat.
 
 **Narrator:**
-> From insight to action in one sentence. The agent finds the right person using the staff lookup tool, then triggers a Kibana Workflow — a deterministic automation that sends the email, logs the event, and confirms delivery. No hallucination risk on the action path. The workflow handles it reliably.
+Now is time for action! The agent finds the branch manager using the staff lookup tool, then triggers a Kibana Workflow — a deterministic automation that sends a congratulatory email, logs the event, and confirms delivery. No hallucination risk on the action path!
 
 **SFX:** Subtle notification chime on email confirmation.
 
@@ -142,7 +142,7 @@ The agent switches to semantic search. It finds a weekly report from months ago 
 **Screen:** Agent triggers the escalation workflow. A Kibana case appears — auto-composed description pulling from recent reports and financials. Then an email confirmation.
 
 **Narrator:**
-> One sentence, three actions. The escalation workflow opens a Kibana case with an AI-composed description pulling from recent reports and financial data. It sends an email to the branch manager. And it logs everything. The agent chose what to do, the workflow executed it safely — create the case, compose the summary, send the notification, write the audit trail. Reliable action, fully traceable.
+> To make sure operational issues are addressed promptly, the escalation workflow opens a Kibana case with an AI-composed description pulling from recent reports and financial data. It sends an email to the branch manager. And it logs everything.Reliable action, fully traceable.
 
 **Lower third:** `Escalation workflow: case + email + audit log — one prompt`
 

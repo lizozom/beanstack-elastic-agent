@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Audio, Sequence, staticFile } from 'remotion';
+import { AbsoluteFill, Audio, interpolate, Sequence, staticFile } from 'remotion';
 import { ColdOpen } from './scenes/ColdOpen';
 import { IntroProblem } from './scenes/IntroProblem';
 import { SolutionArchitecture } from './scenes/SolutionArchitecture';
@@ -27,6 +27,25 @@ import { Closing } from './scenes/Closing';
 export const BeanStackVideo: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
+      <Sequence from={0}>
+        <Audio
+          src={staticFile('delosound-soft-background-music-483779.mp3')}
+          volume={(f) =>
+            interpolate(f, [100, 210], [1, 0.08], {
+              extrapolateLeft: 'clamp',
+              extrapolateRight: 'clamp',
+            })
+          }
+        />
+      </Sequence>
+      <Sequence from={3750}>
+        <Audio
+          src={staticFile('delosound-soft-background-music-483779.mp3')}
+          volume={0.08}
+          
+        />
+      </Sequence>
+
       <Sequence from={0} durationInFrames={200}>
         <ColdOpen />
       </Sequence>
@@ -55,23 +74,37 @@ export const BeanStackVideo: React.FC = () => {
 
       <Sequence from={2710} durationInFrames={700}>
         <Scene2StoryBehind />
+
+        <Sequence from={30}>
         <Audio src={staticFile('05 - semantic.mp3')} playbackRate={1.1} />
+        </Sequence>
       </Sequence>
 
       <Sequence from={3410} durationInFrames={640}>
         <Scene3ActOnIt />
-        <Audio src={staticFile('06 - action.mp3')} playbackRate={1.1} />
+        <Sequence from={30}>
+          <Audio src={staticFile('06 - action.mp3')} playbackRate={1.1} />
+        </Sequence>
+        <Sequence from={600}>
+          <Audio src={staticFile('06 - system notification.mp3')} />
+        </Sequence>
       </Sequence>
 
-      <Sequence from={4050} durationInFrames={940}>
+      <Sequence from={4050} durationInFrames={800}>
+        <Sequence from={30}>
+          <Audio src={staticFile('07 - investigation.mp3')} playbackRate={1.1} />
+        </Sequence>
         <Scene4FindBroken />
       </Sequence>
 
-      <Sequence from={5095} durationInFrames={790}>
+      <Sequence from={4850} durationInFrames={580}>
         <Scene5Escalate />
+        <Sequence from={30}>
+          <Audio src={staticFile('08 - cases.mp3')} playbackRate={1.1} />
+        </Sequence>
       </Sequence>
 
-      <Sequence from={5845} durationInFrames={470}>
+      <Sequence from={5450} durationInFrames={300}>
         <Closing />
       </Sequence>
     </AbsoluteFill>
