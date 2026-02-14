@@ -64,6 +64,9 @@ export const BeanStackVideo: React.FC = () => {
 
       <Sequence from={2070} durationInFrames={640}>
         <Scene1BigPicture />
+        <Sequence from={30} durationInFrames={65}>
+          <Audio src={staticFile('freesound_community-apple-mac-keyboad-typing-close-up-26390.mp3')} />
+        </Sequence>
         <Sequence from={0}>
           <Audio src={staticFile('03 - big pic 1.mp3')} playbackRate={1.1} />
         </Sequence>
@@ -74,6 +77,9 @@ export const BeanStackVideo: React.FC = () => {
 
       <Sequence from={2710} durationInFrames={700}>
         <Scene2StoryBehind />
+        <Sequence from={30} durationInFrames={65}>
+          <Audio src={staticFile('freesound_community-apple-mac-keyboad-typing-close-up-26390.mp3')} />
+        </Sequence>
 
         <Sequence from={30}>
         <Audio src={staticFile('05 - semantic.mp3')} playbackRate={1.1} />
@@ -82,6 +88,9 @@ export const BeanStackVideo: React.FC = () => {
 
       <Sequence from={3410} durationInFrames={640}>
         <Scene3ActOnIt />
+        <Sequence from={10} durationInFrames={65}>
+          <Audio src={staticFile('freesound_community-apple-mac-keyboad-typing-close-up-26390.mp3')} />
+        </Sequence>
         <Sequence from={30}>
           <Audio src={staticFile('06 - action.mp3')} playbackRate={1.1} />
         </Sequence>
@@ -91,6 +100,9 @@ export const BeanStackVideo: React.FC = () => {
       </Sequence>
 
       <Sequence from={4050} durationInFrames={800}>
+        <Sequence from={40} durationInFrames={65}>
+          <Audio src={staticFile('freesound_community-apple-mac-keyboad-typing-close-up-26390.mp3')} />
+        </Sequence>
         <Sequence from={30}>
           <Audio src={staticFile('07 - investigation.mp3')} playbackRate={1.1} />
         </Sequence>
@@ -99,6 +111,9 @@ export const BeanStackVideo: React.FC = () => {
 
       <Sequence from={4850} durationInFrames={580}>
         <Scene5Escalate />
+        <Sequence from={15} durationInFrames={90}>
+          <Audio src={staticFile('freesound_community-apple-mac-keyboad-typing-close-up-26390.mp3')} />
+        </Sequence>
         <Sequence from={30}>
           <Audio src={staticFile('08 - cases.mp3')} playbackRate={1.1} />
         </Sequence>

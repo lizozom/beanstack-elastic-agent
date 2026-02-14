@@ -35,7 +35,7 @@ export const Closing: React.FC = () => {
 
   // Phase 4: Built on line (210-300)
   const builtOnOpacity = spring({
-    frame: frame - 210,
+    frame: frame - 140,
     fps,
     config: { damping: 20, stiffness: 80, mass: 1 },
   });
