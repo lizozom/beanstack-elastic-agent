@@ -30,158 +30,120 @@ An AI agent for managing a 100+ branch coffee chain (BeanStack).
 - **Embeddings:** Cohere v4 (Embed 4) - `search_document` for indexing, `search_query` for retrieval
 - **Hybrid Search:** RRF (Reciprocal Rank Fusion) combining Cohere vectors with BM25
 - **Orchestration:** Elastic Agent Builder (Claude 4.5)
-- **UI:** Gradio (Python)
+- **Slack Integration:** slack-bolt (Socket Mode)
 - **Environment:** uv (Python package manager)
 
-## Architecture Principles
-- **Flexible Temporal Awareness:** Extract user's time intent, apply hard filter + Gaussian decay
-- **Geo-Filtering:** Geo-distance and Geo-bounding box filters
-- **Hybrid Precision:** RRF for exact term matches + semantic intent
-- **Operational Gaps:** Proactively identify missing data
+---
+
+# Project Structure
+
+## `data/` — Generated Synthetic Data
+
+Contains all generated data used to populate Elasticsearch indices.
+
+- `generated/branches.json` — ~120 branch records with geo-coordinates across major US cities
+- `generated/staff.json` — ~500-600 staff members (4-6 per branch)
+- `generated/branch_narratives.json` — Contextual branch narratives
+- `generated/quarterly_reports.json` — Structured financial reports (Q1-2023 through Q4-2025)
+- `generated/financial-reports/` — Quarterly financial reports organized by period
+- `generated/reports/` — Weekly unstructured reports organized by quarter (~2,600 total)
+
+## `scripts/` — Data Generation & Elasticsearch Setup
+
+### `scripts/data_generation/` — Synthetic Data Generation
+
+Uses Faker and Claude Haiku to generate realistic data with seasonal patterns, regional variance, and catastrophic events.
+
+| Script | Purpose |
+|--------|---------|
+| `branches.py` | Generate ~120 branches across US cities with geo-coordinates |
+| `staff.py` | Generate ~500-600 staff with roles and branch assignments |
+| `weekly_reports.py` | Generate ~2,600 unstructured weekly reports using Claude Haiku |
+| `quarterly_reports.py` | Generate structured quarterly financials (Q1-2023 to Q4-2025) |
+
+### `scripts/es_setup/` — Elasticsearch & Agent Setup
+
+Numbered scripts run in order to fully configure the Elasticsearch cluster and Agent Builder.
+
+| Script | Purpose |
+|--------|---------|
+| `00_init_es.py` | Enable Agent Builder feature flag, set default AI connector, configure SMTP |
+| `01_setup_indices.py` | Create 4 indices, set up Cohere embed-v4 inference endpoint |
+| `02_ingest_data.py` | Bulk-index branches/staff, create enrich policy for region lookups |
+| `03_ingest_reports.py` | Bulk-index weekly reports with semantic_text embeddings |
+| `04_ingest_financial.py` | Bulk-index quarterly financial reports |
+| `10_setup_workflows.py` | Deploy 3 Kibana Workflows (escalation, missing reports reminder, send message) |
+| `11_setup_agent.py` | Create BeanStack Agent in Agent Builder with 20 custom tools |
+
+**Agent Tools (20 total)** in `scripts/es_setup/tools/`:
+- **Index Search** (4): `search_reports`, `search_branches`, `search_staff`, `search_financial_reports`
+- **ES|QL Analytics** (10): `revenue_by_region`, `underperforming_branches`, `branches_without_reports`, `turnover_by_branch`, `equipment_issues_by_branch`, etc.
+- **Workflow** (3): `wf_send_manager_message`, `wf_missing_reports_reminder`, `wf_escalation`
+
+**Kibana Workflows** in `scripts/es_setup/workflows/`:
+- `escalation.yaml` — Escalate critical issues to ops team
+- `missing_reports_reminder.yaml` — Automated reminders for overdue reports
+- `send_manager_message.yaml` — Send emails to branch managers
+
+## `slack_bot/` — Slack Integration
+
+A standalone Python bot connecting Slack to BeanStack Agent via the Agent Builder converse API.
+
+- **Socket Mode** — No public URL required
+- **Two modes:** `@BeanStack` mentions in channels (single-turn) and DMs (multi-turn with conversation continuity)
+- **Markdown conversion** — Translates standard Markdown to Slack mrkdwn format
+- **Deployment:** Runs on Fly.io (`fly.toml` + `Dockerfile`)
+
+Key files:
+- `slack_bot/bot.py` — Main bot implementation
+- `slack_bot/slack_app_manifest.json` — Pre-configured Slack app manifest
+
+## `demo/` — Submission Video
+
+The hackathon submission video, built programmatically with **Remotion** (React-based video framework) and narrated with **ElevenLabs** voice generation.
+
+- `demo/script.md` — 3:30 demo narrative script
+- `demo/video/` — Remotion TypeScript project
+
+### Video Project (`demo/video/`)
+
+```
+demo/video/src/
+├── Video.tsx              # Main composition — scene sequencing + audio tracks
+├── scenes/                # 9 scenes (ColdOpen, IntroProblem, SolutionArchitecture, Scene1-5, Closing)
+├── components/            # Reusable UI (ChatInterface, ChatMessage, BarChart, WorkflowChain, etc.)
+├── data/                  # Scene data fixtures (conversations, region data, branch data)
+├── theme/                 # Colors (coffee palette + UI palette), typography (Inter font)
+└── utils/                 # Frame utilities, interpolation helpers
+```
+
+- Chat interface styled as Slack dark mode
+- Animated architecture diagrams, bar charts, workflow chains
+- Audio: ElevenLabs narration tracks + background music with volume ducking
+- `npm run studio` to preview, `npm run render` for final MP4
 
 ---
 
 # Data Model
 
+## Elasticsearch Indices
+
+| Index | Records | Description |
+|-------|---------|-------------|
+| `beanstack-branches` | ~120 | Branch locations with geo-coordinates |
+| `beanstack-staff` | ~500-600 | Staff directory with roles and branch assignments |
+| `beanstack-reports` | ~2,600 | Weekly unstructured reports (semantic_text embeddings) |
+| `beanstack-financial-reports` | ~200 | Quarterly structured financials (semantic_text embeddings) |
+
 ## Date Range
-August 2025 - January 2026 (6 months)
+August 2025 - January 2026 (6 months of weekly reports); Q1-2023 through Q4-2025 (quarterly financials)
 
 ## Geography
 US only, major cities (NYC, LA, Chicago, Seattle, Miami, Austin, Denver, Boston, SF, etc.)
 
----
-
-## Index: `branches`
-~100-120 branches
-
-```json
-{
-  "id": "branch-042",
-  "name": "BeanStack 5th Ave NYC",
-  "address": "123 5th Avenue",
-  "city": "New York",
-  "state": "NY",
-  "zip": "10001",
-  "region": "Northeast",
-  "location": { "lat": 40.7128, "lon": -74.0060 },
-  "size": "large",
-  "opened_date": "2019-03-15",
-  "manager_email": "marcus.johnson@beanstack.com"
-}
-```
-
-## Index: `staff`
-~500-600 staff members (4-6 per branch)
-
-```json
-{
-  "id": "staff-001",
-  "name": "Marcus Johnson",
-  "email": "marcus.johnson@beanstack.com",
-  "role": "Manager",
-  "branch_id": "branch-042",
-  "branch_name": "BeanStack 5th Ave NYC",
-  "start_date": "2019-03-15",
-  "status": "active"
-}
-```
-
-Roles: Barista, Shift Lead, Assistant Manager, Manager
-
-## Index: `weekly_reports`
-~2,600 reports (26 weeks × 100 branches)
-
-Informal, email-style, unstructured text covering:
-- Equipment failures
-- Staffing shortages
-- Supply chain issues
-- Local events
-- Seasonal patterns
-- Occasional catastrophic events (strikes, staff walkouts, pest incidents, etc.)
-
-```json
-{
-  "id": "report-001",
-  "branch_id": "branch-042",
-  "branch_name": "BeanStack 5th Ave NYC",
-  "sender_email": "marcus.johnson@beanstack.com",
-  "subject": "Week of Jan 15 - rough one",
-  "text": "Hey,\nCrazy week. Espresso machine #2 broke down Tuesday...",
-  "date": "2025-01-20",
-  "timestamp": "2025-01-20T09:34:00Z"
-}
-```
-
-## Index: `quarterly_reports`
-~200 reports (2 quarters × 100 branches)
-
-Structured JSON forms filled by managers.
-
-```json
-{
-  "id": "q4-2025-branch-042",
-  "branch_id": "branch-042",
-  "branch_name": "BeanStack 5th Ave NYC",
-  "period": "Q4-2025",
-  "submitted_by": "marcus.johnson@beanstack.com",
-  "submitted_at": "2025-01-05T14:22:00Z",
-  "revenue": 142500.00,
-  "transactions": 18420,
-  "avg_ticket": 7.74,
-  "labor_hours": 2860,
-  "labor_cost_pct": 32.5,
-  "inventory_waste_pct": 4.2,
-  "customer_satisfaction": 4.3,
-  "employee_count": 6,
-  "turnover_count": 1,
-  "equipment_issues": 3,
-  "notes": "Strong holiday season despite machine repairs"
-}
-```
-
-## Index: `yearly_reports`
-~100 reports (2025 partial year)
-
-Structured JSON forms filled by managers.
-
-```json
-{
-  "id": "y-2025-branch-042",
-  "branch_id": "branch-042",
-  "branch_name": "BeanStack 5th Ave NYC",
-  "year": 2025,
-  "total_revenue": 520000.00,
-  "total_transactions": 71200,
-  "yoy_growth_pct": 8.2,
-  "best_quarter": "Q4",
-  "worst_quarter": "Q1",
-  "total_employee_turnover": 4,
-  "major_incidents": 2,
-  "capital_requests": ["New espresso machine", "Outdoor seating expansion"],
-  "manager_summary": "Solid year overall..."
-}
-```
-
----
-
 ## Data Generation Patterns
 
-**Realistic Variance:**
-- Some branches consistently well-run, others struggle (hidden quality score)
-- Staff turnover patterns
-
-**Seasonal Patterns:**
-- Winter: Hot drinks, holiday rushes, weather delays
-- Summer: Iced drinks surge, AC issues, vacation staffing gaps
-- Fall: Pumpkin spice season, back-to-school
-
-**Regional Events:**
-- Local sports, concerts, weather (hurricanes in Miami, heat in Phoenix, snow in NYC)
-
-**Catastrophic Events (~5-10% of reports):**
-- Staff walkouts/strikes
-- Equipment fires
-- Pest incidents
-- Health inspection failures
-- Burst pipes
-- Viral social media moments
+- **Realistic Variance:** Hidden quality scores per branch, staff turnover patterns
+- **Seasonal:** Winter holiday rushes, summer AC issues, fall pumpkin spice season
+- **Regional Events:** Local sports, weather (hurricanes, heat waves, snow)
+- **Catastrophic Events (~5-10%):** Staff walkouts, equipment fires, pest incidents, health inspection failures

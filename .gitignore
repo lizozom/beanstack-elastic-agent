@@ -21,3 +21,4 @@ data/generated/reports/
 scripts/es_setup/workflow_ids.json
 data/generated/quarterly_reports.json
 demo/video/node_modules/
+demo/video/out/BeanStackDemo.mp4
